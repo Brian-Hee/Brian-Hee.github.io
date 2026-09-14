@@ -1,0 +1,122 @@
+/* 自定义样式 - 宇宙背景 + 卡片浮层 + 风车头像 */
+
+/* 网站背景 - 直接设置在 body 上 */
+body {
+  background: url("/img/bg-space-art.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+/* 内容区域背景透明，让背景图显示出来 */
+#body-wrap,
+#content-outer,
+.layout,
+#content,
+#aside-content {
+  background: transparent !important;
+}
+
+/* 文章卡片白色浮层 */
+.recent-post-item,
+.article-sort-item,
+.post-card,
+.flink-item,
+.gallery-item {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  margin-bottom: 20px !important;
+}
+
+.recent-post-item:hover,
+.article-sort-item:hover,
+.post-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* 侧边栏卡片白色浮层 */
+.card-widget {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 20px !important;
+}
+
+/* 分页器 */
+#pagination .page-number,
+#pagination .extend {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 8px !important;
+}
+
+/* 页脚背景半透明 */
+#footer {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+#footer, #footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 风车头像旋转动画 - 用更具体的选择器确保生效 */
+.card-info .avatar-img img,
+.avatar-img img {
+  animation: pinwheel-spin 6s linear infinite !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+}
+
+@keyframes pinwheel-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 文章详情页内容区域白色背景 */
+#post,
+.post-content,
+.article-meta,
+.post-copyright,
+.relatedPosts,
+#pagination {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+#post {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 30px !important;
+}
+
+/* 评论区域 */
+#post-comment {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 归档页面 */
+.article-sort {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 分类标签页面 */
+#category, #tag, #tag-page, #category-page {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 页面标题区域 - 保留横幅图，不透明 */
+/* #page-header 保持主题默认样式，首页横幅图正常显示 */
+
+/* 确保文章封面图正确显示 */
+.recent-post-item .post-bg {
+  border-radius: 12px 12px 0 0 !important;
+}
