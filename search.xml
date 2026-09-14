@@ -1,89 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>你好，世界 - 我的第一篇博客</title>
-    <url>/2026/09/12/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[你好，世界！这是我用 Hexo 搭建的个人博客的第一篇文章。
-为什么要写博客？
-记录学习和思考的过程
-分享知识，帮助他人
-倒逼自己输出和总结
-
-这个博客用了什么？
-框架：Hexo - 快速、简洁、高效的博客框架
-主题：Butterfly - 简洁美观的主题
-托管：GitHub Pages - 免费、稳定
-
-接下来会写什么？
-技术学习笔记
-生活感悟
-实用工具分享
-读书心得
-
-
-路漫漫其修远兮，吾将上下而求索。
-
-感谢你的访问，欢迎常来！
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的技术学习路线图</title>
-    <url>/2026/09/12/%E6%88%91%E7%9A%84%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E5%9B%BE/</url>
-    <content><![CDATA[我的技术学习路线图学习技术是一场马拉松，不是百米冲刺。以下是我为自己规划的学习路线。
-第一阶段：打好基础编程语言
-
-Python：入门友好，生态丰富
-JavaScript：前端必备，全栈基础
-
-计算机基础
-
-数据结构与算法
-计算机网络
-操作系统
-
-第二阶段：方向深耕前端方向
-
-HTML &#x2F; CSS &#x2F; JavaScript 深入
-React &#x2F; Vue 框架
-工程化工具链
-
-后端方向
-
-Node.js &#x2F; Go &#x2F; Java
-数据库（MySQL &#x2F; MongoDB）
-容器化与部署
-
-第三阶段：进阶提升
-系统设计与架构
-性能优化
-开源项目贡献
-
-学习方法建议
-动手实践：每学一个知识点，都要写代码验证
-输出倒逼输入：写博客、做笔记，教会别人才算学会
-保持节奏：每天学习 1-2 小时，胜过周末突击 8 小时
-
-
-种一棵树最好的时间是十年前，其次是现在。
-
-加油，一起进步！
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>学习路线</tag>
-        <tag>编程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2026年互联网实用工具盘点</title>
     <url>/2026/09/12/2026%E5%B9%B4%E4%BA%92%E8%81%94%E7%BD%91%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E7%9B%98%E7%82%B9/</url>
     <content><![CDATA[2026年互联网实用工具盘点信息爆炸的时代，好工具能帮你事半功倍。
@@ -138,6 +55,89 @@ Docker：容器化部署标准
       <tags>
         <tag>工具推荐</tag>
         <tag>效率</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的技术学习路线图</title>
+    <url>/2026/09/12/%E6%88%91%E7%9A%84%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E5%9B%BE/</url>
+    <content><![CDATA[我的技术学习路线图学习技术是一场马拉松，不是百米冲刺。以下是我为自己规划的学习路线。
+第一阶段：打好基础编程语言
+
+Python：入门友好，生态丰富
+JavaScript：前端必备，全栈基础
+
+计算机基础
+
+数据结构与算法
+计算机网络
+操作系统
+
+第二阶段：方向深耕前端方向
+
+HTML &#x2F; CSS &#x2F; JavaScript 深入
+React &#x2F; Vue 框架
+工程化工具链
+
+后端方向
+
+Node.js &#x2F; Go &#x2F; Java
+数据库（MySQL &#x2F; MongoDB）
+容器化与部署
+
+第三阶段：进阶提升
+系统设计与架构
+性能优化
+开源项目贡献
+
+学习方法建议
+动手实践：每学一个知识点，都要写代码验证
+输出倒逼输入：写博客、做笔记，教会别人才算学会
+保持节奏：每天学习 1-2 小时，胜过周末突击 8 小时
+
+
+种一棵树最好的时间是十年前，其次是现在。
+
+加油，一起进步！
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>学习路线</tag>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>你好，世界 - 我的第一篇博客</title>
+    <url>/2026/09/12/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[你好，世界！这是我用 Hexo 搭建的个人博客的第一篇文章。
+为什么要写博客？
+记录学习和思考的过程
+分享知识，帮助他人
+倒逼自己输出和总结
+
+这个博客用了什么？
+框架：Hexo - 快速、简洁、高效的博客框架
+主题：Butterfly - 简洁美观的主题
+托管：GitHub Pages - 免费、稳定
+
+接下来会写什么？
+技术学习笔记
+生活感悟
+实用工具分享
+读书心得
+
+
+路漫漫其修远兮，吾将上下而求索。
+
+感谢你的访问，欢迎常来！
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>

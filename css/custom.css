@@ -2,7 +2,7 @@
 
 /* 网站背景 - 直接设置在 body 上 */
 body {
-  background: url("/img/bg-space.jpg") no-repeat center center fixed !important;
+  background: url("/img/bg-space-art.jpg") no-repeat center center fixed !important;
   background-size: cover !important;
 }
 
