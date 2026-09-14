@@ -113,15 +113,8 @@ body {
   padding: 20px !important;
 }
 
-/* 页面标题区域 */
-#page-header {
-  background: transparent !important;
-}
-
-#page-header.post-bg,
-#page-header.not-top-img {
-  background: transparent !important;
-}
+/* 页面标题区域 - 保留横幅图，不透明 */
+/* #page-header 保持主题默认样式，首页横幅图正常显示 */
 
 /* 确保文章封面图正确显示 */
 .recent-post-item .post-bg {
