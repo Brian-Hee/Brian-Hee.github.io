@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>Brian</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <icon>https://brian-hee.github.io/icon.png</icon>
+  <id>https://brian-hee.github.io/</id>
+  <link href="https://brian-hee.github.io/" rel="alternate"/>
+  <link href="https://brian-hee.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, Brian</rights>
+  <subtitle>
+    <![CDATA[Share & Learn | 记录与分享]]>
+  </subtitle>
+  <title>Brian 的博客</title>
+  <updated>2026-09-14T06:25:39.868Z</updated>
+  <entry>
+    <author>
+      <name>Brian</name>
+    </author>
+    <category term="实用技巧" scheme="https://brian-hee.github.io/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    <category term="效率" scheme="https://brian-hee.github.io/tags/%E6%95%88%E7%8E%87/"/>
+    <category term="工具推荐" scheme="https://brian-hee.github.io/tags/%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%8D%90/"/>
+    <id>https://brian-hee.github.io/2026/09/12/2026%E5%B9%B4%E4%BA%92%E8%81%94%E7%BD%91%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E7%9B%98%E7%82%B9/</id>
+    <link href="https://brian-hee.github.io/2026/09/12/2026%E5%B9%B4%E4%BA%92%E8%81%94%E7%BD%91%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E7%9B%98%E7%82%B9/"/>
+    <published>2026-09-12T08:32:00.000Z</published>
+    <summary>盘点 2026 年值得收藏的互联网实用工具</summary>
+    <title>2026年互联网实用工具盘点</title>
+    <updated>2026-09-14T06:25:39.868Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Brian</name>
+    </author>
+    <category term="自我提升" scheme="https://brian-hee.github.io/categories/%E8%87%AA%E6%88%91%E6%8F%90%E5%8D%87/"/>
+    <category term="学习方法" scheme="https://brian-hee.github.io/tags/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/"/>
+    <category term="效率" scheme="https://brian-hee.github.io/tags/%E6%95%88%E7%8E%87/"/>
+    <id>https://brian-hee.github.io/2026/09/12/%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%96%B9%E6%B3%95%E8%AE%BA/</id>
+    <link href="https://brian-hee.github.io/2026/09/12/%E9%AB%98%E6%95%88%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
+    <published>2026-09-12T08:31:00.000Z</published>
+    <summary>分享我实践过的高效学习方法论</summary>
+    <title>高效学习的方法论</title>
+    <updated>2026-09-14T06:25:34.354Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Brian</name>
+    </author>
+    <category term="技术" scheme="https://brian-hee.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    <category term="学习路线" scheme="https://brian-hee.github.io/tags/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    <category term="编程" scheme="https://brian-hee.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    <id>https://brian-hee.github.io/2026/09/12/%E6%88%91%E7%9A%84%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E5%9B%BE/</id>
+    <link href="https://brian-hee.github.io/2026/09/12/%E6%88%91%E7%9A%84%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E5%9B%BE/"/>
+    <published>2026-09-12T08:30:00.000Z</published>
+    <summary>分享我的技术学习路线，从基础到进阶的完整规划</summary>
+    <title>我的技术学习路线图</title>
+    <updated>2026-09-14T06:25:29.368Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>Brian</name>
+    </author>
+    <category term="随笔" scheme="https://brian-hee.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    <category term="博客" scheme="https://brian-hee.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    <category term="Hexo" scheme="https://brian-hee.github.io/tags/Hexo/"/>
+    <id>https://brian-hee.github.io/2026/09/12/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
+    <link href="https://brian-hee.github.io/2026/09/12/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E4%B8%96%E7%95%8C-%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <published>2026-09-12T07:58:20.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="你好，世界！"><a href="#你好，世界！" class="headerlink" title="你好，世界！"></a>你好，世界！</h2><p>这是我用 Hexo 搭建的个人博客的第一篇文章。</p>
+<h3 id="为什么要写博客？"><a]]>
+    </summary>
+    <title>你好，世界 - 我的第一篇博客</title>
+    <updated>2026-09-12T07:58:33.286Z</updated>
+  </entry>
+</feed>
