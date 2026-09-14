@@ -1,0 +1,110 @@
+/* 自定义样式 - 宇宙背景 + 卡片浮层 */
+
+/* 网站背景 */
+#web_bg {
+  background: url("/img/bg-space.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+}
+
+/* 内容区域背景透明，让背景图显示出来 */
+#content-outer,
+.layout,
+#content {
+  background: transparent !important;
+}
+
+/* 文章卡片白色浮层 */
+.recent-post-item,
+.article-sort-item,
+.post-card,
+.flink-item,
+.gallery-item {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.recent-post-item:hover,
+.article-sort-item:hover,
+.post-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* 侧边栏卡片白色浮层 */
+.card-widget {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 分页器 */
+#pagination .page-number,
+#pagination .extend {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 8px !important;
+}
+
+/* 页脚背景半透明 */
+#footer {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+#footer, #footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 头像旋转动画增强 */
+.card-info-avatar img {
+  animation: spin 8s linear infinite !important;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 文章详情页内容区域白色背景 */
+#post,
+.post-content,
+.article-meta,
+.post-copyright,
+.relatedPosts,
+#pagination {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+#post {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 30px !important;
+}
+
+/* 评论区域 */
+#post-comment {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 归档页面 */
+.article-sort {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 分类标签页面 */
+#category, #tag, #tag-page, #category-page {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
