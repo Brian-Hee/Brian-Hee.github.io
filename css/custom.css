@@ -60,8 +60,9 @@
 }
 
 /* 头像旋转动画增强 */
-.card-info-avatar img {
+.avatar-img img {
   animation: spin 8s linear infinite !important;
+  border-radius: 50% !important;
 }
 
 @keyframes spin {
