@@ -1,18 +1,17 @@
-/* 自定义样式 - 宇宙背景 + 卡片浮层 */
+/* 自定义样式 - 宇宙背景 + 卡片浮层 + 风车头像 */
 
-/* 网站背景 */
-#web_bg {
-  background: url("/img/bg-space.jpg") !important;
+/* 网站背景 - 直接设置在 body 上 */
+body {
+  background: url("/img/bg-space.jpg") no-repeat center center fixed !important;
   background-size: cover !important;
-  background-position: center !important;
-  background-attachment: fixed !important;
-  background-repeat: no-repeat !important;
 }
 
 /* 内容区域背景透明，让背景图显示出来 */
+#body-wrap,
 #content-outer,
 .layout,
-#content {
+#content,
+#aside-content {
   background: transparent !important;
 }
 
@@ -26,6 +25,7 @@
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  margin-bottom: 20px !important;
 }
 
 .recent-post-item:hover,
@@ -40,6 +40,7 @@
   background: rgba(255, 255, 255, 0.95) !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 20px !important;
 }
 
 /* 分页器 */
@@ -59,13 +60,15 @@
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
-/* 头像旋转动画增强 */
+/* 风车头像旋转动画 - 用更具体的选择器确保生效 */
+.card-info .avatar-img img,
 .avatar-img img {
-  animation: spin 8s linear infinite !important;
+  animation: pinwheel-spin 6s linear infinite !important;
   border-radius: 50% !important;
+  display: inline-block !important;
 }
 
-@keyframes spin {
+@keyframes pinwheel-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
@@ -108,4 +111,19 @@
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
   padding: 20px !important;
+}
+
+/* 页面标题区域 */
+#page-header {
+  background: transparent !important;
+}
+
+#page-header.post-bg,
+#page-header.not-top-img {
+  background: transparent !important;
+}
+
+/* 确保文章封面图正确显示 */
+.recent-post-item .post-bg {
+  border-radius: 12px 12px 0 0 !important;
 }
