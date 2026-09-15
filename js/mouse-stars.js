@@ -1,4 +1,4 @@
-// 鼠标移动星星飘落特效
+// 鼠标移动星星飘落特效 - 单种形状随机
 (function() {
   var stars = [];
   var colors = [
@@ -8,9 +8,12 @@
   ];
   var shapes = ['★', '✦', '✧', '❋', '✿', '❀', '♥', '♡'];
 
+  // 页面加载时随机选择一种形状
+  var selectedShape = shapes[Math.floor(Math.random() * shapes.length)];
+
   function createStar(x, y) {
     var star = document.createElement('div');
-    star.textContent = shapes[Math.floor(Math.random() * shapes.length)];
+    star.textContent = selectedShape;
     star.style.cssText = [
       'position: fixed',
       'left: ' + x + 'px',
