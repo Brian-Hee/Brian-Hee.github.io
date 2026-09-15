@@ -1,4 +1,4 @@
-// 鼠标移动星星飘落特效 - 单种形状随机
+// 鼠标移动星星飘落特效 - 单种形状随机，缓慢飘逸版
 (function() {
   var stars = [];
   var colors = [
@@ -14,16 +14,18 @@
   function createStar(x, y) {
     var star = document.createElement('div');
     star.textContent = selectedShape;
+    var size = Math.random() * 10 + 10; // 10-20px
     star.style.cssText = [
       'position: fixed',
       'left: ' + x + 'px',
       'top: ' + y + 'px',
       'color: ' + colors[Math.floor(Math.random() * colors.length)],
-      'font-size: ' + (Math.random() * 12 + 8) + 'px',
+      'font-size: ' + size + 'px',
       'pointer-events: none',
       'z-index: 99999',
       'user-select: none',
-      'transition: none'
+      'transition: none',
+      'will-change: transform, opacity'
     ].join(';');
     document.body.appendChild(star);
 
@@ -31,27 +33,45 @@
       el: star,
       x: x,
       y: y,
-      vx: (Math.random() - 0.5) * 2,
-      vy: Math.random() * 2 + 1,
+      vx: (Math.random() - 0.5) * 0.8, // 很小的水平初速度
+      vy: Math.random() * 0.5 + 0.3, // 很慢的初始下落速度 0.3-0.8
+      gravity: 0.008, // 很小的重力，慢慢加速
+      swayAmplitude: Math.random() * 1.5 + 0.5, // 左右摇摆幅度
+      swayFrequency: Math.random() * 0.02 + 0.01, // 摇摆频率
+      swayOffset: Math.random() * Math.PI * 2, // 摇摆相位偏移
       alpha: 1,
+      alphaDecay: Math.random() * 0.004 + 0.003, // 很慢的透明度衰减，存在更久
       rotation: Math.random() * 360,
-      rotationSpeed: (Math.random() - 0.5) * 10,
-      scale: 1
+      rotationSpeed: (Math.random() - 0.5) * 1.5, // 很慢的旋转
+      scale: 1,
+      scaleDecay: 0.002, // 很慢的缩小
+      time: 0
     });
   }
 
   function animate() {
     for (var i = stars.length - 1; i >= 0; i--) {
       var s = stars[i];
-      s.x += s.vx;
-      s.y += s.vy;
-      s.vy += 0.05; // 重力
-      s.alpha -= 0.015;
-      s.rotation += s.rotationSpeed;
-      s.scale = Math.max(0, s.scale - 0.005);
+      s.time++;
 
-      if (s.alpha <= 0) {
-        document.body.removeChild(s.el);
+      // 缓慢下落，带重力加速
+      s.vy += s.gravity;
+      s.y += s.vy;
+
+      // 左右摇摆，像飘落一样
+      var sway = Math.sin(s.time * s.swayFrequency + s.swayOffset) * s.swayAmplitude;
+      s.x += s.vx + sway * 0.1;
+
+      // 缓慢消失
+      s.alpha -= s.alphaDecay;
+      s.rotation += s.rotationSpeed;
+      s.scale = Math.max(0.3, s.scale - s.scaleDecay);
+
+      // 超出屏幕或完全透明时移除
+      if (s.alpha <= 0 || s.y > window.innerHeight + 50) {
+        if (s.el.parentNode) {
+          document.body.removeChild(s.el);
+        }
         stars.splice(i, 1);
         continue;
       }
@@ -67,34 +87,34 @@
         'user-select: none',
         'opacity: ' + s.alpha,
         'transform: rotate(' + s.rotation + 'deg) scale(' + s.scale + ')',
-        'transition: none'
+        'transition: none',
+        'will-change: transform, opacity'
       ].join(';');
     }
     requestAnimationFrame(animate);
   }
 
   var lastMove = 0;
-  var throttle = 30; // 节流，避免生成过多星星
+  var throttle = 50; // 稍微加大节流，避免星星太密集
 
   document.addEventListener('mousemove', function(e) {
     var now = Date.now();
     if (now - lastMove < throttle) return;
     lastMove = now;
 
-    // 每次移动生成1-2个星星
-    var count = Math.random() > 0.5 ? 2 : 1;
-    for (var i = 0; i < count; i++) {
-      createStar(
-        e.clientX + (Math.random() - 0.5) * 20,
-        e.clientY + (Math.random() - 0.5) * 20
-      );
-    }
+    // 每次移动生成1个星星，更稀疏更优雅
+    createStar(
+      e.clientX + (Math.random() - 0.5) * 15,
+      e.clientY + (Math.random() - 0.5) * 15
+    );
 
-    // 限制星星数量，避免过多
-    if (stars.length > 80) {
-      var excess = stars.length - 80;
+    // 限制星星数量
+    if (stars.length > 60) {
+      var excess = stars.length - 60;
       for (var j = 0; j < excess; j++) {
-        document.body.removeChild(stars[j].el);
+        if (stars[j] && stars[j].el.parentNode) {
+          document.body.removeChild(stars[j].el);
+        }
       }
       stars.splice(0, excess);
     }
