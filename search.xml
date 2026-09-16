@@ -98,6 +98,161 @@ ROAS： 赚没赚钱
       </tags>
   </entry>
   <entry>
+    <title>OpenClaw Windows 完整安装教程（云端AI + 本地AI）</title>
+    <url>/2026/09/13/OpenClaw-Windows-%E5%AE%8C%E6%95%B4%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[最强小白指南：OpenClaw Windows 完整安装教程（云端AI + 本地AI 一次讲透）很多人第一次接触 OpenClaw 时，都会遇到几个问题：
+
+网上教程太复杂，看不懂
+安装到一半就报错
+不知道该用云端 AI 还是本地 AI
+一堆命令不知道在干什么
+
+这篇文章就是为完全没有技术基础的新手写的。只要照着一步一步做，基本都可以成功安装。
+本教程包含：
+
+Windows完整安装流程
+云端AI配置
+本地AI配置
+常见错误解决
+新手最推荐配置
+
+整个流程分为6大步骤：
+
+检查电脑环境
+安装基础软件
+安装 OpenClaw
+配置 AI（云端 或 本地）
+启动 OpenClaw
+解决常见问题
+
+一、OpenClaw 是什么？简单理解：
+OpenClaw &#x3D; AI 控制中心
+它本身不是 AI 模型，而是用来连接 AI 并执行任务。
+比如：
+
+调用 ChatGPT
+调用 Gemini
+调用本地大模型
+自动执行任务
+连接 Telegram &#x2F; Discord
+
+你可以把它理解为：AI大脑 + 自动执行工具
+二、OpenClaw 的两种 AI 使用方式OpenClaw 可以连接两种 AI。
+1. 云端 AI（推荐新手）AI 在互联网服务器运行。
+常见：OpenAI、Google Gemini、Minimax
+优点：最聪明、不占电脑性能、设置简单缺点：需要 API Key、有些需要付费
+2. 本地 AIAI 运行在你的电脑上。
+常见工具：Ollama
+优点：完全免费、不联网也能用、数据私密缺点：吃电脑配置、回答能力略弱
+三、安装前电脑要求最低配置建议：
+
+
+
+项目
+建议配置
+
+
+
+系统
+Windows 10 &#x2F; Windows 11
+
+
+内存
+8GB以上
+
+
+硬盘
+至少30GB
+
+
+网络
+稳定网络
+
+
+如果要运行本地AI，建议：16GB内存、RTX3060 或以上显卡。
+四、安装基础环境（必须安装）OpenClaw 需要三个基础工具：Node.js、Git、PowerShell权限。
+1. 安装 Node.jsNode.js 是 OpenClaw 的运行环境。
+
+打开官网：https://nodejs.org
+点击 LTS (Recommended for most users)
+下载 Windows 版本
+双击安装包，一直 Next → Install
+检查安装：Win+R → 输入 powershell → 输入 node -v，看到版本号即成功
+
+2. 安装 GitGit 用来下载程序。
+
+打开：https://git-scm.com
+点击 Download for Windows
+双击安装包，全部默认 Next → Install
+
+3. 解除 PowerShell 限制Windows 默认禁止运行脚本，需要开启权限。
+
+搜索 PowerShell，右键以管理员身份运行
+输入命令：Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+按回车，输入 Y 确认
+
+五、安装 OpenClaw打开 PowerShell，输入：
+iwr -useb https://openclaw.ai/install.ps1 | iex
+
+按回车，系统会自动下载、安装依赖、配置环境，整个过程大约1-5分钟。
+六、初始化 OpenClaw安装完成后输入命令：
+openclaw onboard --install-daemon
+
+系统会进入配置向导，接下来需要选择 AI Provider。
+七、方案一：使用云端AI（推荐）如果你电脑配置一般，推荐用云端AI。
+以 Google AI 为例：
+
+打开 https://aistudio.google.com
+登录账号，创建 API Key，复制 Key
+在初始化向导中选择 Provider → Google AI
+粘贴 API Key 即可完成配置
+
+八、方案二：使用本地AI（完全免费）如果你想不花钱、本地运行、不联网，可以用 Ollama。
+
+打开 https://ollama.com，下载 Windows 版本安装
+安装后系统托盘会出现 Ollama 图标
+打开 PowerShell，输入：ollama pull qwen2.5:7b（模型约4GB）
+重新运行 openclaw onboard --install-daemon
+选择 Provider → Ollama，URL 填 http://localhost:11434，API Key 随便写或留空
+
+九、打开 OpenClaw 界面输入：
+openclaw dashboard
+
+浏览器会自动打开管理界面。
+十、测试 AI 是否正常在界面中输入：你好
+如果 AI 回复，说明运行正常。
+十一、常见问题解决1. 命令无法识别报错：openclaw is not recognized解决：关闭 PowerShell，重新打开再运行命令。
+2. npm install 失败出现 node-gyp error，原因是缺少 C++ 编译工具。解决：安装 Visual Studio Build Tools，安装时勾选 Desktop development with C++。
+3. Ollama 无法连接报错：Disconnected from gateway解决：输入 ollama serve 重新启动。
+4. 网页打不开OpenClaw网关没有运行，输入：openclaw gateway restart
+5. 自动检测问题如果不知道哪里出错，输入：openclaw doctor，系统会自动检查问题。
+十二、关闭和升级
+关闭：openclaw gateway stop
+升级：npm install -g openclaw@latest
+
+十三、新手最推荐配置如果你是第一次使用，推荐：OpenClaw + 云端AI
+原因：安装简单、不吃电脑配置、AI更聪明。
+等熟悉之后再尝试 OpenClaw + Ollama 本地AI。
+最后总结整个安装流程其实只有三件事：
+
+安装基础环境
+安装 OpenClaw
+选择 AI（云端 或 本地）
+
+只要按顺序操作，大多数人10分钟内可以完成安装。
+如果你继续深入使用 OpenClaw，下一步可以研究：自动任务执行、AI代理、Telegram机器人、Discord机器人、AI自动化工作流等功能。
+]]></content>
+      <categories>
+        <category>技术分享</category>
+      </categories>
+      <tags>
+        <tag>AI</tag>
+        <tag>OpenClaw</tag>
+        <tag>Ollama</tag>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一个人值不值得信赖，就看这三件小事</title>
     <url>/2026/09/14/%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B5%96%E5%B0%B1%E7%9C%8B%E8%BF%99%E4%B8%89%E4%BB%B6%E5%B0%8F%E4%BA%8B/</url>
     <content><![CDATA[说实话，我这些年看人，越来越简单了。
@@ -290,161 +445,6 @@ ROAS： 赚没赚钱
         <tag>成长</tag>
         <tag>赚钱</tag>
         <tag>自媒体</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>OpenClaw Windows 完整安装教程（云端AI + 本地AI）</title>
-    <url>/2026/09/13/OpenClaw-Windows-%E5%AE%8C%E6%95%B4%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[最强小白指南：OpenClaw Windows 完整安装教程（云端AI + 本地AI 一次讲透）很多人第一次接触 OpenClaw 时，都会遇到几个问题：
-
-网上教程太复杂，看不懂
-安装到一半就报错
-不知道该用云端 AI 还是本地 AI
-一堆命令不知道在干什么
-
-这篇文章就是为完全没有技术基础的新手写的。只要照着一步一步做，基本都可以成功安装。
-本教程包含：
-
-Windows完整安装流程
-云端AI配置
-本地AI配置
-常见错误解决
-新手最推荐配置
-
-整个流程分为6大步骤：
-
-检查电脑环境
-安装基础软件
-安装 OpenClaw
-配置 AI（云端 或 本地）
-启动 OpenClaw
-解决常见问题
-
-一、OpenClaw 是什么？简单理解：
-OpenClaw &#x3D; AI 控制中心
-它本身不是 AI 模型，而是用来连接 AI 并执行任务。
-比如：
-
-调用 ChatGPT
-调用 Gemini
-调用本地大模型
-自动执行任务
-连接 Telegram &#x2F; Discord
-
-你可以把它理解为：AI大脑 + 自动执行工具
-二、OpenClaw 的两种 AI 使用方式OpenClaw 可以连接两种 AI。
-1. 云端 AI（推荐新手）AI 在互联网服务器运行。
-常见：OpenAI、Google Gemini、Minimax
-优点：最聪明、不占电脑性能、设置简单缺点：需要 API Key、有些需要付费
-2. 本地 AIAI 运行在你的电脑上。
-常见工具：Ollama
-优点：完全免费、不联网也能用、数据私密缺点：吃电脑配置、回答能力略弱
-三、安装前电脑要求最低配置建议：
-
-
-
-项目
-建议配置
-
-
-
-系统
-Windows 10 &#x2F; Windows 11
-
-
-内存
-8GB以上
-
-
-硬盘
-至少30GB
-
-
-网络
-稳定网络
-
-
-如果要运行本地AI，建议：16GB内存、RTX3060 或以上显卡。
-四、安装基础环境（必须安装）OpenClaw 需要三个基础工具：Node.js、Git、PowerShell权限。
-1. 安装 Node.jsNode.js 是 OpenClaw 的运行环境。
-
-打开官网：https://nodejs.org
-点击 LTS (Recommended for most users)
-下载 Windows 版本
-双击安装包，一直 Next → Install
-检查安装：Win+R → 输入 powershell → 输入 node -v，看到版本号即成功
-
-2. 安装 GitGit 用来下载程序。
-
-打开：https://git-scm.com
-点击 Download for Windows
-双击安装包，全部默认 Next → Install
-
-3. 解除 PowerShell 限制Windows 默认禁止运行脚本，需要开启权限。
-
-搜索 PowerShell，右键以管理员身份运行
-输入命令：Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-按回车，输入 Y 确认
-
-五、安装 OpenClaw打开 PowerShell，输入：
-iwr -useb https://openclaw.ai/install.ps1 | iex
-
-按回车，系统会自动下载、安装依赖、配置环境，整个过程大约1-5分钟。
-六、初始化 OpenClaw安装完成后输入命令：
-openclaw onboard --install-daemon
-
-系统会进入配置向导，接下来需要选择 AI Provider。
-七、方案一：使用云端AI（推荐）如果你电脑配置一般，推荐用云端AI。
-以 Google AI 为例：
-
-打开 https://aistudio.google.com
-登录账号，创建 API Key，复制 Key
-在初始化向导中选择 Provider → Google AI
-粘贴 API Key 即可完成配置
-
-八、方案二：使用本地AI（完全免费）如果你想不花钱、本地运行、不联网，可以用 Ollama。
-
-打开 https://ollama.com，下载 Windows 版本安装
-安装后系统托盘会出现 Ollama 图标
-打开 PowerShell，输入：ollama pull qwen2.5:7b（模型约4GB）
-重新运行 openclaw onboard --install-daemon
-选择 Provider → Ollama，URL 填 http://localhost:11434，API Key 随便写或留空
-
-九、打开 OpenClaw 界面输入：
-openclaw dashboard
-
-浏览器会自动打开管理界面。
-十、测试 AI 是否正常在界面中输入：你好
-如果 AI 回复，说明运行正常。
-十一、常见问题解决1. 命令无法识别报错：openclaw is not recognized解决：关闭 PowerShell，重新打开再运行命令。
-2. npm install 失败出现 node-gyp error，原因是缺少 C++ 编译工具。解决：安装 Visual Studio Build Tools，安装时勾选 Desktop development with C++。
-3. Ollama 无法连接报错：Disconnected from gateway解决：输入 ollama serve 重新启动。
-4. 网页打不开OpenClaw网关没有运行，输入：openclaw gateway restart
-5. 自动检测问题如果不知道哪里出错，输入：openclaw doctor，系统会自动检查问题。
-十二、关闭和升级
-关闭：openclaw gateway stop
-升级：npm install -g openclaw@latest
-
-十三、新手最推荐配置如果你是第一次使用，推荐：OpenClaw + 云端AI
-原因：安装简单、不吃电脑配置、AI更聪明。
-等熟悉之后再尝试 OpenClaw + Ollama 本地AI。
-最后总结整个安装流程其实只有三件事：
-
-安装基础环境
-安装 OpenClaw
-选择 AI（云端 或 本地）
-
-只要按顺序操作，大多数人10分钟内可以完成安装。
-如果你继续深入使用 OpenClaw，下一步可以研究：自动任务执行、AI代理、Telegram机器人、Discord机器人、AI自动化工作流等功能。
-]]></content>
-      <categories>
-        <category>技术分享</category>
-      </categories>
-      <tags>
-        <tag>AI</tag>
-        <tag>OpenClaw</tag>
-        <tag>Ollama</tag>
-        <tag>教程</tag>
       </tags>
   </entry>
   <entry>
