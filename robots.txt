@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Allow: /wallpaper/
+Allow: /about/
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /img/
+
+Sitemap: https://brian-hee.github.io/sitemap.xml
