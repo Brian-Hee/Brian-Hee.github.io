@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <author>
-    <name>钧泽</name>
+    <name>Brian</name>
   </author>
   <generator uri="https://hexo.io/">Hexo</generator>
   <icon>https://amzian.com/icon.png</icon>
   <id>https://amzian.com/</id>
   <link href="https://amzian.com/" rel="alternate"/>
   <link href="https://amzian.com/atom.xml" rel="self"/>
-  <rights>All rights reserved 2026, 钧泽</rights>
+  <rights>All rights reserved 2026, Brian</rights>
   <subtitle>记录生活感受，分享知识教程</subtitle>
   <title>心中之城</title>
-  <updated>2026-09-18T08:12:08.336Z</updated>
+  <updated>2026-09-15T01:15:25.153Z</updated>
   <entry>
     <author>
-      <name>钧泽</name>
+      <name>Brian</name>
     </author>
     <category term="认知升级" scheme="https://amzian.com/categories/%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7/"/>
     <category term="成长" scheme="https://amzian.com/tags/%E6%88%90%E9%95%BF/"/>
@@ -27,11 +27,11 @@
       <![CDATA[<h1 id="我喜欢为了赚钱而成长，而不是为了成长而成长"><a href="#我喜欢为了赚钱而成长，而不是为了成长而成长" class="headerlink"]]>
     </summary>
     <title>别困在&quot;成长&quot;的幻觉里，先为赚钱赋能自己</title>
-    <updated>2026-09-18T08:12:08.336Z</updated>
+    <updated>2026-09-15T01:15:25.153Z</updated>
   </entry>
   <entry>
     <author>
-      <name>钧泽</name>
+      <name>Brian</name>
     </author>
     <category term="认知升级" scheme="https://amzian.com/categories/%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7/"/>
     <category term="社交" scheme="https://amzian.com/tags/%E7%A4%BE%E4%BA%A4/"/>
@@ -48,11 +48,11 @@
 <p]]>
     </summary>
     <title>一个人值不值得信赖，就看这三件小事</title>
-    <updated>2026-09-18T08:12:08.336Z</updated>
+    <updated>2026-09-15T01:15:20.114Z</updated>
   </entry>
   <entry>
     <author>
-      <name>钧泽</name>
+      <name>Brian</name>
     </author>
     <category term="实战复盘" scheme="https://amzian.com/categories/%E5%AE%9E%E6%88%98%E5%A4%8D%E7%9B%98/"/>
     <category term="Facebook" scheme="https://amzian.com/tags/Facebook/"/>
@@ -65,11 +65,11 @@
       <![CDATA[<p>第一次打开 Facebook 和 Instagram]]>
     </summary>
     <title>怎么把 Facebook 和 Instagram 广告一步步玩明白</title>
-    <updated>2026-09-18T08:12:08.335Z</updated>
+    <updated>2026-09-15T01:15:15.460Z</updated>
   </entry>
   <entry>
     <author>
-      <name>钧泽</name>
+      <name>Brian</name>
     </author>
     <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     <category term="AI" scheme="https://amzian.com/tags/AI/"/>
@@ -83,11 +83,11 @@
       <![CDATA[<h1 id="最强小白指南：OpenClaw-Windows-完整安装教程（云端AI-本地AI-一次讲透）"><a href="#最强小白指南：OpenClaw-Windows-完整安装教程（云端AI-本地AI-一次讲透）" class="headerlink"]]>
     </summary>
     <title>OpenClaw Windows 完整安装教程（云端AI + 本地AI）</title>
-    <updated>2026-09-18T08:12:08.336Z</updated>
+    <updated>2026-09-15T01:15:10.923Z</updated>
   </entry>
   <entry>
     <author>
-      <name>钧泽</name>
+      <name>Brian</name>
     </author>
     <category term="随笔" scheme="https://amzian.com/categories/%E9%9A%8F%E7%AC%94/"/>
     <category term="心中之城" scheme="https://amzian.com/tags/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E/"/>
@@ -100,6 +100,6 @@
       <![CDATA[<h2 id="欢迎来到心中之城-City-of-Heart"><a href="#欢迎来到心中之城-City-of-Heart" class="headerlink" title="欢迎来到心中之城 (City of Heart)"></a>欢迎来到心中之城 (City of]]>
     </summary>
     <title>心中之城：构建属于自己的数字家园</title>
-    <updated>2026-09-18T08:12:08.336Z</updated>
+    <updated>2026-09-18T02:25:47.129Z</updated>
   </entry>
 </feed>
