@@ -1,4 +1,3 @@
-# 允许传统搜索引擎（搜索结果会显示来源链接）
 User-agent: Baiduspider
 Allow: /
 
@@ -11,7 +10,6 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-# 禁止纯AI训练爬虫（不标注来源，拿内容训练模型）
 User-agent: GPTBot
 Disallow: /
 
@@ -24,11 +22,10 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
-# 通用规则
 User-agent: *
 Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /img/
 
-Sitemap: https://brian-hee.github.io/sitemap.xml
+Sitemap: https://amzian.com/sitemap.xml
