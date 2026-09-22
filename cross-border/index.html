@@ -1,0 +1,1048 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>跨境导航 | 心中之城</title><meta name="author" content="钧泽"><meta name="copyright" content="钧泽"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content=".nav-hero {   scroll-margin-top: 140px;   background: #1a1a1a;   border-radius: 12px;   padding: 28px 20px;   text-align: center;   margin-bottom: 24px;   color: #fff; } .nav-hero h2 { margin: 0 0 6p">
+<meta property="og:type" content="website">
+<meta property="og:title" content="跨境导航">
+<meta property="og:url" content="https://amzian.com/cross-border/index.html">
+<meta property="og:site_name" content="心中之城">
+<meta property="og:description" content=".nav-hero {   scroll-margin-top: 140px;   background: #1a1a1a;   border-radius: 12px;   padding: 28px 20px;   text-align: center;   margin-bottom: 24px;   color: #fff; } .nav-hero h2 { margin: 0 0 6p">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://amzian.com/img/pinwheel.png">
+<meta property="article:published_time" content="2026-09-21T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-09-22T03:49:24.549Z">
+<meta property="article:author" content="钧泽">
+<meta property="article:tag" content="心中之城, 个人博客, 生活记录, 知识教程, 成长思考">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://amzian.com/img/pinwheel.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://amzian.com/cross-border/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        const data = { value }
+
+        if (ttl != null) {
+          data.expiry = Date.now() + ttl * 86400000
+        }
+
+        localStorage.setItem(key, JSON.stringify(data))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '跨境导航',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/css/custom-v2.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="心中之城" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/pinwheel.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 收藏</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wallpaper/"><i class="fa-fw fas fa-image"></i><span> 壁纸</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 百宝箱</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/nav/"><i class="fa-fw fas fa-compass"></i><span> 常用导航</span></a></li><li><a class="site-page child" href="/cross-border/"><i class="fa-fw fas fa-globe"></i><span> 跨境导航</span></a></li><li><a class="site-page child" href="/fun/"><i class="fa-fw fas fa-lightbulb"></i><span> 有趣网站</span></a></li><li><a class="site-page child" href="/files/"><i class="fa-fw fas fa-download"></i><span> 文件下载</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page fixed" id="page-header" style="background-image: url(/img/top-fun.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">心中之城</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 收藏</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wallpaper/"><i class="fa-fw fas fa-image"></i><span> 壁纸</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 百宝箱</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/nav/"><i class="fa-fw fas fa-compass"></i><span> 常用导航</span></a></li><li><a class="site-page child" href="/cross-border/"><i class="fa-fw fas fa-globe"></i><span> 跨境导航</span></a></li><li><a class="site-page child" href="/fun/"><i class="fa-fw fas fa-lightbulb"></i><span> 有趣网站</span></a></li><li><a class="site-page child" href="/files/"><i class="fa-fw fas fa-download"></i><span> 文件下载</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">跨境导航</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><style>
+.nav-hero {
+  scroll-margin-top: 140px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 28px 20px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #fff;
+}
+.nav-hero h2 { margin: 0 0 6px 0; font-size: 22px; color: #fff; }
+.nav-hero p { color: #999; margin: 0 0 16px 0; font-size: 13px; }
+.nav-search {
+  display: flex; max-width: 600px; margin: 0 auto;
+  border-radius: 24px; overflow: hidden;
+}
+.nav-search input {
+  flex: 1; border: none; padding: 10px 20px; font-size: 14px; outline: none;
+}
+.nav-search button {
+  background: #00b96b; color: #fff; border: none;
+  padding: 0 28px; cursor: pointer; font-size: 14px;
+}
+.nav-sidebar {
+  width: 110px;
+  position: fixed;
+  left: 0px;
+  top: 190px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  z-index: 100;
+}
+.nav-sidebar a {
+  display: block;
+  padding: 7px 10px;
+  border-radius: 6px;
+  color: #666;
+  font-size: 12px;
+  text-decoration: none;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+.nav-sidebar a:hover, .nav-sidebar a.active {
+  background: #f0f4ff;
+  color: #4e73df;
+  font-weight: 500;
+}
+.nav-section {
+  margin-bottom: 22px;
+  scroll-margin-top: 190px;
+}
+.nav-section-header {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+}
+.nav-section-header h3 {
+  margin: 0; font-size: 16px; font-weight: 600; color: #333; white-space: nowrap;
+}
+.nav-section-header .tags { display: flex; gap: 14px; }
+.nav-section-header .tags span { color: #999; font-size: 12px; }
+.nav-section-header .line { flex: 1; height: 1px; background: #eee; }
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+@media (max-width: 1200px) {
+  .nav-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 1400px) {
+  .nav-sidebar { display: none; }
+  .nav-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 600px) {
+  .nav-grid { grid-template-columns: repeat(2, 1fr); }
+}
+.nav-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  display: flex; align-items: center; gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 1px solid #f0f0f0;
+  min-width: 0;
+}
+.nav-item:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transform: translateY(-1px);
+}
+.nav-item img {
+  width: 22px; height: 22px; border-radius: 4px;
+  object-fit: cover; flex-shrink: 0;
+}
+.nav-item .info { flex: 1; min-width: 0; overflow: hidden; }
+.nav-item .name {
+  font-weight: 500; color: #333; font-size: 13px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.nav-item .desc {
+  color: #999; font-size: 11px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+</style>
+
+<div class="nav-hero" id="sec-top">
+  <h2>🌍 跨境电商导航</h2>
+  <p>跨境卖家常用工具一键直达，从选品到售后全流程覆盖</p>
+  <div class="nav-search">
+    <input type="text" placeholder="输入关键词，百度一下" id="navSearchInput">
+    <button onclick="doSearch()">搜索</button>
+  </div>
+</div>
+
+<script>
+function doSearch() {
+  const q = document.getElementById('navSearchInput').value.trim();
+  if(q) window.open('https://www.baidu.com/s?wd='+encodeURIComponent(q), '_blank');
+}
+document.getElementById('navSearchInput').addEventListener('keydown', function(e){
+  if(e.key === 'Enter') doSearch();
+});
+</script>
+
+<div class="nav-sidebar">
+  <a href="#sec-top" class="active">🔍 首页搜索</a>
+  <a href="#sec-platform">🛒 主流平台</a>
+  <a href="#sec-product">📊 选品调研</a>
+  <a href="#sec-keyword">🔑 关键词Listing</a>
+  <a href="#sec-ad">📢 广告投放</a>
+  <a href="#sec-data">📈 数据分析</a>
+  <a href="#sec-erp">⚙️ ERP与运营</a>
+  <a href="#sec-logistics">🚚 物流仓储</a>
+  <a href="#sec-pay">💳 支付收款</a>
+  <a href="#sec-compliance">📋 合规税务</a>
+  <a href="#sec-translate">🌐 翻译本地化</a>
+  <a href="#sec-site">🏗️ 独立站建站</a>
+  <a href="#sec-marketing">📣 站外营销</a>
+  <a href="#sec-tools">🧰 常用工具箱</a>
+</div>
+
+<div class="nav-main">
+
+  <div class="nav-section" id="sec-platform">
+    <div class="nav-section-header">
+      <h3>🛒 主流平台</h3>
+      <div class="tags"><span>前台</span><span>后台</span><span>按流量排序</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.amazon.com/" target="_blank" class="nav-item">
+        <img src="https://www.amazon.com/favicon.ico">
+        <div class="info"><div class="name">亚马逊美国</div><div class="desc">全球最大电商平台</div></div>
+      </a>
+      <a href="https://sellercentral.amazon.com/" target="_blank" class="nav-item">
+        <img src="https://sellercentral.amazon.com/favicon.ico">
+        <div class="info"><div class="name">亚马逊卖家后台</div><div class="desc">Amazon Seller Central</div></div>
+      </a>
+      <a href="https://www.alibaba.com/" target="_blank" class="nav-item">
+        <img src="https://www.alibaba.com/favicon.ico">
+        <div class="info"><div class="name">阿里巴巴国际站</div><div class="desc">跨境B2B核心平台</div></div>
+      </a>
+      <a href="https://seller.alibaba.com/" target="_blank" class="nav-item">
+        <img src="https://seller.alibaba.com/favicon.ico">
+        <div class="info"><div class="name">阿里国际站后台</div><div class="desc">My Alibaba卖家中心</div></div>
+      </a>
+      <a href="https://www.aliexpress.com/" target="_blank" class="nav-item">
+        <img src="https://www.aliexpress.com/favicon.ico">
+        <div class="info"><div class="name">速卖通</div><div class="desc">阿里系跨境B2C</div></div>
+      </a>
+      <a href="https://sell.aliexpress.com/" target="_blank" class="nav-item">
+        <img src="https://sell.aliexpress.com/favicon.ico">
+        <div class="info"><div class="name">速卖通卖家后台</div><div class="desc">AliExpress Seller</div></div>
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank" class="nav-item">
+        <img src="https://www.tiktok.com/favicon.ico">
+        <div class="info"><div class="name">TikTok Shop</div><div class="desc">短视频电商新势力</div></div>
+      </a>
+      <a href="https://seller.tiktokglobalshop.com/" target="_blank" class="nav-item">
+        <img src="https://seller.tiktokglobalshop.com/favicon.ico">
+        <div class="info"><div class="name">TikTok卖家后台</div><div class="desc">TikTok Seller Center</div></div>
+      </a>
+      <a href="https://www.temu.com/" target="_blank" class="nav-item">
+        <img src="https://www.temu.com/favicon.ico">
+        <div class="info"><div class="name">Temu</div><div class="desc">拼多多跨境平台</div></div>
+      </a>
+      <a href="https://seller.kuajingmaihuo.com/" target="_blank" class="nav-item">
+        <img src="https://seller.kuajingmaihuo.com/favicon.ico">
+        <div class="info"><div class="name">Temu卖家后台</div><div class="desc">Temu Seller Center</div></div>
+      </a>
+      <a href="https://www.shein.com/" target="_blank" class="nav-item">
+        <img src="https://www.shein.com/favicon.ico">
+        <div class="info"><div class="name">SHEIN</div><div class="desc">快时尚跨境巨头</div></div>
+      </a>
+      <a href="https://shopee.sg/" target="_blank" class="nav-item">
+        <img src="https://shopee.sg/favicon.ico">
+        <div class="info"><div class="name">Shopee</div><div class="desc">东南亚电商龙头</div></div>
+      </a>
+      <a href="https://seller.shopee.cn/" target="_blank" class="nav-item">
+        <img src="https://seller.shopee.cn/favicon.ico">
+        <div class="info"><div class="name">Shopee卖家后台</div><div class="desc">Shopee Seller Center</div></div>
+      </a>
+      <a href="https://www.lazada.com/" target="_blank" class="nav-item">
+        <img src="https://www.lazada.com/favicon.ico">
+        <div class="info"><div class="name">Lazada</div><div class="desc">阿里系东南亚电商</div></div>
+      </a>
+      <a href="https://sellercenter.lazada.com/" target="_blank" class="nav-item">
+        <img src="https://sellercenter.lazada.com/favicon.ico">
+        <div class="info"><div class="name">Lazada卖家后台</div><div class="desc">Lazada Seller Center</div></div>
+      </a>
+      <a href="https://www.ebay.com/" target="_blank" class="nav-item">
+        <img src="https://www.ebay.com/favicon.ico">
+        <div class="info"><div class="name">eBay</div><div class="desc">老牌跨境电商平台</div></div>
+      </a>
+      <a href="https://www.walmart.com/" target="_blank" class="nav-item">
+        <img src="https://www.walmart.com/favicon.ico">
+        <div class="info"><div class="name">沃尔玛</div><div class="desc">美国零售巨头电商</div></div>
+      </a>
+      <a href="https://www.etsy.com/" target="_blank" class="nav-item">
+        <img src="https://www.etsy.com/favicon.ico">
+        <div class="info"><div class="name">Etsy</div><div class="desc">手工创意品平台</div></div>
+      </a>
+      <a href="https://www.coupang.com/" target="_blank" class="nav-item">
+        <img src="https://www.coupang.com/favicon.ico">
+        <div class="info"><div class="name">Coupang</div><div class="desc">韩国电商龙头</div></div>
+      </a>
+      <a href="https://www.ozon.ru/" target="_blank" class="nav-item">
+        <img src="https://www.ozon.ru/favicon.ico">
+        <div class="info"><div class="name">Ozon</div><div class="desc">俄罗斯电商龙头</div></div>
+      </a>
+      <a href="https://www.emag.ro/" target="_blank" class="nav-item">
+        <img src="https://www.emag.ro/favicon.ico">
+        <div class="info"><div class="name">eMAG</div><div class="desc">东欧电商平台</div></div>
+      </a>
+      <a href="https://www.mercadolibre.com/" target="_blank" class="nav-item">
+        <img src="https://www.mercadolibre.com/favicon.ico">
+        <div class="info"><div class="name">美客多</div><div class="desc">拉美电商龙头</div></div>
+      </a>
+      <a href="https://www.made-in-china.com/" target="_blank" class="nav-item">
+        <img src="https://www.made-in-china.com/favicon.ico">
+        <div class="info"><div class="name">中国制造网</div><div class="desc">跨境B2B平台</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-product">
+    <div class="nav-section-header">
+      <h3>📊 选品调研</h3>
+      <div class="tags"><span>选品工具</span><span>市场趋势</span><span>竞品分析</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.sellersprite.com/" target="_blank" class="nav-item">
+        <img src="https://www.sellersprite.com/favicon.ico">
+        <div class="info"><div class="name">卖家精灵</div><div class="desc">亚马逊选品关键词工具</div></div>
+      </a>
+      <a href="https://www.oalur.com/" target="_blank" class="nav-item">
+        <img src="https://www.oalur.com/favicon.ico">
+        <div class="info"><div class="name">鸥鹭</div><div class="desc">亚马逊大数据选品运营</div></div>
+      </a>
+      <a href="https://www.junglescout.com/" target="_blank" class="nav-item">
+        <img src="https://www.junglescout.com/favicon.ico">
+        <div class="info"><div class="name">Jungle Scout</div><div class="desc">亚马逊选品工具鼻祖</div></div>
+      </a>
+      <a href="https://www.helium10.com/" target="_blank" class="nav-item">
+        <img src="https://www.helium10.com/favicon.ico">
+        <div class="info"><div class="name">Helium 10</div><div class="desc">亚马逊全能运营工具</div></div>
+      </a>
+      <a href="https://www.sorftime.com/" target="_blank" class="nav-item">
+        <img src="https://www.sorftime.com/favicon.ico">
+        <div class="info"><div class="name">Sorftime</div><div class="desc">亚马逊类目数据分析</div></div>
+      </a>
+      <a href="https://www.ishuapai.com/" target="_blank" class="nav-item">
+        <img src="https://www.ishuapai.com/favicon.ico">
+        <div class="info"><div class="name">数派</div><div class="desc">跨境选品运营工具</div></div>
+      </a>
+      <a href="https://trends.google.com/" target="_blank" class="nav-item">
+        <img src="https://trends.google.com/favicon.ico">
+        <div class="info"><div class="name">Google Trends</div><div class="desc">谷歌趋势市场调研</div></div>
+      </a>
+      <a href="https://www.kickstarter.com/" target="_blank" class="nav-item">
+        <img src="https://www.kickstarter.com/favicon.ico">
+        <div class="info"><div class="name">Kickstarter</div><div class="desc">众筹平台爆款挖掘</div></div>
+      </a>
+      <a href="https://www.indiegogo.com/" target="_blank" class="nav-item">
+        <img src="https://www.indiegogo.com/favicon.ico">
+        <div class="info"><div class="name">Indiegogo</div><div class="desc">海外众筹选品参考</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-keyword">
+    <div class="nav-section-header">
+      <h3>🔑 关键词Listing</h3>
+      <div class="tags"><span>关键词挖掘</span><span>Listing优化</span><span>SEO</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.sif.com/" target="_blank" class="nav-item">
+        <img src="https://www.sif.com/favicon.ico">
+        <div class="info"><div class="name">Sif</div><div class="desc">亚马逊关键词体系工具</div></div>
+      </a>
+      <a href="https://keywordtool.io/" target="_blank" class="nav-item">
+        <img src="https://keywordtool.io/favicon.ico">
+        <div class="info"><div class="name">Keyword Tool</div><div class="desc">多平台关键词挖掘</div></div>
+      </a>
+      <a href="https://ubersuggest.com/" target="_blank" class="nav-item">
+        <img src="https://ubersuggest.com/favicon.ico">
+        <div class="info"><div class="name">Ubersuggest</div><div class="desc">免费关键词SEO工具</div></div>
+      </a>
+      <a href="https://www.merchantwords.com/" target="_blank" class="nav-item">
+        <img src="https://www.merchantwords.com/favicon.ico">
+        <div class="info"><div class="name">Merchant Words</div><div class="desc">亚马逊关键词数据库</div></div>
+      </a>
+      <a href="https://www.sellersprite.com/" target="_blank" class="nav-item">
+        <img src="https://www.sellersprite.com/favicon.ico">
+        <div class="info"><div class="name">卖家精灵关键词</div><div class="desc">反查竞品出单词</div></div>
+      </a>
+      <a href="https://soovle.com/" target="_blank" class="nav-item">
+        <img src="https://soovle.com/favicon.ico">
+        <div class="info"><div class="name">Soovle</div><div class="desc">多平台关键词聚合</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-ad">
+    <div class="nav-section-header">
+      <h3>📢 广告投放</h3>
+      <div class="tags"><span>亚马逊广告</span><span>社媒广告</span><span>优化工具</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://advertising.amazon.com/" target="_blank" class="nav-item">
+        <img src="https://advertising.amazon.com/favicon.ico">
+        <div class="info"><div class="name">亚马逊广告</div><div class="desc">Amazon Ads官方平台</div></div>
+      </a>
+      <a href="https://www.facebook.com/business/" target="_blank" class="nav-item">
+        <img src="https://www.facebook.com/favicon.ico">
+        <div class="info"><div class="name">Facebook广告</div><div class="desc">Meta社媒广告平台</div></div>
+      </a>
+      <a href="https://ads.google.com/" target="_blank" class="nav-item">
+        <img src="https://ads.google.com/favicon.ico">
+        <div class="info"><div class="name">Google Ads</div><div class="desc">谷歌搜索广告平台</div></div>
+      </a>
+      <a href="https://ads.tiktok.com/" target="_blank" class="nav-item">
+        <img src="https://ads.tiktok.com/favicon.ico">
+        <div class="info"><div class="name">TikTok广告</div><div class="desc">TikTok for Business</div></div>
+      </a>
+      <a href="https://www.sellics.com/" target="_blank" class="nav-item">
+        <img src="https://www.sellics.com/favicon.ico">
+        <div class="info"><div class="name">Sellics</div><div class="desc">亚马逊PPC优化工具</div></div>
+      </a>
+      <a href="https://www.perpetua.io/" target="_blank" class="nav-item">
+        <img src="https://www.perpetua.io/favicon.ico">
+        <div class="info"><div class="name">Perpetua</div><div class="desc">亚马逊广告AI优化</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-data">
+    <div class="nav-section-header">
+      <h3>📈 数据分析</h3>
+      <div class="tags"><span>价格追踪</span><span>销售数据</span><span>竞品分析</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://keepa.com/" target="_blank" class="nav-item">
+        <img src="https://keepa.com/favicon.ico">
+        <div class="info"><div class="name">Keepa</div><div class="desc">亚马逊价格历史追踪</div></div>
+      </a>
+      <a href="https://camelcamelcamel.com/" target="_blank" class="nav-item">
+        <img src="https://camelcamelcamel.com/favicon.ico">
+        <div class="info"><div class="name">CamelCamelCamel</div><div class="desc">亚马逊价格降价提醒</div></div>
+      </a>
+      <a href="https://www.marketplacepulse.com/" target="_blank" class="nav-item">
+        <img src="https://www.marketplacepulse.com/favicon.ico">
+        <div class="info"><div class="name">Marketplace Pulse</div><div class="desc">电商平台市场数据分析</div></div>
+      </a>
+      <a href="https://www.oalur.com/" target="_blank" class="nav-item">
+        <img src="https://www.oalur.com/favicon.ico">
+        <div class="info"><div class="name">鸥鹭数据</div><div class="desc">亚马逊竞品销售分析</div></div>
+      </a>
+      <a href="https://www.sellersprite.com/" target="_blank" class="nav-item">
+        <img src="https://www.sellersprite.com/favicon.ico">
+        <div class="info"><div class="name">卖家精灵数据</div><div class="desc">销量预估竞品分析</div></div>
+      </a>
+      <a href="https://www.viral-launch.com/" target="_blank" class="nav-item">
+        <img src="https://www.viral-launch.com/favicon.ico">
+        <div class="info"><div class="name">Viral Launch</div><div class="desc">亚马逊产品数据分析</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-erp">
+    <div class="nav-section-header">
+      <h3>⚙️ ERP与运营</h3>
+      <div class="tags"><span>ERP系统</span><span>防关联</span><span>客服工具</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.dianxiaomi.com/" target="_blank" class="nav-item">
+        <img src="https://www.dianxiaomi.com/favicon.ico">
+        <div class="info"><div class="name">店小秘</div><div class="desc">中小卖家首选ERP</div></div>
+      </a>
+      <a href="https://www.mabangerp.com/" target="_blank" class="nav-item">
+        <img src="https://www.mabangerp.com/favicon.ico">
+        <div class="info"><div class="name">马帮ERP</div><div class="desc">跨境电商ERP系统</div></div>
+      </a>
+      <a href="https://www.leadinger.com/" target="_blank" class="nav-item">
+        <img src="https://www.leadinger.com/favicon.ico">
+        <div class="info"><div class="name">领星ERP</div><div class="desc">亚马逊精品运营ERP</div></div>
+      </a>
+      <a href="https://www.jiaplus.net/" target="_blank" class="nav-item">
+        <img src="https://www.jiaplus.net/favicon.ico">
+        <div class="info"><div class="name">积加ERP</div><div class="desc">亚马逊全链路运营ERP</div></div>
+      </a>
+      <a href="https://www.purplesoft.com/" target="_blank" class="nav-item">
+        <img src="https://www.purplesoft.com/favicon.ico">
+        <div class="info"><div class="name">紫鸟浏览器</div><div class="desc">跨境账号防关联神器</div></div>
+      </a>
+      <a href="https://www.bitbrowser.cn/" target="_blank" class="nav-item">
+        <img src="https://www.bitbrowser.cn/favicon.ico">
+        <div class="info"><div class="name">比特指纹浏览器</div><div class="desc">多账号防关联浏览器</div></div>
+      </a>
+      <a href="https://www.sellingexpress.cn/" target="_blank" class="nav-item">
+        <img src="https://www.sellingexpress.cn/favicon.ico">
+        <div class="info"><div class="name">速脉ERP</div><div class="desc">跨境电商管理系统</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-logistics">
+    <div class="nav-section-header">
+      <h3>🚚 物流仓储</h3>
+      <div class="tags"><span>货代</span><span>海外仓</span><span>物流追踪</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.4px.com/" target="_blank" class="nav-item">
+        <img src="https://www.4px.com/favicon.ico">
+        <div class="info"><div class="name">递四方</div><div class="desc">跨境物流头部企业</div></div>
+      </a>
+      <a href="https://www.yw56.com.cn/" target="_blank" class="nav-item">
+        <img src="https://www.yw56.com.cn/favicon.ico">
+        <div class="info"><div class="name">燕文物流</div><div class="desc">跨境专线物流服务商</div></div>
+      </a>
+      <a href="https://www.yunexpress.com/" target="_blank" class="nav-item">
+        <img src="https://www.yunexpress.com/favicon.ico">
+        <div class="info"><div class="name">云途物流</div><div class="desc">跨境专线小包物流</div></div>
+      </a>
+      <a href="https://www.winit.com.cn/" target="_blank" class="nav-item">
+        <img src="https://www.winit.com.cn/favicon.ico">
+        <div class="info"><div class="name">万邑通海外仓</div><div class="desc">跨境海外仓服务商</div></div>
+      </a>
+      <a href="https://www.goodcang.com/" target="_blank" class="nav-item">
+        <img src="https://www.goodcang.com/favicon.ico">
+        <div class="info"><div class="name">谷仓海外仓</div><div class="desc">跨境电商海外仓</div></div>
+      </a>
+      <a href="https://t.17track.net/" target="_blank" class="nav-item">
+        <img src="https://t.17track.net/favicon.ico">
+        <div class="info"><div class="name">17track</div><div class="desc">全球物流包裹追踪</div></div>
+      </a>
+      <a href="https://www.kuajingman.com/" target="_blank" class="nav-item">
+        <img src="https://www.kuajingman.com/favicon.ico">
+        <div class="info"><div class="name">跨境眼</div><div class="desc">跨境物流服务商查询</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-pay">
+    <div class="nav-section-header">
+      <h3>💳 支付收款</h3>
+      <div class="tags"><span>第三方支付</span><span>收款工具</span><span>结汇</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.paypal.com/" target="_blank" class="nav-item">
+        <img src="https://www.paypal.com/favicon.ico">
+        <div class="info"><div class="name">PayPal</div><div class="desc">全球最大第三方支付</div></div>
+      </a>
+      <a href="https://www.pingpongx.com/" target="_blank" class="nav-item">
+        <img src="https://www.pingpongx.com/favicon.ico">
+        <div class="info"><div class="name">派安盈PingPong</div><div class="desc">跨境收款平台</div></div>
+      </a>
+      <a href="https://www.lianlianpay.com/" target="_blank" class="nav-item">
+        <img src="https://www.lianlianpay.com/favicon.ico">
+        <div class="info"><div class="name">连连支付</div><div class="desc">跨境收款结汇工具</div></div>
+      </a>
+      <a href="https://www.worldfirst.com.cn/" target="_blank" class="nav-item">
+        <img src="https://www.worldfirst.com.cn/favicon.ico">
+        <div class="info"><div class="name">万里汇WorldFirst</div><div class="desc">蚂蚁旗下跨境收款</div></div>
+      </a>
+      <a href="https://www.airwallex.com/" target="_blank" class="nav-item">
+        <img src="https://www.airwallex.com/favicon.ico">
+        <div class="info"><div class="name">空中云汇</div><div class="desc">全球跨境支付平台</div></div>
+      </a>
+      <a href="https://pay.amazon.com/" target="_blank" class="nav-item">
+        <img src="https://pay.amazon.com/favicon.ico">
+        <div class="info"><div class="name">亚马逊全球收款</div><div class="desc">Amazon官方收款服务</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-compliance">
+    <div class="nav-section-header">
+      <h3>📋 合规税务</h3>
+      <div class="tags"><span>VAT</span><span>商标专利</span><span>合规认证</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.jpvat.com/" target="_blank" class="nav-item">
+        <img src="https://www.jpvat.com/favicon.ico">
+        <div class="info"><div class="name">J&P会计师事务所</div><div class="desc">欧洲VAT税务服务</div></div>
+      </a>
+      <a href="https://www.ovst.com/" target="_blank" class="nav-item">
+        <img src="https://www.ovst.com/favicon.ico">
+        <div class="info"><div class="name">欧税通</div><div class="desc">欧洲VAT自主申报</div></div>
+      </a>
+      <a href="https://www.cifnews.com/" target="_blank" class="nav-item">
+        <img src="https://www.cifnews.com/favicon.ico">
+        <div class="info"><div class="name">卖家成长</div><div class="desc">跨境合规税务服务</div></div>
+      </a>
+      <a href="https://www.uspto.gov/" target="_blank" class="nav-item">
+        <img src="https://www.uspto.gov/favicon.ico">
+        <div class="info"><div class="name">美国商标局</div><div class="desc">USPTO商标专利查询</div></div>
+      </a>
+      <a href="https://euipo.europa.eu/" target="_blank" class="nav-item">
+        <img src="https://euipo.europa.eu/favicon.ico">
+        <div class="info"><div class="name">欧盟知识产权局</div><div class="desc">EUIPO商标查询</div></div>
+      </a>
+      <a href="https://www.wipo.int/" target="_blank" class="nav-item">
+        <img src="https://www.wipo.int/favicon.ico">
+        <div class="info"><div class="name">世界知识产权组织</div><div class="desc">WIPO全球商标查询</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-translate">
+    <div class="nav-section-header">
+      <h3>🌐 翻译本地化</h3>
+      <div class="tags"><span>翻译工具</span><span>小语种</span><span>AI写作</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.deepl.com/translator" target="_blank" class="nav-item">
+        <img src="https://www.deepl.com/favicon.ico">
+        <div class="info"><div class="name">DeepL翻译</div><div class="desc">最准确的机器翻译</div></div>
+      </a>
+      <a href="https://translate.google.com/" target="_blank" class="nav-item">
+        <img src="https://translate.google.com/favicon.ico">
+        <div class="info"><div class="name">谷歌翻译</div><div class="desc">支持100+语言翻译</div></div>
+      </a>
+      <a href="https://fanyi.youdao.com/" target="_blank" class="nav-item">
+        <img src="https://fanyi.youdao.com/favicon.ico">
+        <div class="info"><div class="name">有道翻译</div><div class="desc">网易有道翻译工具</div></div>
+      </a>
+      <a href="https://www.fanyigou.com/" target="_blank" class="nav-item">
+        <img src="https://www.fanyigou.com/favicon.ico">
+        <div class="info"><div class="name">翻译狗</div><div class="desc">文档翻译保留格式</div></div>
+      </a>
+      <a href="https://www.copy.ai/" target="_blank" class="nav-item">
+        <img src="https://www.copy.ai/favicon.ico">
+        <div class="info"><div class="name">CopyAI</div><div class="desc">AI营销文案生成</div></div>
+      </a>
+      <a href="https://www.quillbot.com/" target="_blank" class="nav-item">
+        <img src="https://www.quillbot.com/favicon.ico">
+        <div class="info"><div class="name">QuillBot</div><div class="desc">英文改写润色工具</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-site">
+    <div class="nav-section-header">
+      <h3>🏗️ 独立站建站</h3>
+      <div class="tags"><span>SaaS建站</span><span>开源系统</span><span>主题插件</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.shopify.com/" target="_blank" class="nav-item">
+        <img src="https://www.shopify.com/favicon.ico">
+        <div class="info"><div class="name">Shopify</div><div class="desc">独立站建站首选平台</div></div>
+      </a>
+      <a href="https://shoplineapp.com/" target="_blank" class="nav-item">
+        <img src="https://shoplineapp.com/favicon.ico">
+        <div class="info"><div class="name">Shopline</div><div class="desc">跨境独立站SaaS平台</div></div>
+      </a>
+      <a href="https://www.shoplazza.com/" target="_blank" class="nav-item">
+        <img src="https://www.shoplazza.com/favicon.ico">
+        <div class="info"><div class="name">店匠</div><div class="desc">国产独立站建站平台</div></div>
+      </a>
+      <a href="https://wordpress.org/" target="_blank" class="nav-item">
+        <img src="https://wordpress.org/favicon.ico">
+        <div class="info"><div class="name">WordPress</div><div class="desc">最流行开源建站系统</div></div>
+      </a>
+      <a href="https://woocommerce.com/" target="_blank" class="nav-item">
+        <img src="https://woocommerce.com/favicon.ico">
+        <div class="info"><div class="name">WooCommerce</div><div class="desc">WordPress电商插件</div></div>
+      </a>
+      <a href="https://themes.shopify.com/" target="_blank" class="nav-item">
+        <img src="https://themes.shopify.com/favicon.ico">
+        <div class="info"><div class="name">Shopify主题市场</div><div class="desc">官方付费免费主题</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-marketing">
+    <div class="nav-section-header">
+      <h3>📣 站外营销</h3>
+      <div class="tags"><span>社媒平台</span><span>红人营销</span><span>Deal站</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.facebook.com/" target="_blank" class="nav-item">
+        <img src="https://www.facebook.com/favicon.ico">
+        <div class="info"><div class="name">Facebook</div><div class="desc">全球最大社交平台</div></div>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" class="nav-item">
+        <img src="https://www.instagram.com/favicon.ico">
+        <div class="info"><div class="name">Instagram</div><div class="desc">图片社交种草平台</div></div>
+      </a>
+      <a href="https://www.youtube.com/" target="_blank" class="nav-item">
+        <img src="https://www.youtube.com/favicon.ico">
+        <div class="info"><div class="name">YouTube</div><div class="desc">全球最大视频平台</div></div>
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank" class="nav-item">
+        <img src="https://www.tiktok.com/favicon.ico">
+        <div class="info"><div class="name">TikTok</div><div class="desc">全球短视频平台</div></div>
+      </a>
+      <a href="https://slickdeals.net/" target="_blank" class="nav-item">
+        <img src="https://slickdeals.net/favicon.ico">
+        <div class="info"><div class="name">Slickdeals</div><div class="desc">美国最大Deal站</div></div>
+      </a>
+      <a href="https://www.dealmoon.com/" target="_blank" class="nav-item">
+        <img src="https://www.dealmoon.com/favicon.ico">
+        <div class="info"><div class="name">Dealmoon</div><div class="desc">北美省钱快报Deal站</div></div>
+      </a>
+      <a href="https://www.fiverr.com/" target="_blank" class="nav-item">
+        <img src="https://www.fiverr.com/favicon.ico">
+        <div class="info"><div class="name">Fiverr</div><div class="desc">海外红人服务外包平台</div></div>
+      </a>
+    </div>
+  </div>
+
+  <div class="nav-section" id="sec-tools">
+    <div class="nav-section-header">
+      <h3>🧰 常用工具箱</h3>
+      <div class="tags"><span>计算工具</span><span>编码生成</span><span>企业背调</span></div>
+      <div class="line"></div>
+    </div>
+    <div class="nav-grid">
+      <a href="https://www.xe.com/currencyconverter/" target="_blank" class="nav-item">
+        <img src="https://www.xe.com/favicon.ico">
+        <div class="info"><div class="name">汇率换算</div><div class="desc">实时全球货币汇率</div></div>
+      </a>
+      <a href="https://sellercentral.amazon.com/fba/profitabilitycalculator" target="_blank" class="nav-item">
+        <img src="https://sellercentral.amazon.com/favicon.ico">
+        <div class="info"><div class="name">FBA费用计算器</div><div class="desc">亚马逊官方利润计算</div></div>
+      </a>
+      <a href="https://www.upccode.net/" target="_blank" class="nav-item">
+        <img src="https://www.upccode.net/favicon.ico">
+        <div class="info"><div class="name">UPC码生成</div><div class="desc">在线UPC/EAN生成器</div></div>
+      </a>
+      <a href="https://www.hsbianma.com/" target="_blank" class="nav-item">
+        <img src="https://www.hsbianma.com/favicon.ico">
+        <div class="info"><div class="name">HS编码查询</div><div class="desc">海关商品编码查询</div></div>
+      </a>
+      <a href="https://www.cifnews.com/tools/cost" target="_blank" class="nav-item">
+        <img src="https://www.cifnews.com/favicon.ico">
+        <div class="info"><div class="name">成本利润计算</div><div class="desc">跨境产品成本核算</div></div>
+      </a>
+      <a href="https://www.unitconverters.net/" target="_blank" class="nav-item">
+        <img src="https://www.unitconverters.net/favicon.ico">
+        <div class="info"><div class="name">单位换算</div><div class="desc">长度重量单位转换</div></div>
+      </a>
+      <a href="http://sh.gsxt.gov.cn/index.html" target="_blank" class="nav-item">
+        <img src="http://sh.gsxt.gov.cn/index.html/favicon.ico">
+        <div class="info"><div class="name">企业信用公示</div><div class="desc">国内企业工商信息查询</div></div>
+      </a>
+      <a href="https://opencorporates.com/" target="_blank" class="nav-item">
+        <img src="https://opencorporates.com/favicon.ico">
+        <div class="info"><div class="name">OpenCorporates</div><div class="desc">全球企业信息查询</div></div>
+      </a>
+      <a href="https://www.dnb.com/" target="_blank" class="nav-item">
+        <img src="https://www.dnb.com/favicon.ico">
+        <div class="info"><div class="name">邓白氏</div><div class="desc">全球企业商业信息</div></div>
+      </a>
+      <a href="https://www.whois.com/" target="_blank" class="nav-item">
+        <img src="https://www.whois.com/favicon.ico">
+        <div class="info"><div class="name">WHOIS查询</div><div class="desc">域名注册信息查询</div></div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll('.nav-sidebar a').forEach(a => {
+  a.addEventListener('click', function(e){
+    e.preventDefault();
+    const href = this.getAttribute('href');
+    const target = document.querySelector(href);
+    if(!target) return;
+    const topPos = target.getBoundingClientRect().top + window.pageYOffset - 70;
+    window.scrollTo({top: topPos, behavior: 'smooth'});
+  });
+});
+const sections = document.querySelectorAll('.nav-section, .nav-hero');
+const navLinks = document.querySelectorAll('.nav-sidebar a');
+function positionSidebar(){
+  const sidebar = document.querySelector('.nav-sidebar');
+  const container = document.querySelector('#article-container');
+  if(!sidebar || !container) return;
+  const cRect = container.getBoundingClientRect();
+  const sRect = sidebar.getBoundingClientRect();
+  sidebar.style.left = (cRect.left - sRect.width - 60) + 'px';
+}
+positionSidebar();
+window.addEventListener('resize', positionSidebar);
+window.addEventListener('scroll', function(){
+  let current = '';
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top + window.pageYOffset - 120;
+    if(window.scrollY >= top) current = sec.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.remove('active');
+    if(a.getAttribute('href') === '#'+current) a.classList.add('active');
+  });
+});
+</script>
+</div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/pinwheel.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">钧泽</div><div class="author-info-description">记录生活感受，分享知识教程。一个普通人的成长与思考笔记。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">16</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Brian-Hee"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Brian-Hee" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:brian@example.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #3b5998;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss" style="color: #FF7242;"></i></a><a class="social-icon" href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到心中之城 🏠 这里记录生活，分享知识，也聊聊成长。慢慢逛，希望你能找到有用的东西。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/09/14/%E5%88%AB%E5%9B%B0%E5%9C%A8%E6%88%90%E9%95%BF%E7%9A%84%E5%B9%BB%E8%A7%89%E9%87%8C%E5%85%88%E4%B8%BA%E8%B5%9A%E9%92%B1%E8%B5%8B%E8%83%BD%E8%87%AA%E5%B7%B1/" title="别困在&quot;成长&quot;的幻觉里，先为赚钱赋能自己"><img src="/img/cover-study.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="别困在&quot;成长&quot;的幻觉里，先为赚钱赋能自己"/></a><div class="content"><a class="title" href="/2026/09/14/%E5%88%AB%E5%9B%B0%E5%9C%A8%E6%88%90%E9%95%BF%E7%9A%84%E5%B9%BB%E8%A7%89%E9%87%8C%E5%85%88%E4%B8%BA%E8%B5%9A%E9%92%B1%E8%B5%8B%E8%83%BD%E8%87%AA%E5%B7%B1/" title="别困在&quot;成长&quot;的幻觉里，先为赚钱赋能自己">别困在&quot;成长&quot;的幻觉里，先为赚钱赋能自己</a><time datetime="2026-09-14T06:00:00.000Z" title="发表于 2026-09-14 14:00:00">2026-09-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/14/%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B5%96%E5%B0%B1%E7%9C%8B%E8%BF%99%E4%B8%89%E4%BB%B6%E5%B0%8F%E4%BA%8B/" title="一个人值不值得信赖，就看这三件小事"><img src="/img/cover-study.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一个人值不值得信赖，就看这三件小事"/></a><div class="content"><a class="title" href="/2026/09/14/%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B5%96%E5%B0%B1%E7%9C%8B%E8%BF%99%E4%B8%89%E4%BB%B6%E5%B0%8F%E4%BA%8B/" title="一个人值不值得信赖，就看这三件小事">一个人值不值得信赖，就看这三件小事</a><time datetime="2026-09-14T02:00:00.000Z" title="发表于 2026-09-14 10:00:00">2026-09-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/13/Facebook-Instagram%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE%E6%8C%87%E5%8D%97/" title="怎么把 Facebook 和 Instagram 广告一步步玩明白"><img src="/img/cover-roadmap.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="怎么把 Facebook 和 Instagram 广告一步步玩明白"/></a><div class="content"><a class="title" href="/2026/09/13/Facebook-Instagram%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE%E6%8C%87%E5%8D%97/" title="怎么把 Facebook 和 Instagram 广告一步步玩明白">怎么把 Facebook 和 Instagram 广告一步步玩明白</a><time datetime="2026-09-13T06:00:00.000Z" title="发表于 2026-09-13 14:00:00">2026-09-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/13/OpenClaw-Windows-%E5%AE%8C%E6%95%B4%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="OpenClaw Windows 完整安装教程（云端AI + 本地AI）"><img src="/img/cover-tools.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OpenClaw Windows 完整安装教程（云端AI + 本地AI）"/></a><div class="content"><a class="title" href="/2026/09/13/OpenClaw-Windows-%E5%AE%8C%E6%95%B4%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="OpenClaw Windows 完整安装教程（云端AI + 本地AI）">OpenClaw Windows 完整安装教程（云端AI + 本地AI）</a><time datetime="2026-09-13T02:00:00.000Z" title="发表于 2026-09-13 10:00:00">2026-09-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/12/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E%E6%9E%84%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E5%AD%97%E5%AE%B6%E5%9B%AD/" title="心中之城：构建属于自己的数字家园"><img src="/img/banner-city.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="心中之城：构建属于自己的数字家园"/></a><div class="content"><a class="title" href="/2026/09/12/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E%E6%9E%84%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E5%AD%97%E5%AE%B6%E5%9B%AD/" title="心中之城：构建属于自己的数字家园">心中之城：构建属于自己的数字家园</a><time datetime="2026-09-12T02:00:00.000Z" title="发表于 2026-09-12 10:00:00">2026-09-12</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AE%9E%E6%88%98%E5%A4%8D%E7%9B%98/"><span class="card-category-list-name">实战复盘</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"><span class="card-category-list-name">技术分享</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A4%E7%9F%A5%E5%8D%87%E7%BA%A7/"><span class="card-category-list-name">认知升级</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">随笔</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/AI/" style="font-size: 1.1em; color: #999">AI</a> <a href="/tags/%E7%A4%BE%E4%BA%A4/" style="font-size: 1.1em; color: #999">社交</a> <a href="/tags/%E8%AE%A4%E7%9F%A5/" style="font-size: 1.1em; color: #999">认知</a> <a href="/tags/Instagram/" style="font-size: 1.1em; color: #999">Instagram</a> <a href="/tags/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/" style="font-size: 1.1em; color: #999">信息技术</a> <a href="/tags/%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE/" style="font-size: 1.1em; color: #999">广告投放</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.1em; color: #999">教程</a> <a href="/tags/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E/" style="font-size: 1.1em; color: #999">心中之城</a> <a href="/tags/%E8%B5%9A%E9%92%B1/" style="font-size: 1.1em; color: #999">赚钱</a> <a href="/tags/%E5%BB%BA%E7%AB%99%E5%BF%83%E5%BE%97/" style="font-size: 1.1em; color: #999">建站心得</a> <a href="/tags/OpenClaw/" style="font-size: 1.1em; color: #999">OpenClaw</a> <a href="/tags/Facebook/" style="font-size: 1.1em; color: #999">Facebook</a> <a href="/tags/Ollama/" style="font-size: 1.1em; color: #999">Ollama</a> <a href="/tags/%E6%88%90%E9%95%BF/" style="font-size: 1.1em; color: #999">成长</a> <a href="/tags/%E9%9D%A0%E8%B0%B1/" style="font-size: 1.1em; color: #999">靠谱</a> <a href="/tags/%E8%87%AA%E5%AA%92%E4%BD%93/" style="font-size: 1.1em; color: #999">自媒体</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/09/">
+            <span class="card-archive-list-date">
+              九月 2026
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2026-09-12T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">6.5k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-09-22T03:50:03.969Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By 钧泽</span></div><div class="footer_custom_text">心中之城</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.0"></script><script src="/js/main.js?v=5.7.0"></script><script src="/js/tw_cn.js?v=5.7.0"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'Brian-Hee/Brian-Hee.github.io',
+      'data-repo-id': 'R_kgDOUXwCog',
+      'data-category-id': 'DIC_kwDOUXwCos4DFjWl',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script src="/js/home-filter.js"></script><script src="/js/clicklove.js"></script><script src="/js/mouse-stars.js"></script><script src="/js/banner-rotate.js"></script><script id="canvas_nest" defer="defer" color="0,120,255" opacity="0.5" zIndex="-1" count="80" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.7.0"></script></div></div></body></html>
