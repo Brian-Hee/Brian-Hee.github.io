@@ -249,5 +249,15 @@ window.WALLPAPERS = [
     colors: "蓝/黑",
     url: "/img/gallery/circuit-chip.jpg",
     date: "2026-09-22"
+  },
+  // ===== 人物类 =====
+  {
+    title: "白猫少女",
+    description: "长发少女与白猫，沙发背景温馨唯美",
+    category: "人物",
+    resolution: "4K",
+    colors: "暖/白",
+    url: "/img/gallery/white-cat-girl-sofa.jpg",
+    date: "2026-09-23"
   }
 ];
