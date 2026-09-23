@@ -8,7 +8,7 @@ window.WALLPAPERS = [
     category: "风景",
     resolution: "4K",
     colors: "白/蓝",
-    url: "/img/gallery/01.jpg",
+    url: "/img/gallery/snow-mountain-town.jpg",
     date: "2026-09-12"
   },
   {
@@ -17,7 +17,7 @@ window.WALLPAPERS = [
     category: "风景",
     resolution: "4K",
     colors: "粉/绿",
-    url: "/img/gallery/04.jpg",
+    url: "/img/gallery/cherry-blossom-village.jpg",
     date: "2026-09-12"
   },
   {
@@ -26,7 +26,7 @@ window.WALLPAPERS = [
     category: "风景",
     resolution: "4K",
     colors: "紫/粉",
-    url: "/img/gallery/06.jpg",
+    url: "/img/gallery/sunset-cabin.jpg",
     date: "2026-09-13"
   },
   {
@@ -35,7 +35,7 @@ window.WALLPAPERS = [
     category: "风景",
     resolution: "4K",
     colors: "橙/蓝",
-    url: "/img/gallery/07.jpg",
+    url: "/img/gallery/lake-sunset.jpg",
     date: "2026-09-13"
   },
   {
@@ -44,7 +44,7 @@ window.WALLPAPERS = [
     category: "风景",
     resolution: "4K",
     colors: "多彩",
-    url: "/img/gallery/08.jpg",
+    url: "/img/gallery/dutch-water-house.jpg",
     date: "2026-09-13"
   },
   {
@@ -53,7 +53,7 @@ window.WALLPAPERS = [
     category: "风景",
     resolution: "4K",
     colors: "灰/绿",
-    url: "/img/gallery/10.jpg",
+    url: "/img/gallery/mountain-mist.jpg",
     date: "2026-09-14"
   },
   {
@@ -62,7 +62,7 @@ window.WALLPAPERS = [
     category: "风景",
     resolution: "4K",
     colors: "蓝/黑",
-    url: "/img/gallery/16.jpg",
+    url: "/img/gallery/fuji-night.jpg",
     date: "2026-09-14"
   },
   {
@@ -71,7 +71,7 @@ window.WALLPAPERS = [
     category: "风景",
     resolution: "4K",
     colors: "绿/蓝",
-    url: "/img/gallery/18.jpg",
+    url: "/img/gallery/coastal-tree.jpg",
     date: "2026-09-14"
   },
   {
@@ -80,8 +80,17 @@ window.WALLPAPERS = [
     category: "风景",
     resolution: "4K",
     colors: "绿/紫",
-    url: "/img/gallery/22.jpg",
+    url: "/img/gallery/aurora-snow-mountain.jpg",
     date: "2026-09-15"
+  },
+  {
+    title: "日照金山",
+    description: "金色阳光洒满雪山之巅，登山者眺望远方",
+    category: "风景",
+    resolution: "4K",
+    colors: "金/蓝",
+    url: "/img/gallery/golden-sunrise-mountain.jpg",
+    date: "2026-09-22"
   },
   // ===== 城市类 =====
   {
@@ -90,7 +99,7 @@ window.WALLPAPERS = [
     category: "城市",
     resolution: "4K",
     colors: "蓝/紫",
-    url: "/img/gallery/09.jpg",
+    url: "/img/gallery/new-york-night.jpg",
     date: "2026-09-12"
   },
   {
@@ -99,7 +108,7 @@ window.WALLPAPERS = [
     category: "城市",
     resolution: "4K",
     colors: "蓝/黑",
-    url: "/img/gallery/11.jpg",
+    url: "/img/gallery/taipei-101-night.jpg",
     date: "2026-09-13"
   },
   {
@@ -108,7 +117,7 @@ window.WALLPAPERS = [
     category: "城市",
     resolution: "4K",
     colors: "灰/黑",
-    url: "/img/gallery/12.jpg",
+    url: "/img/gallery/guangzhou-storm.jpg",
     date: "2026-09-13"
   },
   {
@@ -117,7 +126,7 @@ window.WALLPAPERS = [
     category: "城市",
     resolution: "4K",
     colors: "蓝/黑",
-    url: "/img/gallery/13.jpg",
+    url: "/img/gallery/coastal-city-night.jpg",
     date: "2026-09-14"
   },
   {
@@ -126,7 +135,7 @@ window.WALLPAPERS = [
     category: "城市",
     resolution: "4K",
     colors: "蓝/黄",
-    url: "/img/gallery/14.jpg",
+    url: "/img/gallery/shenzhen-bay-bridge.jpg",
     date: "2026-09-14"
   },
   {
@@ -135,7 +144,7 @@ window.WALLPAPERS = [
     category: "城市",
     resolution: "4K",
     colors: "多彩",
-    url: "/img/gallery/15.jpg",
+    url: "/img/gallery/macau-fireworks.jpg",
     date: "2026-09-15"
   },
   {
@@ -144,8 +153,26 @@ window.WALLPAPERS = [
     category: "城市",
     resolution: "4K",
     colors: "橙/紫",
-    url: "/img/gallery/17.jpg",
+    url: "/img/gallery/manhattan-sunset.jpg",
     date: "2026-09-15"
+  },
+  {
+    title: "城市光迹",
+    description: "城市道路车流光轨，长曝光夜色动感十足",
+    category: "城市",
+    resolution: "4K",
+    colors: "暗/彩",
+    url: "/img/gallery/city-light-trails.jpg",
+    date: "2026-09-22"
+  },
+  {
+    title: "河畔日落",
+    description: "河畔城市黄昏日落，暖色调灯火璀璨",
+    category: "城市",
+    resolution: "4K",
+    colors: "橙/蓝",
+    url: "/img/gallery/river-sunset-city.jpg",
+    date: "2026-09-22"
   },
   // ===== 星空类 =====
   {
@@ -154,7 +181,7 @@ window.WALLPAPERS = [
     category: "星空",
     resolution: "4K",
     colors: "蓝/紫",
-    url: "/img/gallery/19.jpg",
+    url: "/img/gallery/starry-mountain.jpg",
     date: "2026-09-12"
   },
   {
@@ -163,7 +190,7 @@ window.WALLPAPERS = [
     category: "星空",
     resolution: "4K",
     colors: "蓝/绿",
-    url: "/img/gallery/20.jpg",
+    url: "/img/gallery/grassland-milky-way.jpg",
     date: "2026-09-13"
   },
   {
@@ -172,7 +199,7 @@ window.WALLPAPERS = [
     category: "星空",
     resolution: "4K",
     colors: "蓝/黑",
-    url: "/img/gallery/21.jpg",
+    url: "/img/gallery/spiral-star-trails.jpg",
     date: "2026-09-15"
   },
   // ===== 动漫类 =====
@@ -182,7 +209,7 @@ window.WALLPAPERS = [
     category: "动漫",
     resolution: "4K",
     colors: "红/白",
-    url: "/img/gallery/02.jpg",
+    url: "/img/gallery/evangelion-asuka.jpg",
     date: "2026-09-12"
   },
   {
@@ -191,7 +218,7 @@ window.WALLPAPERS = [
     category: "动漫",
     resolution: "4K",
     colors: "蓝/绿",
-    url: "/img/gallery/03.jpg",
+    url: "/img/gallery/anime-island.jpg",
     date: "2026-09-12"
   },
   // ===== 插画类 =====
@@ -201,7 +228,26 @@ window.WALLPAPERS = [
     category: "插画",
     resolution: "4K",
     colors: "蓝/黑",
-    url: "/img/gallery/05.jpg",
+    url: "/img/gallery/astronaut-space.jpg",
     date: "2026-09-12"
+  },
+  // ===== 科技类 =====
+  {
+    title: "数据可视化",
+    description: "代码界面与数据图表，深色科技感背景",
+    category: "科技",
+    resolution: "4K",
+    colors: "深蓝",
+    url: "/img/gallery/data-visualization.jpg",
+    date: "2026-09-22"
+  },
+  {
+    title: "芯片电路",
+    description: "电路板与芯片特写，蓝色科技感光影",
+    category: "科技",
+    resolution: "4K",
+    colors: "蓝/黑",
+    url: "/img/gallery/circuit-chip.jpg",
+    date: "2026-09-22"
   }
 ];
