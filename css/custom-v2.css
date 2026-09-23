@@ -193,3 +193,49 @@ body {
   border-radius: 10px;
   object-fit: cover;
 }
+
+/* ========== 夜间模式覆盖 ========== */
+[data-theme="dark"] .recent-post-item,
+[data-theme="dark"] .article-sort-item,
+[data-theme="dark"] .post-card,
+[data-theme="dark"] .flink-item,
+[data-theme="dark"] .gallery-item,
+[data-theme="dark"] .card-widget,
+[data-theme="dark"] #post,
+[data-theme="dark"] .post-content,
+[data-theme="dark"] .article-meta,
+[data-theme="dark"] .post-copyright,
+[data-theme="dark"] .relatedPosts,
+[data-theme="dark"] #pagination,
+[data-theme="dark"] #post-comment,
+[data-theme="dark"] .article-sort,
+[data-theme="dark"] #category,
+[data-theme="dark"] #tag,
+[data-theme="dark"] #tag-page,
+[data-theme="dark"] #category-page,
+[data-theme="dark"] .nav-card {
+  background: rgba(28, 28, 34, 0.92) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] #pagination .page-number,
+[data-theme="dark"] #pagination .extend {
+  background: rgba(50, 50, 60, 0.9) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-theme="dark"] .recent-post-item .post-title a,
+[data-theme="dark"] .recent-post-item .post-excerpt,
+[data-theme="dark"] .card-widget .card-info,
+[data-theme="dark"] .card-widget .author-info__name,
+[data-theme="dark"] .card-widget .author-info__description,
+[data-theme="dark"] .post-content p,
+[data-theme="dark"] .post-content h1,
+[data-theme="dark"] .post-content h2,
+[data-theme="dark"] .post-content h3,
+[data-theme="dark"] .post-content li,
+[data-theme="dark"] .nav-card-info h3,
+[data-theme="dark"] .nav-card-info p,
+[data-theme="dark"] .nav-section-title {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
