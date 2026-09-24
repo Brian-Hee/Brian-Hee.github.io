@@ -60,23 +60,12 @@ body {
   color: rgba(255, 255, 255, 0.9) !important;
 }
 
-/* 风车头像旋转动画 - 用更具体的选择器确保生效 */
+/* 风车头像旋转动画 - JS接管平滑加速 */
 .card-info .avatar-img img,
 .avatar-img img {
-  animation: pinwheel-spin 8s linear infinite !important;
   border-radius: 50% !important;
   display: inline-block !important;
-}
-
-/* 鼠标悬停时加速旋转 */
-.card-info .avatar-img img:hover,
-.avatar-img img:hover {
-  animation-duration: 1.5s !important;
-}
-
-@keyframes pinwheel-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  will-change: transform;
 }
 
 /* 文章详情页内容区域白色背景 */
