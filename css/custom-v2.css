@@ -68,6 +68,15 @@ body {
   will-change: transform;
 }
 
+/* 句子锦集页面 - 去掉白色容器，让渐变卡片直接浮在背景上 */
+body.page-sentences #post,
+body.page-sentences #post-body,
+body.page-sentences .article-content,
+body.page-sentences #post > * {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 /* 文章详情页内容区域白色背景 */
 #post,
 .post-content,
