@@ -63,9 +63,15 @@ body {
 /* 风车头像旋转动画 - 用更具体的选择器确保生效 */
 .card-info .avatar-img img,
 .avatar-img img {
-  animation: pinwheel-spin 6s linear infinite !important;
+  animation: pinwheel-spin 8s linear infinite !important;
   border-radius: 50% !important;
   display: inline-block !important;
+}
+
+/* 鼠标悬停时加速旋转 */
+.card-info .avatar-img img:hover,
+.avatar-img img:hover {
+  animation-duration: 1.5s !important;
 }
 
 @keyframes pinwheel-spin {
