@@ -245,23 +245,24 @@ body.page-sentences #post > * {
 }
 
 /* 文章页标题和元信息居中 */
-.layout_post #post-info,
-.layout_post #post-info .post-title,
-.layout_post #post-meta,
-.layout_post #post-meta .meta-firstline,
-.layout_post #post-meta .meta-secondline {
+#post-info,
+#post-info .post-title,
+#post-meta,
+#post-meta .meta-firstline,
+#post-meta .meta-secondline {
   text-align: center !important;
 }
 
-.layout_post #post-meta .meta-firstline,
-.layout_post #post-meta .meta-secondline {
+#post-meta .meta-firstline,
+#post-meta .meta-secondline {
   display: flex !important;
   justify-content: center !important;
   flex-wrap: wrap !important;
   align-items: center !important;
 }
 
-.layout_post #post-info h1.post-title {
+#post-info h1.post-title {
   margin-top: 10px !important;
   margin-bottom: 15px !important;
 }
+
