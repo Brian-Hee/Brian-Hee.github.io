@@ -164,32 +164,22 @@ body {
 }
 
 /* 文章页标题和元信息居中 */
-#post .post-title,
-#post .article-meta-wrap,
-#post .article-date-info {
+#post-info,
+#post-info .post-title,
+#post-meta,
+#post-meta .meta-firstline,
+#post-meta .meta-secondline {
   text-align: center !important;
 }
 
-#post .article-meta {
-  justify-content: center !important;
+#post-meta .meta-firstline,
+#post-meta .meta-secondline {
   display: flex !important;
+  justify-content: center !important;
   flex-wrap: wrap !important;
 }
 
-#post .article-meta .article-date,
-#post .article-meta .article-category,
-#post .article-meta .article-tag,
-#post .article-meta .post-wordcount,
-#post .article-meta .post-minutes {
-  display: inline-flex !important;
-  align-items: center !important;
-}
-
-#post .article-meta .meta-sep {
-  margin: 0 8px !important;
-}
-
-#post h1.post-title {
+#post-info h1.post-title {
   margin-top: 10px !important;
   margin-bottom: 15px !important;
 }
