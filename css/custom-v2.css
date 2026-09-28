@@ -243,3 +243,25 @@ body.page-sentences #post > * {
 [data-theme="dark"] .nav-section-title {
   color: rgba(255, 255, 255, 0.85) !important;
 }
+
+/* 文章页标题和元信息居中 */
+.layout_post #post-info,
+.layout_post #post-info .post-title,
+.layout_post #post-meta,
+.layout_post #post-meta .meta-firstline,
+.layout_post #post-meta .meta-secondline {
+  text-align: center !important;
+}
+
+.layout_post #post-meta .meta-firstline,
+.layout_post #post-meta .meta-secondline {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+}
+
+.layout_post #post-info h1.post-title {
+  margin-top: 10px !important;
+  margin-bottom: 15px !important;
+}
