@@ -1,0 +1,190 @@
+/* 自定义样式 - 宇宙背景 + 卡片浮层 + 风车头像 */
+
+/* 网站背景 - 直接设置在 body 上 */
+body {
+  background: url("/img/bg-space-art.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+/* 内容区域背景透明，让背景图显示出来 */
+#body-wrap,
+#content-outer,
+.layout,
+#content,
+#aside-content {
+  background: transparent !important;
+}
+
+/* 文章卡片白色浮层 */
+.recent-post-item,
+.article-sort-item,
+.post-card,
+.flink-item,
+.gallery-item {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  margin-bottom: 20px !important;
+}
+
+.recent-post-item:hover,
+.article-sort-item:hover,
+.post-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* 侧边栏卡片白色浮层 */
+.card-widget {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 20px !important;
+}
+
+/* 分页器 */
+#pagination .page-number,
+#pagination .extend {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 8px !important;
+}
+
+/* 页脚背景半透明 */
+#footer {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+#footer, #footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 风车头像旋转动画 - 用更具体的选择器确保生效 */
+.card-info .avatar-img img,
+.avatar-img img {
+  animation: pinwheel-spin 6s linear infinite !important;
+  border-radius: 50% !important;
+  display: inline-block !important;
+}
+
+@keyframes pinwheel-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 文章详情页内容区域白色背景 */
+#post,
+.post-content,
+.article-meta,
+.post-copyright,
+.relatedPosts,
+#pagination {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+#post {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 30px !important;
+}
+
+/* 评论区域 */
+#post-comment {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 归档页面 */
+.article-sort {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 分类标签页面 */
+#category, #tag, #tag-page, #category-page {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 页面标题区域 - 保留横幅图，不透明 */
+/* #page-header 保持主题默认样式，首页横幅图正常显示 */
+
+/* 确保文章封面图正确显示 */
+.recent-post-item .post-bg {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+/* ========== 夜间模式覆盖 ========== */
+[data-theme="dark"] .recent-post-item,
+[data-theme="dark"] .article-sort-item,
+[data-theme="dark"] .post-card,
+[data-theme="dark"] .flink-item,
+[data-theme="dark"] .gallery-item,
+[data-theme="dark"] .card-widget,
+[data-theme="dark"] #post,
+[data-theme="dark"] .post-content,
+[data-theme="dark"] .article-meta,
+[data-theme="dark"] .post-copyright,
+[data-theme="dark"] .relatedPosts,
+[data-theme="dark"] #pagination,
+[data-theme="dark"] #post-comment,
+[data-theme="dark"] .article-sort,
+[data-theme="dark"] #category,
+[data-theme="dark"] #tag,
+[data-theme="dark"] #tag-page,
+[data-theme="dark"] #category-page {
+  background: rgba(28, 28, 34, 0.92) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] #pagination .page-number,
+[data-theme="dark"] #pagination .extend {
+  background: rgba(50, 50, 60, 0.9) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-theme="dark"] .recent-post-item .post-title a,
+[data-theme="dark"] .recent-post-item .post-excerpt,
+[data-theme="dark"] .card-widget .card-info,
+[data-theme="dark"] .card-widget .author-info__name,
+[data-theme="dark"] .card-widget .author-info__description,
+[data-theme="dark"] .post-content p,
+[data-theme="dark"] .post-content h1,
+[data-theme="dark"] .post-content h2,
+[data-theme="dark"] .post-content h3,
+[data-theme="dark"] .post-content li {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* 文章页标题和元信息居中 */
+.layout_post #post-info,
+.layout_post #post-info .post-title,
+.layout_post #post-meta,
+.layout_post #post-meta .meta-firstline,
+.layout_post #post-meta .meta-secondline,
+.layout_post #post-meta .post-meta-date,
+.layout_post #post-meta .post-meta-category,
+.layout_post #post-meta .post-meta-tags {
+  text-align: center !important;
+}
+
+.layout_post #post-meta .meta-firstline,
+.layout_post #post-meta .meta-secondline {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+}
+
+.layout_post #post-info h1.post-title {
+  margin-top: 10px !important;
+  margin-bottom: 15px !important;
+}
+

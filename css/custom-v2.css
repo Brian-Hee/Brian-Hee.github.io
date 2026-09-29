@@ -1,0 +1,268 @@
+/* 自定义样式 - 宇宙背景 + 卡片浮层 + 风车头像 */
+
+/* 网站背景 - 直接设置在 body 上 */
+body {
+  background: url("/img/bg-mountain.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+}
+
+/* 内容区域背景透明，让背景图显示出来 */
+#body-wrap,
+#content-outer,
+.layout,
+#content,
+#aside-content {
+  background: transparent !important;
+}
+
+/* 文章卡片白色浮层 */
+.recent-post-item,
+.article-sort-item,
+.post-card,
+.flink-item,
+.gallery-item {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  margin-bottom: 20px !important;
+}
+
+.recent-post-item:hover,
+.article-sort-item:hover,
+.post-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* 侧边栏卡片白色浮层 */
+.card-widget {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  margin-bottom: 20px !important;
+}
+
+/* 分页器 */
+#pagination .page-number,
+#pagination .extend {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 8px !important;
+}
+
+/* 页脚背景半透明 */
+#footer {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+#footer, #footer a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 风车头像旋转动画 - JS接管平滑加速 */
+.card-info .avatar-img img,
+.avatar-img img {
+  border-radius: 50% !important;
+  display: inline-block !important;
+  will-change: transform;
+}
+
+/* 句子锦集页面 - 去掉白色容器，让渐变卡片直接浮在背景上 */
+body.page-sentences #post,
+body.page-sentences #post-body,
+body.page-sentences .article-content,
+body.page-sentences #post > * {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* 文章详情页内容区域白色背景 */
+#post,
+.post-content,
+.article-meta,
+.post-copyright,
+.relatedPosts,
+#pagination {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+#post {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 30px !important;
+}
+
+/* 评论区域 */
+#post-comment {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 归档页面 */
+.article-sort {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 分类标签页面 */
+#category, #tag, #tag-page, #category-page {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  padding: 20px !important;
+}
+
+/* 页面标题区域 - 保留横幅图，不透明 */
+/* #page-header 保持主题默认样式，首页横幅图正常显示 */
+
+/* 确保文章封面图正确显示 */
+.recent-post-item .post-bg {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+/* 导航卡片网格 */
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.nav-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.nav-card-icon {
+  font-size: 36px;
+  margin-right: 15px;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  color: white;
+}
+
+.nav-card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.nav-card-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.nav-card-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #888;
+  line-height: 1.4;
+}
+
+.nav-section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0 15px 0;
+  padding-left: 12px;
+  border-left: 4px solid #49B1F5;
+  color: #333;
+}
+
+.nav-card-icon img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* ========== 夜间模式覆盖 ========== */
+[data-theme="dark"] .recent-post-item,
+[data-theme="dark"] .article-sort-item,
+[data-theme="dark"] .post-card,
+[data-theme="dark"] .flink-item,
+[data-theme="dark"] .gallery-item,
+[data-theme="dark"] .card-widget,
+[data-theme="dark"] #post,
+[data-theme="dark"] .post-content,
+[data-theme="dark"] .article-meta,
+[data-theme="dark"] .post-copyright,
+[data-theme="dark"] .relatedPosts,
+[data-theme="dark"] #pagination,
+[data-theme="dark"] #post-comment,
+[data-theme="dark"] .article-sort,
+[data-theme="dark"] #category,
+[data-theme="dark"] #tag,
+[data-theme="dark"] #tag-page,
+[data-theme="dark"] #category-page,
+[data-theme="dark"] .nav-card {
+  background: rgba(28, 28, 34, 0.92) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+[data-theme="dark"] #pagination .page-number,
+[data-theme="dark"] #pagination .extend {
+  background: rgba(50, 50, 60, 0.9) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-theme="dark"] .recent-post-item .post-title a,
+[data-theme="dark"] .recent-post-item .post-excerpt,
+[data-theme="dark"] .card-widget .card-info,
+[data-theme="dark"] .card-widget .author-info__name,
+[data-theme="dark"] .card-widget .author-info__description,
+[data-theme="dark"] .post-content p,
+[data-theme="dark"] .post-content h1,
+[data-theme="dark"] .post-content h2,
+[data-theme="dark"] .post-content h3,
+[data-theme="dark"] .post-content li,
+[data-theme="dark"] .nav-card-info h3,
+[data-theme="dark"] .nav-card-info p,
+[data-theme="dark"] .nav-section-title {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* 文章页标题和元信息居中 */
+#post-info,
+#post-info .post-title,
+#post-meta,
+#post-meta .meta-firstline,
+#post-meta .meta-secondline {
+  text-align: center !important;
+}
+
+#post-meta .meta-firstline,
+#post-meta .meta-secondline {
+  display: flex !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+}
+
+#post-info h1.post-title {
+  margin-top: 10px !important;
+  margin-bottom: 15px !important;
+}
+

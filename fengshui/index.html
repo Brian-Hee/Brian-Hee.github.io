@@ -1,0 +1,388 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>风水玄学 | 心中之城</title><meta name="author" content="钧泽"><meta name="copyright" content="钧泽"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="中国传统文化中的风水、生肖、节气、易经，作为民俗文化了解即可，请勿迷信。         全部     生肖文化     风水常识     节气习俗     易经入门          .fs-page { margin: 30px 0; } .fs-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; jus">
+<meta property="og:type" content="website">
+<meta property="og:title" content="风水玄学">
+<meta property="og:url" content="https://amzian.com/fengshui/index.html">
+<meta property="og:site_name" content="心中之城">
+<meta property="og:description" content="中国传统文化中的风水、生肖、节气、易经，作为民俗文化了解即可，请勿迷信。         全部     生肖文化     风水常识     节气习俗     易经入门          .fs-page { margin: 30px 0; } .fs-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; jus">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://amzian.com/img/pinwheel.png">
+<meta property="article:published_time" content="2026-09-22T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-09-23T08:45:56.795Z">
+<meta property="article:author" content="钧泽">
+<meta property="article:tag" content="心中之城, 个人博客, 生活记录, 知识教程, 成长思考">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://amzian.com/img/pinwheel.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://amzian.com/fengshui/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        const data = { value }
+
+        if (ttl != null) {
+          data.expiry = Date.now() + ttl * 86400000
+        }
+
+        localStorage.setItem(key, JSON.stringify(data))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', 'ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '风水玄学',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/css/custom-v2.css?v=20260928c"><meta name="baidu-site-verification" content="codeva-jN3OA30iOd" /><meta name="msvalidate.01" content="D14D714E3595E6876D944CB0D74E5302" /><meta name="sogou_site_verification" content="OwKCr6AURc" /><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="心中之城" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/pinwheel.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 收藏</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wallpaper/"><i class="fa-fw fas fa-image"></i><span> 壁纸</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 导航</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/nav/"><i class="fa-fw fas fa-compass"></i><span> 常用导航</span></a></li><li><a class="site-page child" href="/cross-border/"><i class="fa-fw fas fa-globe"></i><span> 跨境导航</span></a></li><li><a class="site-page child" href="/work/"><i class="fa-fw fas fa-briefcase"></i><span> 自用工作导航</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 百宝箱</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/fun/"><i class="fa-fw fas fa-lightbulb"></i><span> 有趣网站</span></a></li><li><a class="site-page child" href="/sentences/"><i class="fa-fw fas fa-quote-left"></i><span> 句子锦集</span></a></li><li><a class="site-page child" href="/changshi/"><i class="fa-fw fas fa-book"></i><span> 华夏常识</span></a></li><li><a class="site-page child" href="/fengshui/"><i class="fa-fw fas fa-yin-yang"></i><span> 风水玄学</span></a></li><li><a class="site-page child" href="/files/"><i class="fa-fw fas fa-download"></i><span> 文件下载</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/private/"><i class="fa-fw fas fa-lock"></i><span> 私有收藏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page fixed" id="page-header" style="background-image: url(/img/top-about.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">心中之城</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 收藏</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wallpaper/"><i class="fa-fw fas fa-image"></i><span> 壁纸</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 导航</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/nav/"><i class="fa-fw fas fa-compass"></i><span> 常用导航</span></a></li><li><a class="site-page child" href="/cross-border/"><i class="fa-fw fas fa-globe"></i><span> 跨境导航</span></a></li><li><a class="site-page child" href="/work/"><i class="fa-fw fas fa-briefcase"></i><span> 自用工作导航</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 百宝箱</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/fun/"><i class="fa-fw fas fa-lightbulb"></i><span> 有趣网站</span></a></li><li><a class="site-page child" href="/sentences/"><i class="fa-fw fas fa-quote-left"></i><span> 句子锦集</span></a></li><li><a class="site-page child" href="/changshi/"><i class="fa-fw fas fa-book"></i><span> 华夏常识</span></a></li><li><a class="site-page child" href="/fengshui/"><i class="fa-fw fas fa-yin-yang"></i><span> 风水玄学</span></a></li><li><a class="site-page child" href="/files/"><i class="fa-fw fas fa-download"></i><span> 文件下载</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></li><li><a class="site-page child" href="/private/"><i class="fa-fw fas fa-lock"></i><span> 私有收藏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">风水玄学</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><p>中国传统文化中的风水、生肖、节气、易经，作为民俗文化了解即可，请勿迷信。</p>
+<div class="fs-page">
+  <div class="fs-tabs">
+    <button class="fs-tab active" data-cat="all">全部</button>
+    <button class="fs-tab" data-cat="zodiac">生肖文化</button>
+    <button class="fs-tab" data-cat="fengshui">风水常识</button>
+    <button class="fs-tab" data-cat="solar">节气习俗</button>
+    <button class="fs-tab" data-cat="yijing">易经入门</button>
+  </div>
+  <div class="fs-grid" id="fsGrid"></div>
+</div>
+
+<style>
+.fs-page { margin: 30px 0; }
+.fs-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; justify-content: center; }
+.fs-tab { padding: 8px 20px; border: 1px solid #e0e0e0; background: #fff; border-radius: 20px; cursor: pointer; font-size: 14px; transition: all 0.2s; }
+.fs-tab:hover { border-color: #b8860b; color: #b8860b; }
+.fs-tab.active { background: #b8860b; color: #fff; border-color: #b8860b; }
+.fs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; }
+.fs-card { background: #fff; border-radius: 10px; padding: 22px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #b8860b; }
+.fs-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+.fs-card .fs-title { font-size: 17px; font-weight: 600; color: #333; margin: 0 0 10px; }
+.fs-card .fs-desc { font-size: 15px; line-height: 1.7; color: #444; }
+.fs-card .fs-source { margin-top: 12px; font-size: 12px; color: #bbb; text-align: right; }
+[data-theme="dark"] .fs-card { background: rgba(28,28,34,0.92); }
+[data-theme="dark"] .fs-card .fs-title { color: rgba(255,255,255,0.9); }
+[data-theme="dark"] .fs-card .fs-desc { color: rgba(255,255,255,0.8); }
+[data-theme="dark"] .fs-tab { background: rgba(28,28,34,0.92); color: rgba(255,255,255,0.85); border-color: #444; }
+</style>
+
+<script>
+const fsData = [
+  {cat:"zodiac", title:"十二生肖的由来", desc:"十二生肖起源于中国古代的动物崇拜和干支纪年法。最早完整记载十二生肖的是东汉王充的《论衡》，与现在的十二生肖完全一致。每种动物对应一个地支，组成六十甲子纪年体系。", source:"《论衡·物势篇》"},
+  {cat:"zodiac", title:"为什么老鼠排第一", desc:"民间传说老鼠骗了猫，又骑在牛背上抢了第一。但从文化角度看，子时（23:00-1:00）是一天中最暗的时刻，老鼠在此时最活跃，古人将最阴的时辰对应最阴的动物，符合阴阳对应逻辑。", source:"传统文化研究"},
+  {cat:"zodiac", title:"生肖性格有依据吗", desc:"生肖性格描述更多是文化符号和心理暗示，而非科学结论。同一年出生的人性格千差万别，生肖性格可以作为茶余饭后的谈资，但不要用来判断一个人。", source:"心理学常识"},
+  {cat:"fengshui", title:"什么是风水", desc:"风水又称堪舆，是中国古代关于环境与居住关系的学问。\"风\"指空气和气候，\"水\"指水源和地形。核心思想是选择适宜的居住环境，本质上是古代的环境规划学。", source:"《葬书》《堪舆正经》"},
+  {cat:"fengshui", title:"玄关为什么重要", desc:"玄关是入户的过渡空间，风水上叫\"气口\"。从实用角度看，玄关可以遮挡视线、保护隐私、缓冲室外温差、放置鞋柜和外套，是很合理的户型设计。", source:"传统居住文化"},
+  {cat:"fengshui", title:"床头不靠窗", desc:"风水上说床头靠窗\"靠山不稳\"。从科学角度看，窗户是温差最大的地方，头部靠窗容易受凉，且窗外光线和声音影响睡眠质量，确实不利于休息。", source:"传统居住文化"},
+  {cat:"fengshui", title:"镜子不对床", desc:"风水认为镜子对床会\"惊梦\"。科学解释是：人在半梦半醒时看到镜中影像容易受到惊吓，且镜子反射光线会影响睡眠环境。建议镜子朝向远离床的方向。", source:"传统居住文化"},
+  {cat:"solar", title:"二十四节气", desc:"二十四节气是中国古代订立的指导农事的补充历法，将太阳周年运动轨迹划分为24等份。2016年被列入联合国教科文组织人类非物质文化遗产代表作名录。每个节气对应物候变化，是古代农耕文明的智慧结晶。", source:"联合国教科文组织"},
+  {cat:"solar", title:"冬至大如年", desc:"冬至是二十四节气中最早被制定的一个，古人认为冬至是阴阳转化的关键节气，\"冬至一阳生\"。民间有\"冬至大如年\"的说法，北方吃饺子、南方吃汤圆，是重要的传统节日。", source:"《汉书》《荆楚岁时记》"},
+  {cat:"solar", title:"清明不只是扫墓", desc:"清明既是节气又是节日。除了扫墓祭祖，清明还有踏青、插柳、放风筝、荡秋千等习俗。古人认为清明时节万物生长，是亲近自然的好时节，不只是悲伤的日子。", source:"《岁时百问》"},
+  {cat:"yijing", title:"易经是什么", desc:"《易经》是中国最古老的经典之一，由伏羲画卦、文王演卦、孔子作传完成。它不是算命书，而是一部关于变化规律的哲学著作，用阴阳八卦的符号系统描述事物发展变化的规律。", source:"《周易》"},
+  {cat:"yijing", title:"八卦是哪八卦", desc:"八卦是：乾（天）、坤（地）、震（雷）、巽（风）、坎（水）、离（火）、艮（山）、兑（泽）。每卦由三个爻组成，阴阳爻的不同组合代表不同的自然现象和哲学含义。八卦两两组合成六十四卦。", source:"《周易·说卦传》"},
+  {cat:"yijing", title:"五行生克", desc:"五行是金、木、水、火、土五种基本物质的运动变化。相生：木生火、火生土、土生金、金生水、水生木。相克：木克土、土克水、水克火、火克金、金克木。五行学说认为万物在生克中保持平衡。", source:"《尚书·洪范》"},
+];
+
+const catNames = {zodiac:"生肖文化", fengshui:"风水常识", solar:"节气习俗", yijing:"易经入门"};
+const grid = document.getElementById('fsGrid');
+
+function renderFS(cat) {
+  const list = cat === 'all' ? fsData : fsData.filter(s => s.cat === cat);
+  grid.innerHTML = list.map(s => `
+    <div class="fs-card">
+      <h3 class="fs-title">${s.title}</h3>
+      <p class="fs-desc">${s.desc}</p>
+      <p class="fs-source">来源：${s.source}</p>
+    </div>
+  `).join('');
+}
+
+document.querySelectorAll('.fs-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.fs-tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    renderFS(tab.dataset.cat);
+  });
+});
+
+renderFS('all');
+</script>
+</div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/pinwheel.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">钧泽</div><div class="author-info-description">记录生活感受，分享知识教程。一个普通人的成长与思考笔记。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">21</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Brian-Hee"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Brian-Hee" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:brian@example.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #3b5998;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss" style="color: #FF7242;"></i></a><a class="social-icon" href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到心中之城 🏠 这里记录生活，分享知识，也聊聊成长。慢慢逛，希望你能找到有用的东西。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/09/29/%E8%B5%9A%E9%92%B1%E5%B0%B1%E6%98%AF%E6%8A%84/" title="赚钱这事儿，你别嫌脏，就是个&quot;抄&quot;字"><img src="/img/cover-copy.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="赚钱这事儿，你别嫌脏，就是个&quot;抄&quot;字"/></a><div class="content"><a class="title" href="/2026/09/29/%E8%B5%9A%E9%92%B1%E5%B0%B1%E6%98%AF%E6%8A%84/" title="赚钱这事儿，你别嫌脏，就是个&quot;抄&quot;字">赚钱这事儿，你别嫌脏，就是个&quot;抄&quot;字</a><time datetime="2026-09-29T02:00:00.000Z" title="发表于 2026-09-29 10:00:00">2026-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/28/%E9%A1%B9%E7%9B%AE%E6%9C%9B%E6%B0%94/" title="项目能不能成，别盯着项目看，去望那股气"><img src="/img/cover-qi2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="项目能不能成，别盯着项目看，去望那股气"/></a><div class="content"><a class="title" href="/2026/09/28/%E9%A1%B9%E7%9B%AE%E6%9C%9B%E6%B0%94/" title="项目能不能成，别盯着项目看，去望那股气">项目能不能成，别盯着项目看，去望那股气</a><time datetime="2026-09-28T07:00:00.000Z" title="发表于 2026-09-28 15:00:00">2026-09-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/27/%E8%B5%9A%E9%92%B1%E5%BA%95%E8%A3%A4/" title="赚钱这点事，扒到底就这么几条底裤"><img src="/img/cover-roadmap.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="赚钱这点事，扒到底就这么几条底裤"/></a><div class="content"><a class="title" href="/2026/09/27/%E8%B5%9A%E9%92%B1%E5%BA%95%E8%A3%A4/" title="赚钱这点事，扒到底就这么几条底裤">赚钱这点事，扒到底就这么几条底裤</a><time datetime="2026-09-27T02:00:00.000Z" title="发表于 2026-09-27 10:00:00">2026-09-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/25/%E4%BF%A1%E4%BB%B0%E5%8D%B0%E9%92%9E/" title="你在为信仰充值，有人拿你的信仰印钞"><img src="/img/cover-faith2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="你在为信仰充值，有人拿你的信仰印钞"/></a><div class="content"><a class="title" href="/2026/09/25/%E4%BF%A1%E4%BB%B0%E5%8D%B0%E9%92%9E/" title="你在为信仰充值，有人拿你的信仰印钞">你在为信仰充值，有人拿你的信仰印钞</a><time datetime="2026-09-25T02:00:00.000Z" title="发表于 2026-09-25 10:00:00">2026-09-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/23/%E7%84%A6%E8%99%91%E7%94%9F%E6%84%8F/" title="你刷抖音杀时间，有人把你的焦虑做成了生意"><img src="/img/cover-anxiety.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="你刷抖音杀时间，有人把你的焦虑做成了生意"/></a><div class="content"><a class="title" href="/2026/09/23/%E7%84%A6%E8%99%91%E7%94%9F%E6%84%8F/" title="你刷抖音杀时间，有人把你的焦虑做成了生意">你刷抖音杀时间，有人把你的焦虑做成了生意</a><time datetime="2026-09-23T02:00:00.000Z" title="发表于 2026-09-23 10:00:00">2026-09-23</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"><span class="card-category-list-name">思考与认知</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"><span class="card-category-list-name">技术分享</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">随笔</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%88%9B%E4%B8%9A/" style="font-size: 1.1em; color: #999">创业</a> <a href="/tags/Facebook/" style="font-size: 1.1em; color: #999">Facebook</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 1.5em; color: #99a9bf">思考</a> <a href="/tags/%E9%9D%A0%E8%B0%B1/" style="font-size: 1.1em; color: #999">靠谱</a> <a href="/tags/AI/" style="font-size: 1.1em; color: #999">AI</a> <a href="/tags/Instagram/" style="font-size: 1.1em; color: #999">Instagram</a> <a href="/tags/%E5%89%AF%E4%B8%9A/" style="font-size: 1.1em; color: #999">副业</a> <a href="/tags/OpenClaw/" style="font-size: 1.1em; color: #999">OpenClaw</a> <a href="/tags/%E6%88%90%E9%95%BF/" style="font-size: 1.1em; color: #999">成长</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.1em; color: #999">教程</a> <a href="/tags/%E7%A4%BE%E4%BA%A4/" style="font-size: 1.1em; color: #999">社交</a> <a href="/tags/%E8%AE%A4%E7%9F%A5/" style="font-size: 1.3em; color: #99a1ac">认知</a> <a href="/tags/%E8%B5%9A%E9%92%B1/" style="font-size: 1.5em; color: #99a9bf">赚钱</a> <a href="/tags/Ollama/" style="font-size: 1.1em; color: #999">Ollama</a> <a href="/tags/%E6%B5%81%E9%87%8F/" style="font-size: 1.3em; color: #99a1ac">流量</a> <a href="/tags/%E5%95%86%E4%B8%9A/" style="font-size: 1.1em; color: #999">商业</a> <a href="/tags/%E8%87%AA%E5%AA%92%E4%BD%93/" style="font-size: 1.1em; color: #999">自媒体</a> <a href="/tags/%E5%BB%BA%E7%AB%99%E5%BF%83%E5%BE%97/" style="font-size: 1.1em; color: #999">建站心得</a> <a href="/tags/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E/" style="font-size: 1.1em; color: #999">心中之城</a> <a href="/tags/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/" style="font-size: 1.1em; color: #999">信息技术</a> <a href="/tags/%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE/" style="font-size: 1.1em; color: #999">广告投放</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/09/">
+            <span class="card-archive-list-date">
+              九月 2026
+            </span>
+            <span class="card-archive-list-count">10</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">10</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2026-09-12T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">10.1k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-09-29T01:46:19.177Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By 钧泽</span></div><div class="footer_custom_text">心中之城</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.0"></script><script src="/js/main.js?v=5.7.0"></script><script src="/js/tw_cn.js?v=5.7.0"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'Brian-Hee/Brian-Hee.github.io',
+      'data-repo-id': 'R_kgDOUXwCog',
+      'data-category-id': 'DIC_kwDOUXwCos4DFjWl',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script src="/js/home-filter.js"></script><script src="/js/clicklove.js"></script><script src="/js/avatar-spin.js"></script><script src="/js/page-detect.js"></script><script src="/js/mouse-stars.js"></script><script src="/js/banner-rotate.js"></script><script id="canvas_nest" defer="defer" color="0,120,255" opacity="0.5" zIndex="-1" count="80" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.7.0"></script></div></div></body></html>
