@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://amzian.com/wallpaper/index.html</loc>
+    
+    <lastmod>2026-09-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://amzian.com/2026/09/28/%E9%A1%B9%E7%9B%AE%E6%9C%9B%E6%B0%94/</loc>
     
     <lastmod>2026-09-29</lastmod>
@@ -156,15 +165,6 @@
   
   <url>
     <loc>https://amzian.com/link/index.html</loc>
-    
-    <lastmod>2026-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://amzian.com/wallpaper/index.html</loc>
     
     <lastmod>2026-09-23</lastmod>
     
