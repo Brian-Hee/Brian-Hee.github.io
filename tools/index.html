@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://amzian.com/img/pinwheel.png">
 <meta property="article:published_time" content="2026-09-14T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-09-30T08:17:26.325Z">
+<meta property="article:modified_time" content="2026-09-30T08:29:43.580Z">
 <meta property="article:author" content="汇桐">
 <meta property="article:tag" content="心中之城, 个人博客, 生活记录, 知识教程, 成长思考">
 <meta name="twitter:card" content="summary">
@@ -372,198 +372,221 @@ btf.addGlobalFn('pjaxComplete', () => {
 
 </div>
 
-<h2 id="🔧-在线小工具"><a href="#🔧-在线小工具" class="headerlink" title="🔧 在线小工具"></a>🔧 在线小工具</h2><div class="tools-page">
-  <div class="tool-tabs">
-    <button class="tool-tab active" data-tool="exchange">💱 汇率换算</button>
-    <button class="tool-tab" data-tool="unit">📏 单位换算</button>
-    <button class="tool-tab" data-tool="text">✏️ 文本处理</button>
-  </div>
+<h2 id="💱-汇率换算"><a href="#💱-汇率换算" class="headerlink" title="💱 汇率换算"></a>💱 汇率换算</h2><div class="exchange-page">
+  <div class="exchange-container">
+    <div class="exchange-box">
+      <div class="currency-side">
+        <div class="currency-select">
+          <span class="flag">🇨🇳</span>
+          <select id="fromCurrency">
+            <option value="CNY">人民币 CNY</option>
+            <option value="USD">美元 USD</option>
+            <option value="EUR">欧元 EUR</option>
+            <option value="GBP">英镑 GBP</option>
+            <option value="JPY">日元 JPY</option>
+            <option value="HKD">港币 HKD</option>
+            <option value="KRW">韩元 KRW</option>
+            <option value="AUD">澳元 AUD</option>
+            <option value="CAD">加元 CAD</option>
+            <option value="CHF">瑞士法郎 CHF</option>
+            <option value="SGD">新加坡元 SGD</option>
+            <option value="THB">泰铢 THB</option>
+            <option value="VND">越南盾 VND</option>
+            <option value="RUB">俄罗斯卢布 RUB</option>
+            <option value="INR">印度卢比 INR</option>
+            <option value="BRL">巴西雷亚尔 BRL</option>
+          </select>
+        </div>
+        <input type="number" id="fromAmount" value="100" class="amount-input" />
+      </div>
 
-  <div class="tool-panel active" id="panel-exchange">
-    <div class="tool-card">
-      <h3>💱 汇率换算</h3>
-      <div class="exchange-row">
-        <label>金额</label>
-        <input type="number" id="exchangeAmount" value="100" />
-      </div>
-      <div class="exchange-row">
-        <label>从</label>
-        <select id="exchangeFrom">
-          <option value="CNY">人民币 (CNY)</option>
-          <option value="USD" selected>美元 (USD)</option>
-          <option value="EUR">欧元 (EUR)</option>
-          <option value="GBP">英镑 (GBP)</option>
-          <option value="JPY">日元 (JPY)</option>
-          <option value="HKD">港币 (HKD)</option>
-          <option value="KRW">韩元 (KRW)</option>
-        </select>
-      </div>
-      <div class="exchange-row">
-        <label>到</label>
-        <select id="exchangeTo">
-          <option value="CNY" selected>人民币 (CNY)</option>
-          <option value="USD">美元 (USD)</option>
-          <option value="EUR">欧元 (EUR)</option>
-          <option value="GBP">英镑 (GBP)</option>
-          <option value="JPY">日元 (JPY)</option>
-          <option value="HKD">港币 (HKD)</option>
-          <option value="KRW">韩元 (KRW)</option>
-        </select>
-      </div>
-      <button class="tool-btn" onclick="convertExchange()">换算</button>
-      <div class="exchange-result" id="exchangeResult">--</div>
-      <p class="tip">💡 汇率为近似参考值，实际以银行实时报价为准</p>
-    </div>
-  </div>
+<pre><code>  &lt;button class=&quot;swap-btn&quot; onclick=&quot;swapCurrencies()&quot;&gt;⇄&lt;/button&gt;
 
-  <div class="tool-panel" id="panel-unit">
-    <div class="tool-card">
-      <h3>📏 长度换算（产品尺寸用）</h3>
-      <div class="exchange-row">
-        <label>数值</label>
-        <input type="number" id="lengthInput" value="10" />
-      </div>
-      <div class="exchange-row">
-        <label>从</label>
-        <select id="lengthFrom">
-          <option value="cm" selected>厘米 (cm)</option>
-          <option value="inch">英寸 (inch)</option>
-          <option value="mm">毫米 (mm)</option>
-          <option value="m">米 (m)</option>
-        </select>
-      </div>
-      <div class="exchange-row">
-        <label>到</label>
-        <select id="lengthTo">
-          <option value="inch" selected>英寸 (inch)</option>
-          <option value="cm">厘米 (cm)</option>
-          <option value="mm">毫米 (mm)</option>
-          <option value="m">米 (m)</option>
-        </select>
-      </div>
-      <button class="tool-btn" onclick="convertLength()">换算</button>
-      <div class="exchange-result" id="lengthResult">--</div>
-    </div>
+  &lt;div class=&quot;currency-side&quot;&gt;
+    &lt;div class=&quot;currency-select&quot;&gt;
+      &lt;span class=&quot;flag&quot;&gt;💵&lt;/span&gt;
+      &lt;select id=&quot;toCurrency&quot;&gt;
+        &lt;option value=&quot;USD&quot; selected&gt;美元 USD&lt;/option&gt;
+        &lt;option value=&quot;CNY&quot;&gt;人民币 CNY&lt;/option&gt;
+        &lt;option value=&quot;EUR&quot;&gt;欧元 EUR&lt;/option&gt;
+        &lt;option value=&quot;GBP&quot;&gt;英镑 GBP&lt;/option&gt;
+        &lt;option value=&quot;JPY&quot;&gt;日元 JPY&lt;/option&gt;
+        &lt;option value=&quot;HKD&quot;&gt;港币 HKD&lt;/option&gt;
+        &lt;option value=&quot;KRW&quot;&gt;韩元 KRW&lt;/option&gt;
+        &lt;option value=&quot;AUD&quot;&gt;澳元 AUD&lt;/option&gt;
+        &lt;option value=&quot;CAD&quot;&gt;加元 CAD&lt;/option&gt;
+        &lt;option value=&quot;CHF&quot;&gt;瑞士法郎 CHF&lt;/option&gt;
+        &lt;option value=&quot;SGD&quot;&gt;新加坡元 SGD&lt;/option&gt;
+        &lt;option value=&quot;THB&quot;&gt;泰铢 THB&lt;/option&gt;
+        &lt;option value=&quot;VND&quot;&gt;越南盾 VND&lt;/option&gt;
+        &lt;option value=&quot;RUB&quot;&gt;俄罗斯卢布 RUB&lt;/option&gt;
+        &lt;option value=&quot;INR&quot;&gt;印度卢比 INR&lt;/option&gt;
+        &lt;option value=&quot;BRL&quot;&gt;巴西雷亚尔 BRL&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;amount-result&quot; id=&quot;toAmount&quot;&gt;--&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-<pre><code>&lt;div class=&quot;tool-card&quot;&gt;
-  &lt;h3&gt;⚖️ 重量换算（产品重量用）&lt;/h3&gt;
-  &lt;div class=&quot;exchange-row&quot;&gt;
-    &lt;label&gt;数值&lt;/label&gt;
-    &lt;input type=&quot;number&quot; id=&quot;weightInput&quot; value=&quot;1&quot; /&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;exchange-row&quot;&gt;
-    &lt;label&gt;从&lt;/label&gt;
-    &lt;select id=&quot;weightFrom&quot;&gt;
-      &lt;option value=&quot;kg&quot; selected&gt;千克 (kg)&lt;/option&gt;
-      &lt;option value=&quot;lb&quot;&gt;磅 (lb)&lt;/option&gt;
-      &lt;option value=&quot;g&quot;&gt;克 (g)&lt;/option&gt;
-      &lt;option value=&quot;oz&quot;&gt;盎司 (oz)&lt;/option&gt;
-    &lt;/select&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;exchange-row&quot;&gt;
-    &lt;label&gt;到&lt;/label&gt;
-    &lt;select id=&quot;weightTo&quot;&gt;
-      &lt;option value=&quot;lb&quot; selected&gt;磅 (lb)&lt;/option&gt;
-      &lt;option value=&quot;kg&quot;&gt;千克 (kg)&lt;/option&gt;
-      &lt;option value=&quot;g&quot;&gt;克 (g)&lt;/option&gt;
-      &lt;option value=&quot;oz&quot;&gt;盎司 (oz)&lt;/option&gt;
-    &lt;/select&gt;
-  &lt;/div&gt;
-  &lt;button class=&quot;tool-btn&quot; onclick=&quot;convertWeight()&quot;&gt;换算&lt;/button&gt;
-  &lt;div class=&quot;exchange-result&quot; id=&quot;weightResult&quot;&gt;--&lt;/div&gt;
+&lt;div class=&quot;rate-info&quot; id=&quot;rateInfo&quot;&gt;--&lt;/div&gt;
+
+&lt;div class=&quot;quick-amounts&quot;&gt;
+  &lt;span&gt;快捷金额：&lt;/span&gt;
+  &lt;button onclick=&quot;setAmount(100)&quot;&gt;100&lt;/button&gt;
+  &lt;button onclick=&quot;setAmount(1000)&quot;&gt;1000&lt;/button&gt;
+  &lt;button onclick=&quot;setAmount(10000)&quot;&gt;10000&lt;/button&gt;
 &lt;/div&gt;
 </code></pre>
-  </div>
-
-  <div class="tool-panel" id="panel-text">
-    <div class="tool-card">
-      <h3>✏️ 文本处理</h3>
-      <textarea id="textInput" placeholder="在这里粘贴你的文本..." rows="6"></textarea>
-      <div class="text-buttons">
-        <button class="tool-btn" onclick="removeSpaces()">去空格</button>
-        <button class="tool-btn" onclick="toUpper()">转大写</button>
-        <button class="tool-btn" onclick="toLower()">转小写</button>
-        <button class="tool-btn" onclick="removeDuplicates()">去重复行</button>
-        <button class="tool-btn" onclick="countText()">字数统计</button>
-      </div>
-      <div class="exchange-result" id="textResult">--</div>
-    </div>
   </div>
 </div>
 
 <style>
-.tools-page { margin: 30px 0; }
-.tool-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 25px; justify-content: center; }
-.tool-tab { padding: 10px 24px; border: 1px solid #e0e0e0; background: #fff; border-radius: 25px; cursor: pointer; font-size: 15px; transition: all 0.3s; }
-.tool-tab:hover { border-color: #49b1f5; color: #49b1f5; transform: translateY(-2px); }
-.tool-tab.active { background: linear-gradient(135deg, #49b1f5, #6c5ce7); color: #fff; border-color: transparent; box-shadow: 0 4px 15px rgba(73,177,245,0.4); }
-.tool-panel { display: none; }
-.tool-panel.active { display: block; }
-.tool-card { background: #fff; padding: 25px; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 20px; }
-.tool-card h3 { margin: 0 0 20px; font-size: 18px; color: #333; }
-.exchange-row { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
-.exchange-row label { width: 50px; color: #666; font-size: 14px; }
-.exchange-row input, .exchange-row select { flex: 1; padding: 10px 15px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 15px; }
-.exchange-row input:focus, .exchange-row select:focus { outline: none; border-color: #49b1f5; }
-.tool-btn { padding: 10px 30px; background: linear-gradient(135deg, #49b1f5, #6c5ce7); color: #fff; border: none; border-radius: 8px; cursor: pointer; font-size: 15px; margin: 10px 5px 10px 0; transition: opacity 0.2s; }
-.tool-btn:hover { opacity: 0.9; }
-.exchange-result { margin-top: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px; font-size: 18px; font-weight: bold; color: #49b1f5; }
-.tip { font-size: 12px; color: #999; margin-top: 10px; }
-textarea { width: 100%; padding: 12px; border: 1px solid #e0e0e0; border-radius: 8px; font-size: 14px; resize: vertical; }
-.text-buttons { margin: 15px 0; }
-[data-theme="dark"] .tool-card { background: #2d2d35; }
-[data-theme="dark"] .tool-card h3 { color: #eee; }
-[data-theme="dark"] .exchange-row label { color: #aaa; }
-[data-theme="dark"] .exchange-row input, [data-theme="dark"] .exchange-row select, [data-theme="dark"] textarea { background: #1a1a20; color: #eee; border-color: #444; }
-[data-theme="dark"] .exchange-result { background: #1a1a20; }
+.exchange-page { margin: 30px 0; }
+.exchange-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.exchange-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+.currency-side {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.currency-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+.currency-select .flag { font-size: 24px; }
+.currency-select select {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+}
+.amount-input {
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+.amount-input:focus { outline: none; border-color: #49b1f5; }
+.amount-result {
+  padding: 15px;
+  background: linear-gradient(135deg, #49b1f5, #6c5ce7);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+.swap-btn {
+  display: block;
+  margin: 15px auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #49b1f5;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.swap-btn:hover { transform: rotate(180deg); }
+.rate-info {
+  text-align: center;
+  margin: 20px 0;
+  color: #666;
+  font-size: 14px;
+}
+.quick-amounts {
+  text-align: center;
+  margin-top: 15px;
+}
+.quick-amounts span { color: #999; font-size: 14px; margin-right: 10px; }
+.quick-amounts button {
+  padding: 6px 15px;
+  margin: 0 5px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.quick-amounts button:hover { border-color: #49b1f5; color: #49b1f5; }
+
+[data-theme="dark"] .exchange-box { background: #2d2d35; }
+[data-theme="dark"] .currency-select { background: #1a1a20; }
+[data-theme="dark"] .currency-select select { color: #eee; }
+[data-theme="dark"] .amount-input { background: #1a1a20; color: #eee; border-color: #444; }
+[data-theme="dark"] .quick-amounts button { background: #1a1a20; color: #eee; border-color: #444; }
 </style>
 
 <script>
-const rates = { CNY: 1, USD: 7.1, EUR: 7.8, GBP: 9.2, JPY: 0.048, HKD: 0.91, KRW: 0.0052 };
-function convertExchange() {
-  const amount = parseFloat(document.getElementById('exchangeAmount').value);
-  const from = document.getElementById('exchangeFrom').value;
-  const to = document.getElementById('exchangeTo').value;
-  document.getElementById('exchangeResult').textContent = `${amount} ${from} = ${(amount * rates[from] / rates[to]).toFixed(2)} ${to}`;
+const rates = {
+  CNY: 1,
+  USD: 0.14,
+  EUR: 0.13,
+  GBP: 0.11,
+  JPY: 21.8,
+  HKD: 1.09,
+  KRW: 193,
+  AUD: 0.22,
+  CAD: 0.19,
+  CHF: 0.13,
+  SGD: 0.19,
+  THB: 4.85,
+  VND: 3550,
+  RUB: 12.8,
+  INR: 11.8,
+  BRL: 0.77
+};
+
+function convert() {
+  const from = document.getElementById('fromCurrency').value;
+  const to = document.getElementById('toCurrency').value;
+  const amount = parseFloat(document.getElementById('fromAmount').value) || 0;
+  const result = (amount / rates[from] * rates[to]).toFixed(2);
+  document.getElementById('toAmount').textContent = result;
+  document.getElementById('rateInfo').textContent = `1 ${from} = ${(rates[to] / rates[from]).toFixed(4)} ${to}`;
 }
-function convertLength() {
-  const val = parseFloat(document.getElementById('lengthInput').value);
-  const from = document.getElementById('lengthFrom').value;
-  const to = document.getElementById('lengthTo').value;
-  const cm = { cm: 1, mm: 0.1, inch: 2.54, m: 100 };
-  document.getElementById('lengthResult').textContent = `${val} ${from} = ${(val * cm[from] / cm[to]).toFixed(2)} ${to}`;
+
+function swapCurrencies() {
+  const from = document.getElementById('fromCurrency');
+  const to = document.getElementById('toCurrency');
+  const temp = from.value;
+  from.value = to.value;
+  to.value = temp;
+  convert();
 }
-function convertWeight() {
-  const val = parseFloat(document.getElementById('weightInput').value);
-  const from = document.getElementById('weightFrom').value;
-  const to = document.getElementById('weightTo').value;
-  const kg = { kg: 1, g: 0.001, lb: 0.4536, oz: 0.02835 };
-  document.getElementById('weightResult').textContent = `${val} ${from} = ${(val * kg[from] / kg[to]).toFixed(2)} ${to}`;
+
+function setAmount(val) {
+  document.getElementById('fromAmount').value = val;
+  convert();
 }
-function removeSpaces() { document.getElementById('textResult').textContent = document.getElementById('textInput').value.replace(/\s+/g, ''); }
-function toUpper() { document.getElementById('textResult').textContent = document.getElementById('textInput').value.toUpperCase(); }
-function toLower() { document.getElementById('textResult').textContent = document.getElementById('textInput').value.toLowerCase(); }
-function removeDuplicates() {
-  const lines = document.getElementById('textInput').value.split('\n').filter(l => l.trim());
-  document.getElementById('textResult').textContent = [...new Set(lines)].join('\n');
-}
-function countText() {
-  const text = document.getElementById('textInput').value;
-  document.getElementById('textResult').textContent = `字数：${text.length}，行数：${text.split('\n').length}`;
-}
-document.querySelectorAll('.tool-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.tool-tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.tool-panel').forEach(p => p.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById('panel-' + tab.dataset.tool).classList.add('active');
-  });
-});
+
+document.getElementById('fromAmount').addEventListener('input', convert);
+document.getElementById('fromCurrency').addEventListener('change', convert);
+document.getElementById('toCurrency').addEventListener('change', convert);
+convert();
 </script>
 </div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/pinwheel.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">汇桐</div><div class="author-info-description">记录生活感受，分享知识教程。一个普通人的成长与思考笔记。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">54</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Brian-Hee"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Brian-Hee" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:brian@example.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #3b5998;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss" style="color: #FF7242;"></i></a><a class="social-icon" href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter" style="color: #1da1f2;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到心中之城 🏠 这里记录生活，分享知识，也聊聊成长。慢慢逛，希望你能找到有用的东西。</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/09/30/%E7%9D%A1%E7%9C%A0%E6%8C%87%E5%8D%97/" title="睡得对，老得慢：一份把现代医学和子午流注揉在一起的睡眠指南"><img src="/img/cover-sleep.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="睡得对，老得慢：一份把现代医学和子午流注揉在一起的睡眠指南"/></a><div class="content"><a class="title" href="/2026/09/30/%E7%9D%A1%E7%9C%A0%E6%8C%87%E5%8D%97/" title="睡得对，老得慢：一份把现代医学和子午流注揉在一起的睡眠指南">睡得对，老得慢：一份把现代医学和子午流注揉在一起的睡眠指南</a><time datetime="2026-09-30T07:00:00.000Z" title="发表于 2026-09-30 15:00:00">2026-09-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/30/%E4%BA%BA%E5%88%86%E4%B8%A4%E7%A7%8D/" title="人分两种：来干事的，还是来修心的"><img src="/img/cover-dao.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人分两种：来干事的，还是来修心的"/></a><div class="content"><a class="title" href="/2026/09/30/%E4%BA%BA%E5%88%86%E4%B8%A4%E7%A7%8D/" title="人分两种：来干事的，还是来修心的">人分两种：来干事的，还是来修心的</a><time datetime="2026-09-30T06:30:00.000Z" title="发表于 2026-09-30 14:30:00">2026-09-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/28/%E8%B5%9A%E9%92%B1%E5%B0%B1%E6%98%AF%E6%8A%84/" title="赚钱这事儿，你别嫌脏，就是个&quot;抄&quot;字"><img src="/img/cover-copy.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="赚钱这事儿，你别嫌脏，就是个&quot;抄&quot;字"/></a><div class="content"><a class="title" href="/2026/09/28/%E8%B5%9A%E9%92%B1%E5%B0%B1%E6%98%AF%E6%8A%84/" title="赚钱这事儿，你别嫌脏，就是个&quot;抄&quot;字">赚钱这事儿，你别嫌脏，就是个&quot;抄&quot;字</a><time datetime="2026-09-28T02:00:00.000Z" title="发表于 2026-09-28 10:00:00">2026-09-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/28/%E8%B5%9A%E9%92%B1%E5%BA%95%E8%A3%A4/" title="赚钱这点事，扒到底就这么几条底裤"><img src="/img/cover-roadmap.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="赚钱这点事，扒到底就这么几条底裤"/></a><div class="content"><a class="title" href="/2026/09/28/%E8%B5%9A%E9%92%B1%E5%BA%95%E8%A3%A4/" title="赚钱这点事，扒到底就这么几条底裤">赚钱这点事，扒到底就这么几条底裤</a><time datetime="2026-09-28T02:00:00.000Z" title="发表于 2026-09-28 10:00:00">2026-09-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/27/%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B5%96%E5%B0%B1%E7%9C%8B%E8%BF%99%E4%B8%89%E4%BB%B6%E5%B0%8F%E4%BA%8B/" title="一个人值不值得信赖，就看这三件小事"><img src="/img/cover-trust.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一个人值不值得信赖，就看这三件小事"/></a><div class="content"><a class="title" href="/2026/09/27/%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B5%96%E5%B0%B1%E7%9C%8B%E8%BF%99%E4%B8%89%E4%BB%B6%E5%B0%8F%E4%BA%8B/" title="一个人值不值得信赖，就看这三件小事">一个人值不值得信赖，就看这三件小事</a><time datetime="2026-09-27T02:00:00.000Z" title="发表于 2026-09-27 10:00:00">2026-09-27</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div>
           <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"><span class="card-category-list-name">思考与认知</span><span class="card-category-list-count">10</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"><span class="card-category-list-name">技术分享</span><span class="card-category-list-count">12</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">生活随笔</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">随笔</span><span class="card-category-list-count">1</span></a></li>
-          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%89%AF%E4%B8%9A/" style="font-size: 1.3em; color: #99a1ac">副业</a> <a href="/tags/%E5%85%BB%E7%94%9F/" style="font-size: 1.1em; color: #999">养生</a> <a href="/tags/%E5%88%9B%E4%B8%9A/" style="font-size: 1.2em; color: #999da3">创业</a> <a href="/tags/%E5%AD%90%E5%8D%88%E6%B5%81%E6%B3%A8/" style="font-size: 1.1em; color: #999">子午流注</a> <a href="/tags/%E5%81%A5%E5%BA%B7/" style="font-size: 1.1em; color: #999">健康</a> <a href="/tags/%E6%B8%A0%E9%81%93/" style="font-size: 1.1em; color: #999">渠道</a> <a href="/tags/%E8%BF%90%E8%90%A5/" style="font-size: 1.1em; color: #999">运营</a> <a href="/tags/%E8%B5%9A%E9%92%B1/" style="font-size: 1.5em; color: #99a9bf">赚钱</a> <a href="/tags/%E5%A4%96%E8%B4%B8%E5%B7%A5%E5%85%B7/" style="font-size: 1.1em; color: #999">外贸工具</a> <a href="/tags/%E7%BE%8E%E5%8C%BA%E5%B0%8F%E5%BA%97/" style="font-size: 1.1em; color: #999">美区小店</a> <a href="/tags/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E/" style="font-size: 1.1em; color: #999">心中之城</a> <a href="/tags/%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE/" style="font-size: 1.1em; color: #999">广告投放</a> <a href="/tags/%E9%9D%A0%E8%B0%B1/" style="font-size: 1.1em; color: #999">靠谱</a> <a href="/tags/%E6%B5%81%E9%87%8F/" style="font-size: 1.2em; color: #999da3">流量</a> <a href="/tags/%E8%B7%A8%E5%A2%83/" style="font-size: 1.1em; color: #999">跨境</a> <a href="/tags/%E8%8E%B7%E5%AE%A2/" style="font-size: 1.1em; color: #999">获客</a> <a href="/tags/%E7%94%B5%E5%95%86/" style="font-size: 1.1em; color: #999">电商</a> <a href="/tags/%E5%A4%96%E8%B4%B8%E5%B0%BE%E5%8D%95/" style="font-size: 1.1em; color: #999">外贸尾单</a> <a href="/tags/SEO/" style="font-size: 1.2em; color: #999da3">SEO</a> <a href="/tags/TikTok/" style="font-size: 1.4em; color: #99a5b6">TikTok</a> <a href="/tags/%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86/" style="font-size: 1.1em; color: #999">资源合集</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 1.5em; color: #99a9bf">思考</a> <a href="/tags/%E7%A4%BE%E4%BA%A4/" style="font-size: 1.1em; color: #999">社交</a> <a href="/tags/%E5%AE%A2%E6%88%B7%E5%BC%80%E5%8F%91/" style="font-size: 1.3em; color: #99a1ac">客户开发</a> <a href="/tags/%E9%81%BF%E5%9D%91/" style="font-size: 1.2em; color: #999da3">避坑</a> <a href="/tags/OpenClaw/" style="font-size: 1.1em; color: #999">OpenClaw</a> <a href="/tags/%E7%8B%AC%E7%AB%8B%E7%AB%99/" style="font-size: 1.1em; color: #999">独立站</a> <a href="/tags/AI/" style="font-size: 1.2em; color: #999da3">AI</a> <a href="/tags/%E5%BC%80%E5%BA%97/" style="font-size: 1.1em; color: #999">开店</a> <a href="/tags/%E5%A4%96%E8%B4%B8%E8%8E%B7%E5%AE%A2/" style="font-size: 1.3em; color: #99a1ac">外贸获客</a> <a href="/tags/%E7%A4%BE%E5%AA%92%E8%90%A5%E9%94%80/" style="font-size: 1.1em; color: #999">社媒营销</a> <a href="/tags/Instagram/" style="font-size: 1.2em; color: #999da3">Instagram</a> <a href="/tags/%E4%BF%AE%E8%A1%8C/" style="font-size: 1.1em; color: #999">修行</a> <a href="/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/" style="font-size: 1.5em; color: #99a9bf">跨境电商</a> <a href="/tags/%E5%A4%96%E8%B4%B8/" style="font-size: 1.1em; color: #999">外贸</a> <a href="/tags/%E8%AE%A4%E7%9F%A5/" style="font-size: 1.4em; color: #99a5b6">认知</a> <a href="/tags/%E5%86%85%E5%AE%B9%E8%BF%90%E8%90%A5/" style="font-size: 1.1em; color: #999">内容运营</a> <a href="/tags/DeepSeek/" style="font-size: 1.1em; color: #999">DeepSeek</a> <a href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/" style="font-size: 1.1em; color: #999">方法论</a> <a href="/tags/%E5%BB%BA%E7%AB%99%E5%BF%83%E5%BE%97/" style="font-size: 1.1em; color: #999">建站心得</a></div></div><div class="card-widget card-archives">
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E7%A4%BE%E4%BA%A4/" style="font-size: 1.1em; color: #999">社交</a> <a href="/tags/%E7%8B%AC%E7%AB%8B%E7%AB%99/" style="font-size: 1.1em; color: #999">独立站</a> <a href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/" style="font-size: 1.1em; color: #999">方法论</a> <a href="/tags/%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86/" style="font-size: 1.1em; color: #999">资源合集</a> <a href="/tags/%E5%A4%96%E8%B4%B8/" style="font-size: 1.1em; color: #999">外贸</a> <a href="/tags/Ollama/" style="font-size: 1.1em; color: #999">Ollama</a> <a href="/tags/%E7%94%B5%E5%95%86/" style="font-size: 1.1em; color: #999">电商</a> <a href="/tags/%E5%89%AF%E4%B8%9A/" style="font-size: 1.3em; color: #99a1ac">副业</a> <a href="/tags/%E8%B7%A8%E5%A2%83/" style="font-size: 1.1em; color: #999">跨境</a> <a href="/tags/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E/" style="font-size: 1.1em; color: #999">心中之城</a> <a href="/tags/%E5%A4%96%E8%B4%B8%E5%B7%A5%E5%85%B7/" style="font-size: 1.1em; color: #999">外贸工具</a> <a href="/tags/%E8%AE%A4%E7%9F%A5/" style="font-size: 1.4em; color: #99a5b6">认知</a> <a href="/tags/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/" style="font-size: 1.1em; color: #999">信息技术</a> <a href="/tags/%E5%85%BB%E7%94%9F/" style="font-size: 1.1em; color: #999">养生</a> <a href="/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/" style="font-size: 1.5em; color: #99a9bf">跨境电商</a> <a href="/tags/%E7%BE%8E%E5%8C%BA%E5%B0%8F%E5%BA%97/" style="font-size: 1.1em; color: #999">美区小店</a> <a href="/tags/%E5%A4%96%E8%B4%B8%E5%B0%BE%E5%8D%95/" style="font-size: 1.1em; color: #999">外贸尾单</a> <a href="/tags/%E5%AD%90%E5%8D%88%E6%B5%81%E6%B3%A8/" style="font-size: 1.1em; color: #999">子午流注</a> <a href="/tags/%E6%B8%A0%E9%81%93/" style="font-size: 1.1em; color: #999">渠道</a> <a href="/tags/%E5%81%A5%E5%BA%B7/" style="font-size: 1.1em; color: #999">健康</a> <a href="/tags/%E6%88%90%E9%95%BF/" style="font-size: 1.1em; color: #999">成长</a> <a href="/tags/%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE/" style="font-size: 1.1em; color: #999">广告投放</a> <a href="/tags/%E5%A4%96%E8%B4%B8%E8%8E%B7%E5%AE%A2/" style="font-size: 1.3em; color: #99a1ac">外贸获客</a> <a href="/tags/%E8%87%AA%E5%AA%92%E4%BD%93/" style="font-size: 1.1em; color: #999">自媒体</a> <a href="/tags/%E7%9D%A1%E7%9C%A0/" style="font-size: 1.1em; color: #999">睡眠</a> <a href="/tags/%E7%BD%91%E7%AB%99%E8%BF%90%E8%90%A5/" style="font-size: 1.1em; color: #999">网站运营</a> <a href="/tags/OpenClaw/" style="font-size: 1.1em; color: #999">OpenClaw</a> <a href="/tags/SEO/" style="font-size: 1.2em; color: #999da3">SEO</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 1.5em; color: #99a9bf">思考</a> <a href="/tags/Facebook/" style="font-size: 1.1em; color: #999">Facebook</a> <a href="/tags/%E6%B5%B7%E5%A4%96%E8%90%A5%E9%94%80/" style="font-size: 1.1em; color: #999">海外营销</a> <a href="/tags/%E8%8E%B7%E5%AE%A2/" style="font-size: 1.1em; color: #999">获客</a> <a href="/tags/Instagram/" style="font-size: 1.2em; color: #999da3">Instagram</a> <a href="/tags/%E6%B5%81%E9%87%8F/" style="font-size: 1.2em; color: #999da3">流量</a> <a href="/tags/%E5%86%85%E5%AE%B9%E8%BF%90%E8%90%A5/" style="font-size: 1.1em; color: #999">内容运营</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.2em; color: #999da3">教程</a> <a href="/tags/WhatsApp/" style="font-size: 1.2em; color: #999da3">WhatsApp</a> <a href="/tags/%E4%BA%BA%E7%94%9F/" style="font-size: 1.1em; color: #999">人生</a> <a href="/tags/%E5%BC%95%E6%B5%81/" style="font-size: 1.1em; color: #999">引流</a> <a href="/tags/%E8%BF%90%E8%90%A5/" style="font-size: 1.1em; color: #999">运营</a></div></div><div class="card-widget card-archives">
     <div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div>
   
     <ul class="card-archive-list">
@@ -578,7 +601,7 @@ document.querySelectorAll('.tool-tab').forEach(tab => {
         </li>
       
     </ul>
-  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">24</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2026-09-13T00:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">20.9k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-09-30T08:17:47.650Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By 汇桐</span></div><div class="footer_custom_text">心中之城</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.0"></script><script src="/js/main.js?v=5.7.0"></script><script src="/js/tw_cn.js?v=5.7.0"></script><div class="js-pjax"><script>(() => {
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">24</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2026-09-12T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">20.9k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-09-30T08:29:53.916Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By 汇桐</span></div><div class="footer_custom_text">心中之城</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.0"></script><script src="/js/main.js?v=5.7.0"></script><script src="/js/tw_cn.js?v=5.7.0"></script><div class="js-pjax"><script>(() => {
   const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
   const option = null
 
