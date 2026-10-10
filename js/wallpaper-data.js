@@ -259,5 +259,26 @@ window.WALLPAPERS = [
     colors: "暖/白",
     url: "/img/gallery/white-cat-girl-sofa.jpg",
     date: "2026-09-23"
+  },
+  {
+    title: "晨光少年",
+    description: "晨光中的少年，厨房窗边慵懒时光",
+    category: "人物",
+    resolution: "4K",
+    colors: "暖/光",
+    url: "/img/gallery/wallpaper-new-02.jpg",
+    date: "2026-09-29"
+  },
+  {
+    title: "红色信仰",
+    description: "红色主题壁纸，庄重热烈",
+    category: "插画",
+    resolution: "4K",
+    colors: "红",
+    url: "/img/gallery/wallpaper-new-04.jpg",
+    date: "2026-09-29"
   }
 ];
+
+
+
