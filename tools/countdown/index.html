@@ -150,16 +150,6 @@ document.getElementById('app').innerHTML = `
         <div class="card-msg" id="work-msg">再坚持一下</div>
         <div class="card-setting"><label>下班时间</label><input type="time" id="work-time" value="18:00"></div>
       </div>
-      <div class="card" id="card-weekend">
-        <div class="card-icon">🎉</div>
-        <div class="card-title">周末倒计时</div>
-        <div class="card-time">
-          <div class="time-block"><div class="time-num" id="week-d">0</div><div class="time-label">天</div></div>
-          <div class="time-block"><div class="time-num" id="week-h">00</div><div class="time-label">小时</div></div>
-          <div class="time-block"><div class="time-num" id="week-m">00</div><div class="time-label">分</div></div>
-        </div>
-        <div class="card-msg" id="week-msg">马上就周末了</div>
-      </div>
     </div>
     <div class="section-title">🎊 节日倒计时（点卡片看详情）</div>
     <div class="detail-card" id="detail">
@@ -203,30 +193,6 @@ function tickWork() {
   const msg = document.getElementById('work-msg');
   if (diff < 0) { msg.textContent = '下班啦！快走吧 🎉'; msg.classList.add('celebrate'); }
   else { msg.textContent = '再坚持一下'; msg.classList.remove('celebrate'); }
-}
-
-function tickWeekend() {
-  const now = new Date();
-  const day = now.getDay();
-  const off = new Date(now);
-  off.setHours(18, 0, 0, 0);
-  if (day === 5) {
-    if (now < off) {}
-    else off.setDate(off.getDate() + 2);
-  } else if (day === 6 || day === 0) {
-    document.getElementById('week-d').textContent = '0';
-    document.getElementById('week-h').textContent = '00';
-    document.getElementById('week-m').textContent = '00';
-    document.getElementById('week-msg').textContent = '今天就是周末！🎉';
-    return;
-  } else {
-    off.setDate(off.getDate() + (5 - day));
-  }
-  const diff = off - now;
-  document.getElementById('week-d').textContent = Math.floor(diff/86400000);
-  document.getElementById('week-h').textContent = pad(Math.floor((diff%86400000)/3600000));
-  document.getElementById('week-m').textContent = pad(Math.floor((diff%3600000)/60000));
-  document.getElementById('week-msg').textContent = '马上就周末了';
 }
 
 const list = document.getElementById('festival-list');
@@ -277,7 +243,6 @@ function addCustom() {
 
 function tickAll() {
   tickWork();
-  tickWeekend();
   updateFestivalDays();
   tickDetail();
 }
