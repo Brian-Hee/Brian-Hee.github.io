@@ -2,155 +2,321 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #fff;
-  overflow: hidden;
 }
 .container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.header {
   text-align: center;
-}
-.title {
-  font-size: 24px;
-  opacity: 0.7;
-  margin-bottom: 30px;
-  letter-spacing: 4px;
-}
-.time-input {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 18px;
-  margin-bottom: 40px;
-  outline: none;
-}
-.time-input::-webkit-calendar-picker-indicator {
-  filter: invert(1);
-  cursor: pointer;
-}
-.countdown {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
   margin-bottom: 40px;
 }
-.time-block {
+.header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.header p {
+  opacity: 0.6;
+  font-size: 14px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.card {
   background: rgba(255,255,255,0.08);
   border-radius: 16px;
-  padding: 20px 30px;
-  min-width: 120px;
+  padding: 24px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-2px);
+}
+.card-icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.card-time {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.time-block {
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
 }
 .time-num {
-  font-size: 64px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1;
   font-variant-numeric: tabular-nums;
 }
 .time-label {
-  font-size: 14px;
+  font-size: 11px;
   opacity: 0.6;
-  margin-top: 8px;
-  letter-spacing: 2px;
+  margin-top: 6px;
 }
-.message {
-  font-size: 20px;
-  opacity: 0.8;
-  min-height: 30px;
+.card-msg {
+  font-size: 13px;
+  opacity: 0.7;
+}
+.card-setting {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.card-setting label {
+  font-size: 12px;
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 6px;
+}
+.card-setting input {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+.card-setting input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+.add-btn {
+  width: 100%;
+  padding: 16px;
+  background: rgba(255,255,255,0.05);
+  border: 2px dashed rgba(255,255,255,0.2);
+  border-radius: 16px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+.add-btn:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.3);
 }
 .celebrate {
-  animation: pulse 1s ease infinite;
   color: #4ecca3;
+  animation: pulse 1s ease infinite;
 }
 @keyframes pulse {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.05); }
 }
-@media (max-width: 768px) {
-  .countdown { gap: 12px; }
-  .time-block { padding: 15px; min-width: 90px; }
-  .time-num { font-size: 40px; }
+@media (max-width: 600px) {
+  .time-num { font-size: 22px; }
+  .card { padding: 16px; }
 }
 </style>
 
 <div class="container">
-  <div class="title">⏰ 下班倒计时</div>
-  <input type="time" id="offTime" class="time-input" value="18:00">
-  <div class="countdown">
-    <div class="time-block">
-      <div class="time-num" id="hours">00</div>
-      <div class="time-label">小时</div>
-    </div>
-    <div class="time-block">
-      <div class="time-num" id="minutes">00</div>
-      <div class="time-label">分钟</div>
-    </div>
-    <div class="time-block">
-      <div class="time-num" id="seconds">00</div>
-      <div class="time-label">秒</div>
-    </div>
+  <div class="header">
+    <h1>⏰ 倒计时</h1>
+    <p>每一刻都值得期待</p>
   </div>
-  <div class="message" id="message">再坚持一下，就下班了 💪</div>
+  <div class="grid" id="grid">
+    <div class="card" id="card-work">
+      <div class="card-icon">💼</div>
+      <div class="card-title">下班倒计时</div>
+      <div class="card-time">
+        <div class="time-block"><div class="time-num" id="work-h">00</div><div class="time-label">小时</div></div>
+        <div class="time-block"><div class="time-num" id="work-m">00</div><div class="time-label">分钟</div></div>
+        <div class="time-block"><div class="time-num" id="work-s">00</div><div class="time-label">秒</div></div>
+      </div>
+      <div class="card-msg" id="work-msg">再坚持一下</div>
+      <div class="card-setting">
+        <label>下班时间</label>
+        <input type="time" id="work-time" value="18:00">
+      </div>
+    </div>
+
+<pre><code>&lt;div class=&quot;card&quot; id=&quot;card-weekend&quot;&gt;
+  &lt;div class=&quot;card-icon&quot;&gt;🎉&lt;/div&gt;
+  &lt;div class=&quot;card-title&quot;&gt;周末倒计时&lt;/div&gt;
+  &lt;div class=&quot;card-time&quot;&gt;
+    &lt;div class=&quot;time-block&quot;&gt;&lt;div class=&quot;time-num&quot; id=&quot;week-d&quot;&gt;0&lt;/div&gt;&lt;div class=&quot;time-label&quot;&gt;天&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;time-block&quot;&gt;&lt;div class=&quot;time-num&quot; id=&quot;week-h&quot;&gt;00&lt;/div&gt;&lt;div class=&quot;time-label&quot;&gt;小时&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;time-block&quot;&gt;&lt;div class=&quot;time-num&quot; id=&quot;week-m&quot;&gt;00&lt;/div&gt;&lt;div class=&quot;time-label&quot;&gt;分&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card-msg&quot; id=&quot;week-msg&quot;&gt;马上就周末了&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+  <button class="add-btn" onclick="addCustom()">+ 添加自定义倒计时</button>
 </div>
 
 <script>
-const offTimeInput = document.getElementById('offTime');
-const hoursEl = document.getElementById('hours');
-const minutesEl = document.getElementById('minutes');
-const secondsEl = document.getElementById('seconds');
-const messageEl = document.getElementById('message');
-
-// 读取保存的时间
-const saved = localStorage.getItem('offTime');
-if (saved) offTimeInput.value = saved;
-
-offTimeInput.addEventListener('change', () => {
-  localStorage.setItem('offTime', offTimeInput.value);
-});
-
 function pad(n) { return String(n).padStart(2, '0'); }
 
-function tick() {
+// 节日列表
+const festivals = [
+  { name: '元旦', icon: '🎊', month: 0, day: 1 },
+  { name: '春节', icon: '🧨', date: '2027-02-06' },
+  { name: '元宵节', icon: '🏮', date: '2027-02-20' },
+  { name: '清明节', icon: '🌿', date: '2027-04-05' },
+  { name: '劳动节', icon: '💪', month: 4, day: 1 },
+  { name: '端午节', icon: '🐉', date: '2027-06-09' },
+  { name: '中秋节', icon: '🌕', date: '2027-09-15' },
+  { name: '国庆节', icon: '🇨🇳', month: 9, day: 1 },
+  { name: '圣诞节', icon: '🎄', month: 11, day: 25 },
+];
+
+// 下班倒计时
+const workTime = document.getElementById('work-time');
+const savedWork = localStorage.getItem('workTime');
+if (savedWork) workTime.value = savedWork;
+workTime.addEventListener('change', () => localStorage.setItem('workTime', workTime.value));
+
+function tickWork() {
   const now = new Date();
-  const [h, m] = offTimeInput.value.split(':').map(Number);
+  const [h, m] = workTime.value.split(':').map(Number);
   const off = new Date(now);
   off.setHours(h, m, 0, 0);
-  
-  // 如果下班时间已经过了，算明天
   if (off < now) off.setDate(off.getDate() + 1);
-  
   const diff = off - now;
-  const hrs = Math.floor(diff / 3600000);
-  const mins = Math.floor((diff % 3600000) / 60000);
-  const secs = Math.floor((diff % 60000) / 1000);
-  
-  hoursEl.textContent = pad(hrs);
-  minutesEl.textContent = pad(mins);
-  secondsEl.textContent = pad(secs);
-  
-  if (diff < 0) {
-    messageEl.textContent = '🎉 下班啦！快走吧！';
-    messageEl.classList.add('celebrate');
-  } else if (hrs === 0 && mins < 30) {
-    messageEl.textContent = '快了快了，再熬一会儿 🔥';
-  } else if (hrs === 0 && mins < 60) {
-    messageEl.textContent = '已经下午了，胜利在望 ⏳';
-  } else {
-    messageEl.textContent = '再坚持一下，就下班了 💪';
-    messageEl.classList.remove('celebrate');
-  }
+  document.getElementById('work-h').textContent = pad(Math.floor(diff/3600000));
+  document.getElementById('work-m').textContent = pad(Math.floor((diff%3600000)/60000));
+  document.getElementById('work-s').textContent = pad(Math.floor((diff%60000)/1000));
+  const msg = document.getElementById('work-msg');
+  if (diff < 0) { msg.textContent = '下班啦！快走吧 🎉'; msg.classList.add('celebrate'); }
+  else { msg.textContent = '再坚持一下'; msg.classList.remove('celebrate'); }
 }
 
-tick();
-setInterval(tick, 1000);
+// 周末倒计时
+function tickWeekend() {
+  const now = new Date();
+  const day = now.getDay();
+  const off = new Date(now);
+  off.setHours(18, 0, 0, 0);
+  if (day === 5) {
+    if (now < off) {}
+    else off.setDate(off.getDate() + 2);
+  } else if (day === 6 || day === 0) {
+    document.getElementById('week-d').textContent = '0';
+    document.getElementById('week-h').textContent = '00';
+    document.getElementById('week-m').textContent = '00';
+    document.getElementById('week-msg').textContent = '今天就是周末！🎉';
+    return;
+  } else {
+    off.setDate(off.getDate() + (5 - day));
+  }
+  const diff = off - now;
+  document.getElementById('week-d').textContent = Math.floor(diff/86400000);
+  document.getElementById('week-h').textContent = pad(Math.floor((diff%86400000)/3600000));
+  document.getElementById('week-m').textContent = pad(Math.floor((diff%3600000)/60000));
+  document.getElementById('week-msg').textContent = '马上就周末了';
+}
+
+// 生成节日卡片
+const grid = document.getElementById('grid');
+festivals.forEach(f => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    <div class="card-icon">${f.icon}</div>
+    <div class="card-title">${f.name}</div>
+    <div class="card-time">
+      <div class="time-block"><div class="time-num" data-d>0</div><div class="time-label">天</div></div>
+      <div class="time-block"><div class="time-num" data-h>00</div><div class="time-label">时</div></div>
+      <div class="time-block"><div class="time-num" data-m>00</div><div class="time-label">分</div></div>
+    </div>
+    <div class="card-msg">倒计时</div>
+  `;
+  grid.appendChild(card);
+
+  function getTarget() {
+    if (f.date) return new Date(f.date);
+    const now = new Date();
+    let t = new Date(now.getFullYear(), f.month, f.day);
+    if (t < now) t = new Date(now.getFullYear()+1, f.month, f.day);
+    return t;
+  }
+
+  function tick() {
+    const now = new Date();
+    const target = getTarget();
+    const diff = target - now;
+    if (diff < 0) {
+      card.querySelector('[data-d]').textContent = '0';
+      card.querySelector('[data-h]').textContent = '00';
+      card.querySelector('[data-m]').textContent = '00';
+      card.querySelector('.card-msg').textContent = '🎉 就是今天！';
+      return;
+    }
+    card.querySelector('[data-d]').textContent = Math.floor(diff/86400000);
+    card.querySelector('[data-h]').textContent = pad(Math.floor((diff%86400000)/3600000));
+    card.querySelector('[data-m]').textContent = pad(Math.floor((diff%3600000)/60000));
+    card.querySelector('.card-msg').textContent = '倒计时';
+  }
+  tick();
+  setInterval(tick, 60000);
+});
+
+// 自定义倒计时
+function addCustom() {
+  const title = prompt('倒计时名称：');
+  if (!title) return;
+  const date = prompt('日期（YYYY-MM-DD）：');
+  if (!date) return;
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    <div class="card-icon">📅</div>
+    <div class="card-title">${title}</div>
+    <div class="card-time">
+      <div class="time-block"><div class="time-num" data-d>0</div><div class="time-label">天</div></div>
+      <div class="time-block"><div class="time-num" data-h>00</div><div class="time-label">时</div></div>
+      <div class="time-block"><div class="time-num" data-m>00</div><div class="time-label">分</div></div>
+    </div>
+    <div class="card-msg">${date}</div>
+  `;
+  grid.appendChild(card);
+  const target = new Date(date);
+  function tick() {
+    const now = new Date();
+    const diff = target - now;
+    if (diff < 0) {
+      card.querySelector('[data-d]').textContent = '0';
+      card.querySelector('[data-h]').textContent = '00';
+      card.querySelector('[data-m]').textContent = '00';
+      card.querySelector('.card-msg').textContent = '🎉 到了！';
+      return;
+    }
+    card.querySelector('[data-d]').textContent = Math.floor(diff/86400000);
+    card.querySelector('[data-h]').textContent = pad(Math.floor((diff%86400000)/3600000));
+    card.querySelector('[data-m]').textContent = pad(Math.floor((diff%3600000)/60000));
+  }
+  tick();
+  setInterval(tick, 60000);
+}
+
+// 总tick
+function tickAll() {
+  tickWork();
+  tickWeekend();
+}
+tickAll();
+setInterval(tickAll, 1000);
 </script>
