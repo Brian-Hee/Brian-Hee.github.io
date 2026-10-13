@@ -121,6 +121,8 @@ html, body {
 
 <div id="app"></div>
 
+<script src="/js/mouse-stars.js"></script>
+
 <script>
 function pad(n) { return String(n).padStart(2, '0'); }
 
@@ -149,7 +151,7 @@ document.getElementById('app').innerHTML = `
           <div class="time-block"><div class="time-num" id="work-s">00</div><div class="time-label">秒</div></div>
         </div>
         <div class="card-msg" id="work-msg">再坚持一下</div>
-        <div class="card-setting"><label>下班时间</label><input type="time" id="work-time" value="18:00"></div>
+        <div class="card-setting"><label>下班时间</label><input type="time" id="work-time" value="17:30"></div>
       </div>
     </div>
     <div class="section-title">🎊 节日倒计时（点卡片看详情）</div>
@@ -204,12 +206,18 @@ festivals.forEach((f, i) => {
   item.className = 'festival-item';
   item.innerHTML = `<div class="festival-icon">${f.icon}</div><div class="festival-name">${f.name}</div><div class="festival-days" data-days>计算中...</div>`;
   item.onclick = () => {
-    document.querySelectorAll('.festival-item').forEach(x => x.classList.remove('active'));
-    item.classList.add('active');
-    currentFestival = f;
-    document.getElementById('detail-icon').textContent = f.icon;
-    document.getElementById('detail-name').textContent = f.name;
-    document.getElementById('detail').classList.add('show');
+    if (item.classList.contains('active')) {
+      item.classList.remove('active');
+      currentFestival = null;
+      document.getElementById('detail').classList.remove('show');
+    } else {
+      document.querySelectorAll('.festival-item').forEach(x => x.classList.remove('active'));
+      item.classList.add('active');
+      currentFestival = f;
+      document.getElementById('detail-icon').textContent = f.icon;
+      document.getElementById('detail-name').textContent = f.name;
+      document.getElementById('detail').classList.add('show');
+    }
   };
   list.appendChild(item);
   f.el = item;
