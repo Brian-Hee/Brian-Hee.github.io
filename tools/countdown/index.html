@@ -12,18 +12,9 @@ html, body {
   margin: 0 auto;
   padding: 40px 20px;
 }
-.header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.header h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-.header p {
-  opacity: 0.6;
-  font-size: 14px;
-}
+.header { text-align: center; margin-bottom: 40px; }
+.header h1 { font-size: 32px; margin-bottom: 10px; }
+.header p { opacity: 0.6; font-size: 14px; }
 .main-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -75,12 +66,7 @@ html, body {
   filter: invert(1);
   cursor: pointer;
 }
-.section-title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 16px;
-  opacity: 0.9;
-}
+.section-title { font-size: 20px; font-weight: 600; margin-bottom: 16px; opacity: 0.9; }
 .festival-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -95,14 +81,8 @@ html, body {
   cursor: pointer;
   transition: all 0.2s;
 }
-.festival-item:hover {
-  background: rgba(255,255,255,0.12);
-  transform: translateY(-2px);
-}
-.festival-item.active {
-  background: rgba(78, 204, 163, 0.15);
-  border-color: #4ecca3;
-}
+.festival-item:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
+.festival-item.active { background: rgba(78, 204, 163, 0.15); border-color: #4ecca3; }
 .festival-icon { font-size: 28px; margin-bottom: 8px; }
 .festival-name { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
 .festival-days { font-size: 12px; opacity: 0.6; }
@@ -128,15 +108,9 @@ html, body {
   transition: all 0.2s;
   margin-top: 20px;
 }
-.add-btn:hover {
-  background: rgba(255,255,255,0.1);
-  border-color: rgba(255,255,255,0.3);
-}
+.add-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); }
 .celebrate { color: #4ecca3; animation: pulse 1s ease infinite; }
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
 @media (max-width: 600px) {
   .time-num { font-size: 24px; }
   .detail-card .time-num { font-size: 36px; }
@@ -144,27 +118,7 @@ html, body {
 }
 </style>
 
-
-<div class="container">
-  <div class="header">
-    <h1>⏰ 倒计时</h1>
-    <p>每一刻都值得期待</p>
-  </div>
-
-  <div class="main-grid">
-    <div class="card" id="card-work"><div class="card-icon">💼</div><div class="card-title">下班倒计时</div><div class="card-time"><div class="time-block"><div class="time-num" id="work-h">00</div><div class="time-label">小时</div></div><div class="time-block"><div class="time-num" id="work-m">00</div><div class="time-label">分钟</div></div><div class="time-block"><div class="time-num" id="work-s">00</div><div class="time-label">秒</div></div></div><div class="card-msg" id="work-msg">再坚持一下</div><div class="card-setting"><label>下班时间</label><input type="time" id="work-time" value="18:00"></div></div>
-
-    <div class="card" id="card-weekend"><div class="card-icon">🎉</div><div class="card-title">周末倒计时</div><div class="card-time"><div class="time-block"><div class="time-num" id="week-d">0</div><div class="time-label">天</div></div><div class="time-block"><div class="time-num" id="week-h">00</div><div class="time-label">小时</div></div><div class="time-block"><div class="time-num" id="week-m">00</div><div class="time-label">分</div></div></div><div class="card-msg" id="week-msg">马上就周末了</div></div>
-  </div>
-
-  <div class="section-title">🎊 节日倒计时（点卡片看详情）</div>
-  <div class="detail-card" id="detail"><div class="card-icon" id="detail-icon">🎊</div><div class="card-title" id="detail-name">节日名称</div><div class="card-time"><div class="time-block"><div class="time-num" id="detail-d">0</div><div class="time-label">天</div></div><div class="time-block"><div class="time-num" id="detail-h">00</div><div class="time-label">时</div></div><div class="time-block"><div class="time-num" id="detail-m">00</div><div class="time-label">分</div></div><div class="time-block"><div class="time-num" id="detail-s">00</div><div class="time-label">秒</div></div></div></div>
-  <div class="festival-list" id="festival-list"></div>
-
-  <button class="add-btn" onclick="addCustom()">+ 添加自定义倒计时</button>
-</div>
-
-
+<div id="app"></div>
 
 <script>
 function pad(n) { return String(n).padStart(2, '0'); }
@@ -181,6 +135,48 @@ const festivals = [
   { name: '圣诞节', icon: '🎄', month: 11, day: 25 },
 ];
 
+document.getElementById('app').innerHTML = `
+  <div class="container">
+    <div class="header"><h1>⏰ 倒计时</h1><p>每一刻都值得期待</p></div>
+    <div class="main-grid">
+      <div class="card" id="card-work">
+        <div class="card-icon">💼</div>
+        <div class="card-title">下班倒计时</div>
+        <div class="card-time">
+          <div class="time-block"><div class="time-num" id="work-h">00</div><div class="time-label">小时</div></div>
+          <div class="time-block"><div class="time-num" id="work-m">00</div><div class="time-label">分钟</div></div>
+          <div class="time-block"><div class="time-num" id="work-s">00</div><div class="time-label">秒</div></div>
+        </div>
+        <div class="card-msg" id="work-msg">再坚持一下</div>
+        <div class="card-setting"><label>下班时间</label><input type="time" id="work-time" value="18:00"></div>
+      </div>
+      <div class="card" id="card-weekend">
+        <div class="card-icon">🎉</div>
+        <div class="card-title">周末倒计时</div>
+        <div class="card-time">
+          <div class="time-block"><div class="time-num" id="week-d">0</div><div class="time-label">天</div></div>
+          <div class="time-block"><div class="time-num" id="week-h">00</div><div class="time-label">小时</div></div>
+          <div class="time-block"><div class="time-num" id="week-m">00</div><div class="time-label">分</div></div>
+        </div>
+        <div class="card-msg" id="week-msg">马上就周末了</div>
+      </div>
+    </div>
+    <div class="section-title">🎊 节日倒计时（点卡片看详情）</div>
+    <div class="detail-card" id="detail">
+      <div class="card-icon" id="detail-icon">🎊</div>
+      <div class="card-title" id="detail-name">节日名称</div>
+      <div class="card-time">
+        <div class="time-block"><div class="time-num" id="detail-d">0</div><div class="time-label">天</div></div>
+        <div class="time-block"><div class="time-num" id="detail-h">00</div><div class="time-label">时</div></div>
+        <div class="time-block"><div class="time-num" id="detail-m">00</div><div class="time-label">分</div></div>
+        <div class="time-block"><div class="time-num" id="detail-s">00</div><div class="time-label">秒</div></div>
+      </div>
+    </div>
+    <div class="festival-list" id="festival-list"></div>
+    <button class="add-btn" onclick="addCustom()">+ 添加自定义倒计时</button>
+  </div>
+`;
+
 function getTarget(f) {
   if (f.date) return new Date(f.date);
   const now = new Date();
@@ -189,7 +185,6 @@ function getTarget(f) {
   return t;
 }
 
-// 下班倒计时
 const workTime = document.getElementById('work-time');
 const savedWork = localStorage.getItem('workTime');
 if (savedWork) workTime.value = savedWork;
@@ -210,7 +205,6 @@ function tickWork() {
   else { msg.textContent = '再坚持一下'; msg.classList.remove('celebrate'); }
 }
 
-// 周末倒计时
 function tickWeekend() {
   const now = new Date();
   const day = now.getDay();
@@ -235,19 +229,21 @@ function tickWeekend() {
   document.getElementById('week-msg').textContent = '马上就周末了';
 }
 
-// 生成节日列表
 const list = document.getElementById('festival-list');
 let currentFestival = null;
 
 festivals.forEach((f, i) => {
   const item = document.createElement('div');
   item.className = 'festival-item';
-  item.innerHTML = `
-    <div class="festival-icon">${f.icon}</div>
-    <div class="festival-name">${f.name}</div>
-    <div class="festival-days" data-days>计算中...</div>
-  `;
-  item.onclick = () => selectFestival(i, item);
+  item.innerHTML = `<div class="festival-icon">${f.icon}</div><div class="festival-name">${f.name}</div><div class="festival-days" data-days>计算中...</div>`;
+  item.onclick = () => {
+    document.querySelectorAll('.festival-item').forEach(x => x.classList.remove('active'));
+    item.classList.add('active');
+    currentFestival = f;
+    document.getElementById('detail-icon').textContent = f.icon;
+    document.getElementById('detail-name').textContent = f.name;
+    document.getElementById('detail').classList.add('show');
+  };
   list.appendChild(item);
   f.el = item;
 });
@@ -261,38 +257,22 @@ function updateFestivalDays() {
   });
 }
 
-function selectFestival(i, el) {
-  document.querySelectorAll('.festival-item').forEach(x => x.classList.remove('active'));
-  el.classList.add('active');
-  currentFestival = festivals[i];
-  document.getElementById('detail-icon').textContent = currentFestival.icon;
-  document.getElementById('detail-name').textContent = currentFestival.name;
-  document.getElementById('detail').classList.add('show');
-}
-
 function tickDetail() {
   if (!currentFestival) return;
   const now = new Date();
-  const diff = getTarget(currentFestival) - now;
-  document.getElementById('detail-d').textContent = Math.max(0, Math.floor(diff/86400000));
-  document.getElementById('detail-h').textContent = pad(Math.floor((Math.max(0,diff)%86400000)/3600000));
-  document.getElementById('detail-m').textContent = pad(Math.floor((Math.max(0,diff)%3600000)/60000));
-  document.getElementById('detail-s').textContent = pad(Math.floor((Math.max(0,diff)%60000)/1000));
+  const diff = Math.max(0, getTarget(currentFestival) - now);
+  document.getElementById('detail-d').textContent = Math.floor(diff/86400000);
+  document.getElementById('detail-h').textContent = pad(Math.floor((diff%86400000)/3600000));
+  document.getElementById('detail-m').textContent = pad(Math.floor((diff%3600000)/60000));
+  document.getElementById('detail-s').textContent = pad(Math.floor((diff%60000)/1000));
 }
 
-// 自定义
 function addCustom() {
   const title = prompt('倒计时名称：');
   if (!title) return;
   const date = prompt('日期（YYYY-MM-DD）：');
   if (!date) return;
-  list.insertAdjacentHTML('beforeend', `
-    <div class="festival-item">
-      <div class="festival-icon">📅</div>
-      <div class="festival-name">${title}</div>
-      <div class="festival-days">${date}</div>
-    </div>
-  `);
+  list.insertAdjacentHTML('beforeend', `<div class="festival-item"><div class="festival-icon">📅</div><div class="festival-name">${title}</div><div class="festival-days">${date}</div></div>`);
 }
 
 function tickAll() {
@@ -304,4 +284,3 @@ function tickAll() {
 tickAll();
 setInterval(tickAll, 1000);
 </script>
-
