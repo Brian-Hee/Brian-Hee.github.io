@@ -144,6 +144,7 @@ html, body {
 }
 </style>
 
+
 <div class="container">
   <div class="header">
     <h1>⏰ 倒计时</h1>
@@ -153,16 +154,17 @@ html, body {
   <div class="main-grid">
     <div class="card" id="card-work"><div class="card-icon">💼</div><div class="card-title">下班倒计时</div><div class="card-time"><div class="time-block"><div class="time-num" id="work-h">00</div><div class="time-label">小时</div></div><div class="time-block"><div class="time-num" id="work-m">00</div><div class="time-label">分钟</div></div><div class="time-block"><div class="time-num" id="work-s">00</div><div class="time-label">秒</div></div></div><div class="card-msg" id="work-msg">再坚持一下</div><div class="card-setting"><label>下班时间</label><input type="time" id="work-time" value="18:00"></div></div>
 
-<pre><code>&lt;div class=&quot;card&quot; id=&quot;card-weekend&quot;&gt;&lt;div class=&quot;card-icon&quot;&gt;🎉&lt;/div&gt;&lt;div class=&quot;card-title&quot;&gt;周末倒计时&lt;/div&gt;&lt;div class=&quot;card-time&quot;&gt;&lt;div class=&quot;time-block&quot;&gt;&lt;div class=&quot;time-num&quot; id=&quot;week-d&quot;&gt;0&lt;/div&gt;&lt;div class=&quot;time-label&quot;&gt;天&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;time-block&quot;&gt;&lt;div class=&quot;time-num&quot; id=&quot;week-h&quot;&gt;00&lt;/div&gt;&lt;div class=&quot;time-label&quot;&gt;小时&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;time-block&quot;&gt;&lt;div class=&quot;time-num&quot; id=&quot;week-m&quot;&gt;00&lt;/div&gt;&lt;div class=&quot;time-label&quot;&gt;分&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card-msg&quot; id=&quot;week-msg&quot;&gt;马上就周末了&lt;/div&gt;&lt;/div&gt;
-</code></pre>
+    <div class="card" id="card-weekend"><div class="card-icon">🎉</div><div class="card-title">周末倒计时</div><div class="card-time"><div class="time-block"><div class="time-num" id="week-d">0</div><div class="time-label">天</div></div><div class="time-block"><div class="time-num" id="week-h">00</div><div class="time-label">小时</div></div><div class="time-block"><div class="time-num" id="week-m">00</div><div class="time-label">分</div></div></div><div class="card-msg" id="week-msg">马上就周末了</div></div>
   </div>
 
   <div class="section-title">🎊 节日倒计时（点卡片看详情）</div>
   <div class="detail-card" id="detail"><div class="card-icon" id="detail-icon">🎊</div><div class="card-title" id="detail-name">节日名称</div><div class="card-time"><div class="time-block"><div class="time-num" id="detail-d">0</div><div class="time-label">天</div></div><div class="time-block"><div class="time-num" id="detail-h">00</div><div class="time-label">时</div></div><div class="time-block"><div class="time-num" id="detail-m">00</div><div class="time-label">分</div></div><div class="time-block"><div class="time-num" id="detail-s">00</div><div class="time-label">秒</div></div></div></div>
   <div class="festival-list" id="festival-list"></div>
 
-<p>  <button class="add-btn" onclick="addCustom()">+ 添加自定义倒计时</button></p>
+  <button class="add-btn" onclick="addCustom()">+ 添加自定义倒计时</button>
 </div>
+
+
 
 <script>
 function pad(n) { return String(n).padStart(2, '0'); }
@@ -302,3 +304,4 @@ function tickAll() {
 tickAll();
 setInterval(tickAll, 1000);
 </script>
+
