@@ -4,22 +4,27 @@
   const header = document.getElementById('page-header');
   if (!header) return;
 
+  // 确保初始状态
+  header.style.position = 'fixed';
+  header.style.width = '100%';
+
   window.addEventListener('scroll', function() {
     const currentScroll = window.pageYOffset;
     
-    // 在最顶部时显示
+    // 在最顶部时强制显示
     if (currentScroll < 50) {
       header.style.transform = 'translateY(0)';
       header.style.transition = 'transform 0.3s ease';
+      lastScroll = currentScroll;
       return;
     }
     
-    // 往下滚隐藏
-    if (currentScroll > lastScroll && currentScroll > 100) {
+    // 往下滚：隐藏导航栏
+    if (currentScroll > lastScroll && currentScroll > 80) {
       header.style.transform = 'translateY(-100%)';
       header.style.transition = 'transform 0.3s ease';
     } 
-    // 往上滚显示
+    // 往上滚：显示导航栏（不管在页面哪个位置）
     else if (currentScroll < lastScroll) {
       header.style.transform = 'translateY(0)';
       header.style.transition = 'transform 0.3s ease';
@@ -28,9 +33,9 @@
     lastScroll = currentScroll;
   });
 
-  // 鼠标移到顶部时显示
+  // 鼠标移到顶部80px范围内，强制显示导航栏
   document.addEventListener('mousemove', function(e) {
-    if (e.clientY < 30) {
+    if (e.clientY < 80) {
       header.style.transform = 'translateY(0)';
       header.style.transition = 'transform 0.3s ease';
     }
