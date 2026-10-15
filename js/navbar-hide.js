@@ -4,10 +4,6 @@
   const header = document.getElementById('page-header');
   if (!header) return;
 
-  // 确保初始状态
-  header.style.position = 'fixed';
-  header.style.width = '100%';
-
   window.addEventListener('scroll', function() {
     const currentScroll = window.pageYOffset;
     
