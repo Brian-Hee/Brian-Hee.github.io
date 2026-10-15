@@ -15,8 +15,8 @@
       return;
     }
     
-    // 往下滚：隐藏导航栏
-    if (currentScroll > lastScroll && currentScroll > 80) {
+    // 往下滚：隐藏导航栏（滚过150px才触发，避免刚滚一下就藏）
+    if (currentScroll > lastScroll && currentScroll > 150) {
       header.style.transform = 'translateY(-100%)';
       header.style.transition = 'transform 0.3s ease';
     } 
