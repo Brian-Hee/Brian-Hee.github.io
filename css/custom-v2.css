@@ -266,3 +266,12 @@ body.page-sentences #post > * {
   margin-bottom: 15px !important;
 }
 
+
+/* 文章内容左右边距对称 */
+.post-content {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#post {
+  padding: 20px !important;
+}
