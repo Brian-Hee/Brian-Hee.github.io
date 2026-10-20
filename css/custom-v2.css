@@ -61,6 +61,13 @@ body::before {
   border-radius: 8px !important;
 }
 
+/* 当前页按钮：主题青填充 + 白字，避免白底白字看不见 */
+#pagination .page-number.current {
+  background: #00c4b6 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
 /* 页脚背景半透明 */
 #footer {
   background: rgba(0, 0, 0, 0.6) !important;
@@ -237,6 +244,12 @@ body.page-sentences #post > * {
 [data-theme="dark"] #pagination .extend {
   background: rgba(50, 50, 60, 0.9) !important;
   color: rgba(255, 255, 255, 0.8) !important;
+}
+
+[data-theme="dark"] #pagination .page-number.current {
+  background: #00c4b6 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
 }
 
 [data-theme="dark"] .recent-post-item .post-title a,
