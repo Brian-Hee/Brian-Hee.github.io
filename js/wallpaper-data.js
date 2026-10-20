@@ -251,12 +251,12 @@ window.WALLPAPERS = [
     date: "2026-09-22"
   },
   {
-    title: "记忆神经中枢",
-    description: "深蓝背景中发光球体被白色神经网络脉络包裹，AI记忆与知识网络意象（Pexels免费可商用）",
+    title: "记忆网络节点",
+    description: "深蓝背景中三个发光球体由光线网络互联，象征记忆网络与知识图谱（Pexels免费可商用）",
     category: "科技",
     resolution: "1260×840",
     colors: "蓝/白",
-    url: "/img/gallery/mempalace-memory-network.jpg",
+    url: "/img/gallery/mempalace-memory-net.jpg",
     date: "2026-10-20"
   },
   // ===== 人物类 =====
