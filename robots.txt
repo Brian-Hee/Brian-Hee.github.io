@@ -28,4 +28,4 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /img/
 
-Sitemap: https://amzian.com/sitemap.xml
+Sitemap: https://soulburg.com/sitemap.xml
