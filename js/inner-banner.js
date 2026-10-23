@@ -42,9 +42,8 @@
       '#page-header{background-image: url("' + img.url + '") !important;}';
   }
 
-  function schedule() { setTimeout(apply, 300); }
-
-  window.addEventListener('load', schedule);
+  // 同步立即执行（脚本在 body 末尾，DOM 与 WALLPAPERS 均已就绪）
+  apply();
   // PJAX 页面切换后，替换为新页面对应的分类图
-  window.addEventListener('pjax:complete', function () { setTimeout(apply, 300); });
+  window.addEventListener('pjax:complete', apply);
 })();
