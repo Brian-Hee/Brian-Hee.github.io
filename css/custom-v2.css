@@ -316,14 +316,14 @@ body.page-sentences #post > * {
   margin-bottom: 18px !important;
 }
 
-/* Hero 横幅收窄：文章/工具/收藏等内页 40vh，首页 full_page 45vh，让内容更快露出 */
-#page-header {
+/* Hero：首页 full_page 保持满屏 100vh；内页（非首页）收窄 40vh，让内容更快露出 */
+#page-header:not(.full_page) {
   height: 40vh !important;
   min-height: 260px !important;
 }
 #page-header.full_page {
-  height: 45vh !important;
-  min-height: 280px !important;
+  height: 100vh !important;
+  min-height: 0 !important;
 }
 #page-header .post-bg {
   height: 100% !important;
