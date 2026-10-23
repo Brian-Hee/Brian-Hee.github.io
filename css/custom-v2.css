@@ -299,3 +299,32 @@ body.page-sentences #post > * {
 #post {
   padding: 20px !important;
 }
+
+/* ========== P0：正文可读性 + Hero 收窄 ========== */
+
+/* 正文字号 16px、行高 1.8、段距 18px（只作用于文章正文，不影响列表卡片） */
+#post .post-content,
+#post .article-entry {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: rgb(60, 58, 57) !important;
+}
+#post .post-content p,
+#post .article-entry p {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  margin-bottom: 18px !important;
+}
+
+/* Hero 横幅收窄：文章/工具/收藏等内页 40vh，首页 full_page 45vh，让内容更快露出 */
+#page-header {
+  height: 40vh !important;
+  min-height: 260px !important;
+}
+#page-header.full_page {
+  height: 45vh !important;
+  min-height: 280px !important;
+}
+#page-header .post-bg {
+  height: 100% !important;
+}
