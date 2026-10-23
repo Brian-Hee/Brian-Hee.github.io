@@ -17,6 +17,8 @@
     return pool[day % pool.length];
   }
 
+  var styleEl = null;
+
   function apply() {
     var header = document.getElementById('page-header');
     if (!header || header.classList.contains('full_page')) return; // 首页跳过，由 banner-rotate 管
@@ -30,16 +32,19 @@
     if (!pool.length) return;
 
     var img = pick(pool);
-    var pre = new Image();
-    pre.onload = function () {
-      header.style.backgroundImage = "url('" + img.url + "')";
-    };
-    pre.src = img.url;
+    // 注入带 !important 的样式，压过服务端 cover/top_img 的内联背景
+    if (!styleEl) {
+      styleEl = document.createElement('style');
+      styleEl.id = 'inner-banner-style';
+      document.head.appendChild(styleEl);
+    }
+    styleEl.textContent =
+      '#page-header{background-image: url("' + img.url + '") !important;}';
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', apply);
-  } else {
-    apply();
-  }
+  function schedule() { setTimeout(apply, 300); }
+
+  window.addEventListener('load', schedule);
+  // PJAX 页面切换后，替换为新页面对应的分类图
+  window.addEventListener('pjax:complete', function () { setTimeout(apply, 300); });
 })();
