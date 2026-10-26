@@ -328,3 +328,25 @@ body.page-sentences #post > * {
 #page-header .post-bg {
   height: 100% !important;
 }
+
+/* === 收尾微调：移动端 dvh 防地址栏跳动 + 分页器胶囊化 === */
+#page-header.full_page {
+  height: 100vh !important;
+  height: 100dvh !important;
+}
+#page-header:not(.full_page) {
+  height: 40vh !important;
+  height: 40dvh !important;
+}
+@media (max-width: 768px) {
+  #page-header.full_page {
+    background-attachment: scroll !important;
+  }
+}
+/* 分页器收成圆角胶囊卡片，不再是横贯内容区的白长条 */
+#pagination {
+  border-radius: 12px !important;
+  padding: 12px 14px !important;
+  margin: 24px auto !important;
+  overflow: hidden !important;
+}
