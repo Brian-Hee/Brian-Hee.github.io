@@ -259,6 +259,15 @@ window.WALLPAPERS = [
     url: "/img/gallery/mempalace-memory-net.jpg",
     date: "2026-10-20"
   },
+  {
+    title: "AMAZON ADS",
+    description: "亚马逊广告系列文章封面，深蓝购物车与图表主题",
+    category: "科技",
+    resolution: "原图",
+    colors: "蓝/橙",
+    url: "/img/gallery/amazon-ads-cover-original.png",
+    date: "2026-10-28"
+  },
   // ===== 人物类 =====
   {
     title: "白猫少女",
