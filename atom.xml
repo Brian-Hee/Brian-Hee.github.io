@@ -11,7 +11,23 @@
   <rights>All rights reserved 2026, 汇桐</rights>
   <subtitle>我的随手记：想到什么写什么，看见什么记什么</subtitle>
   <title>心中之城</title>
-  <updated>2026-10-30T02:00:00.000Z</updated>
+  <updated>2026-10-30T06:00:00.000Z</updated>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/%E4%BA%9A%E9%A9%AC%E9%80%8A%E5%B9%BF%E5%91%8A/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/"/>
+    <category term="旺季运营" scheme="https://soulburg.com/tags/%E6%97%BA%E5%AD%A3%E8%BF%90%E8%90%A5/"/>
+    <category term="广告结构" scheme="https://soulburg.com/tags/%E5%B9%BF%E5%91%8A%E7%BB%93%E6%9E%84/"/>
+    <id>https://soulburg.com/posts/amazon-ads-peak-season-structure/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-peak-season-structure/"/>
+    <published>2026-10-30T06:00:00.000Z</published>
+    <summary>旺季预算加多少、出价抬不抬，先别急着调。先看你的品流量是从搜索来的还是详情页逛来的。标品死磕关键词，非标品重视关联流量，自动养词、手动收词、商品投放抢互补——顺序对了旺季才不慌。</summary>
+    <title>亚马逊广告：旺季前搭广告，自动、手动、商品投放三步排兵</title>
+    <updated>2026-10-30T06:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>汇桐</name>
@@ -291,6 +307,20 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    <category term="外贸获客" scheme="https://soulburg.com/tags/%E5%A4%96%E8%B4%B8%E8%8E%B7%E5%AE%A2/"/>
+    <category term="客户开发" scheme="https://soulburg.com/tags/%E5%AE%A2%E6%88%B7%E5%BC%80%E5%8F%91/"/>
+    <id>https://soulburg.com/posts/whatsapp-six-ways/</id>
+    <link href="https://soulburg.com/posts/whatsapp-six-ways/"/>
+    <published>2026-09-23T02:00:00.000Z</published>
+    <summary>谷歌指令、地图工具、展商名录、展会名片、本地黄页、客户官网——六条找WhatsApp客户的路子，外加四条防封号提醒和四条开口话术。</summary>
+    <title>找海外客户的WhatsApp，其实就六条路</title>
+    <updated>2026-09-23T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     <category term="避坑" scheme="https://soulburg.com/tags/%E9%81%BF%E5%9D%91/"/>
     <category term="外贸获客" scheme="https://soulburg.com/tags/%E5%A4%96%E8%B4%B8%E8%8E%B7%E5%AE%A2/"/>
     <category term="客户开发" scheme="https://soulburg.com/tags/%E5%AE%A2%E6%88%B7%E5%BC%80%E5%8F%91/"/>
@@ -306,20 +336,6 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="外贸获客" scheme="https://soulburg.com/tags/%E5%A4%96%E8%B4%B8%E8%8E%B7%E5%AE%A2/"/>
-    <category term="客户开发" scheme="https://soulburg.com/tags/%E5%AE%A2%E6%88%B7%E5%BC%80%E5%8F%91/"/>
-    <id>https://soulburg.com/posts/whatsapp-six-ways/</id>
-    <link href="https://soulburg.com/posts/whatsapp-six-ways/"/>
-    <published>2026-09-23T02:00:00.000Z</published>
-    <summary>谷歌指令、地图工具、展商名录、展会名片、本地黄页、客户官网——六条找WhatsApp客户的路子，外加四条防封号提醒和四条开口话术。</summary>
-    <title>找海外客户的WhatsApp，其实就六条路</title>
-    <updated>2026-09-23T02:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://soulburg.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     <category term="跨境电商" scheme="https://soulburg.com/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/"/>
     <category term="避坑" scheme="https://soulburg.com/tags/%E9%81%BF%E5%9D%91/"/>
     <category term="TikTok" scheme="https://soulburg.com/tags/TikTok/"/>
@@ -328,20 +344,6 @@
     <published>2026-09-22T02:00:00.000Z</published>
     <summary>美区TK小店这波封店潮主要抓物流欺诈——跑水账号、空包裹、轨迹造假、仓库地址对不上都在列；加上资料造假、IP乱切、产品踩线、店铺闲置，四条死因。</summary>
     <title>美区TikTok小店这波封店潮，大卖也没能全身而退</title>
-    <updated>2026-09-22T02:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://soulburg.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/"/>
-    <category term="TikTok" scheme="https://soulburg.com/tags/TikTok/"/>
-    <id>https://soulburg.com/posts/us-tiktok-local-store/</id>
-    <link href="https://soulburg.com/posts/us-tiktok-local-store/"/>
-    <published>2026-09-22T02:00:00.000Z</published>
-    <summary>一份美国TikTok本土店全流程：发货方式、账号绑定、原创内容、直播节奏、店群选品、红人计划、佣金回款、本土店与ACCU店区别。</summary>
-    <title>做美国TikTok本土店，这二十多个坑我替你踩过一遍</title>
     <updated>2026-09-22T02:00:00.000Z</updated>
   </entry>
 </feed>
