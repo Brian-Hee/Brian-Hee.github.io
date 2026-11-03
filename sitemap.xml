@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://soulburg.com/posts/amazon-ads-keyword-groups/</loc>
+    
+    <lastmod>2026-11-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://soulburg.com/posts/amazon-ads-bis-vcpm/</loc>
+    
+    <lastmod>2026-11-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://soulburg.com/posts/amazon-ads-haiwang-vs-value/</loc>
+    
+    <lastmod>2026-11-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://soulburg.com/posts/amazon-ads-standard-vs-nonstandard/</loc>
+    
+    <lastmod>2026-11-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://soulburg.com/posts/amazon-ads-free-tools/</loc>
     
     <lastmod>2026-11-03</lastmod>
@@ -398,7 +434,7 @@
   </url>
   
   <url>
-    <loc>https://soulburg.com/posts/tiktok-shop-registration/</loc>
+    <loc>https://soulburg.com/posts/tiktok-nine-markets/</loc>
     
     <lastmod>2026-09-18</lastmod>
     
@@ -407,7 +443,7 @@
   </url>
   
   <url>
-    <loc>https://soulburg.com/posts/tiktok-nine-markets/</loc>
+    <loc>https://soulburg.com/posts/tiktok-shop-registration/</loc>
     
     <lastmod>2026-09-18</lastmod>
     
@@ -619,6 +655,27 @@
   </url>
   
   <url>
+    <loc>https://soulburg.com/tags/ads/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://soulburg.com/tags/bidding/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://soulburg.com/tags/keywords/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://soulburg.com/tags/tools/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -626,7 +683,7 @@
   </url>
   
   <url>
-    <loc>https://soulburg.com/tags/%E5%93%81%E7%89%8C%E8%BF%90%E8%90%A5/</loc>
+    <loc>https://soulburg.com/tags/pitfalls/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -647,35 +704,7 @@
   </url>
   
   <url>
-    <loc>https://soulburg.com/tags/ads/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://soulburg.com/tags/keywords/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://soulburg.com/tags/pitfalls/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://soulburg.com/tags/peak-season/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://soulburg.com/tags/ad-structure/</loc>
+    <loc>https://soulburg.com/tags/%E5%93%81%E7%89%8C%E8%BF%90%E8%90%A5/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -689,6 +718,20 @@
   </url>
   
   <url>
+    <loc>https://soulburg.com/tags/ad-structure/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://soulburg.com/tags/peak-season/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://soulburg.com/tags/small-market/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -696,21 +739,7 @@
   </url>
   
   <url>
-    <loc>https://soulburg.com/tags/bidding/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://soulburg.com/tags/mindset/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://soulburg.com/tags/money/</loc>
+    <loc>https://soulburg.com/tags/AI/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -724,6 +753,13 @@
   </url>
   
   <url>
+    <loc>https://soulburg.com/tags/mindset/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://soulburg.com/tags/blog-notes/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -731,7 +767,7 @@
   </url>
   
   <url>
-    <loc>https://soulburg.com/tags/AI/</loc>
+    <loc>https://soulburg.com/tags/money/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -766,13 +802,6 @@
   </url>
   
   <url>
-    <loc>https://soulburg.com/tags/tutorial/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://soulburg.com/tags/client-acquisition/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -780,7 +809,7 @@
   </url>
   
   <url>
-    <loc>https://soulburg.com/tags/health/</loc>
+    <loc>https://soulburg.com/tags/tutorial/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -788,6 +817,13 @@
   
   <url>
     <loc>https://soulburg.com/tags/startup/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://soulburg.com/tags/health/</loc>
     <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

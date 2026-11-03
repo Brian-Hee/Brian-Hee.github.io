@@ -11,7 +11,71 @@
   <rights>All rights reserved 2026, 汇桐</rights>
   <subtitle>我的随手记：想到什么写什么，看见什么记什么</subtitle>
   <title>心中之城</title>
-  <updated>2026-11-03T06:00:00.000Z</updated>
+  <updated>2026-11-03T08:30:00.000Z</updated>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
+    <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
+    <id>https://soulburg.com/posts/amazon-ads-keyword-groups/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-keyword-groups/"/>
+    <published>2026-11-03T08:30:00.000Z</published>
+    <summary>2025年新上的关键词组功能，系统帮你选词帮你匹配。不是神器是效率工具——新品期不会搭词库让它兜底、小语种新品牌词让它捡漏、节日礼品词让它蹭一波。但它跟自动广告高度重叠，否词功夫一点没少。</summary>
+    <title>亚马逊广告：关键词组能替代手动拓词吗？四个案例的真实答案</title>
+    <updated>2026-11-03T08:30:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
+    <category term="竞价策略" scheme="https://soulburg.com/tags/bidding/"/>
+    <id>https://soulburg.com/posts/amazon-ads-bis-vcpm/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-bis-vcpm/"/>
+    <published>2026-11-03T08:00:00.000Z</published>
+    <summary>SB里的BIS目标按vCPM计费，看着建议价三四十刀肉疼，自己换算后往往比CPC还便宜。但新手别碰——新品、没评论、旗舰店空架子的开了就是交学费。小站点反而是练手的好地方。</summary>
+    <title>亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？</title>
+    <updated>2026-11-03T08:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
+    <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
+    <id>https://soulburg.com/posts/amazon-ads-haiwang-vs-value/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-haiwang-vs-value/"/>
+    <published>2026-11-03T07:30:00.000Z</published>
+    <summary>海王打法低成本广触达，价值打法找精准需求。新品期老老实实做价值打法先搞清楚卖点，链接跑顺了再拿海王拓低价流量。别搞反顺序——海王是给跑起来的链接补流量，不是给新品冷启动用的。</summary>
+    <title>亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？</title>
+    <updated>2026-11-03T07:30:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
+    <category term="广告结构" scheme="https://soulburg.com/tags/ad-structure/"/>
+    <id>https://soulburg.com/posts/amazon-ads-standard-vs-nonstandard/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-standard-vs-nonstandard/"/>
+    <published>2026-11-03T07:00:00.000Z</published>
+    <summary>拿同一套结构打所有品类一定翻车。标品是流量集中、用广告换排名；非标品是需求分散、用结构接流失。核心大词砸预算撬排名，非标品退到详情页截流，别脑子一热开一堆近似款自己跟自己抢流量。</summary>
+    <title>亚马逊广告：一个撬排名一个抢详情页，标品和非标品的广告分水岭</title>
+    <updated>2026-11-03T07:00:00.000Z</updated>
+  </entry>
   <entry>
     <author>
       <name>汇桐</name>
@@ -83,8 +147,8 @@
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
     <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
-    <category term="旺季运营" scheme="https://soulburg.com/tags/peak-season/"/>
     <category term="广告结构" scheme="https://soulburg.com/tags/ad-structure/"/>
+    <category term="旺季运营" scheme="https://soulburg.com/tags/peak-season/"/>
     <id>https://soulburg.com/posts/amazon-ads-peak-season-structure/</id>
     <link href="https://soulburg.com/posts/amazon-ads-peak-season-structure/"/>
     <published>2026-10-30T06:00:00.000Z</published>
@@ -99,8 +163,8 @@
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
     <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
-    <category term="多站点运营" scheme="https://soulburg.com/tags/multi-site/"/>
     <category term="竞价策略" scheme="https://soulburg.com/tags/bidding/"/>
+    <category term="多站点运营" scheme="https://soulburg.com/tags/multi-site/"/>
     <id>https://soulburg.com/posts/amazon-ads-low-bid-tos/</id>
     <link href="https://soulburg.com/posts/amazon-ads-low-bid-tos/"/>
     <published>2026-10-30T02:00:00.000Z</published>
@@ -115,8 +179,8 @@
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
     <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
-    <category term="ACOS" scheme="https://soulburg.com/tags/ACOS/"/>
     <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
+    <category term="ACOS" scheme="https://soulburg.com/tags/ACOS/"/>
     <id>https://soulburg.com/posts/amazon-ads-low-vs-high-price/</id>
     <link href="https://soulburg.com/posts/amazon-ads-low-vs-high-price/"/>
     <published>2026-10-29T02:00:00.000Z</published>
@@ -276,79 +340,5 @@
     </summary>
     <title>一个人值不值得信赖，就看这三件小事</title>
     <updated>2026-10-07T02:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://soulburg.com/categories/thinking/"/>
-    <category term="认知" scheme="https://soulburg.com/tags/mindset/"/>
-    <category term="赚钱" scheme="https://soulburg.com/tags/money/"/>
-    <category term="副业" scheme="https://soulburg.com/tags/side-hustle/"/>
-    <id>https://soulburg.com/posts/belief-money-printing/</id>
-    <link href="https://soulburg.com/posts/belief-money-printing/"/>
-    <published>2026-10-05T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>一个破塑料娃娃，被资本炒到天价，一群人嗷嗷叫着往里冲。排队、抽签、加价抢，你以为自己走在潮流前头，其实是跪在镰刀底下。</p>
-<p>这世界根本没什么潮流，只有明晃晃的人性收割。99%的人抢到个”隐藏款”还在那儿沾沾自喜，那1%的人早把你们这股狂热，变成了自己的印钞机。他们一分钱没花，把你的”热爱”按在地上搓，反手日入6000+。</p>]]>
-    </summary>
-    <title>你在为信仰充值，有人拿你的信仰印钞</title>
-    <updated>2026-10-05T02:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://soulburg.com/categories/thinking/"/>
-    <category term="认知" scheme="https://soulburg.com/tags/mindset/"/>
-    <category term="创业" scheme="https://soulburg.com/tags/startup/"/>
-    <id>https://soulburg.com/posts/project-qi/</id>
-    <link href="https://soulburg.com/posts/project-qi/"/>
-    <published>2026-10-03T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>任何能让你赚到钱的项目，扒开外面那层花架子，里面其实都不是”项目多亮眼”，而是你一脚踩中了一个真实存在、还没被喂饱的需求。</p>
-<p>财富这东西有点意思——它不是你追来的，是你把根扎在价值上，它自己跟上来的影子。</p>]]>
-    </summary>
-    <title>项目能不能成，别盯着项目看，去望那股气</title>
-    <updated>2026-10-03T02:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://soulburg.com/categories/thinking/"/>
-    <category term="认知" scheme="https://soulburg.com/tags/mindset/"/>
-    <category term="赚钱" scheme="https://soulburg.com/tags/money/"/>
-    <id>https://soulburg.com/posts/growth-hallucination/</id>
-    <link href="https://soulburg.com/posts/growth-hallucination/"/>
-    <published>2026-10-01T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="我喜欢为了赚钱而成长，而不是为了成长而成长"><a href="#我喜欢为了赚钱而成长，而不是为了成长而成长" class="headerlink"]]>
-    </summary>
-    <title>别困在&quot;成长&quot;的幻觉里，先为赚钱赋能自己</title>
-    <updated>2026-10-01T02:00:00.000Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="生活随笔" scheme="https://soulburg.com/categories/life/"/>
-    <category term="健康" scheme="https://soulburg.com/tags/health/"/>
-    <id>https://soulburg.com/posts/sleep-guide/</id>
-    <link href="https://soulburg.com/posts/sleep-guide/"/>
-    <published>2026-09-30T07:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>养生这事儿，讲到底就三句话：<strong>时长是底线，时辰是效率，心神决定你老得有多快。</strong> 下面这套东西，把现代睡眠医学的硬指标和中医、道家睡法里真正经过长期验证的部分拼在一起，去掉那些神神叨叨的禁忌，留下能直接照做的。</p>
-<h2 id="不同年龄段，睡多久才够"><a href="#不同年龄段，睡多久才够" class="headerlink" title="不同年龄段，睡多久才够"></a>不同年龄段，睡多久才够</h2><ul>
-<li><strong>0–3岁</strong>：10–14小时，最好11–13。小儿稚阴稚阳，多睡长气血，别抱着哄，困了就放。</li>
-<li><strong>4–12岁</strong>：9–12小时，最好9.5–11。23点后还没睡，肝气容易郁，注意力散，发育也跟着受影响。</li>
-<li><strong>13–17岁</strong>：8–10小时，最好8.5–9.5。这是肾精充盈的关键期，熬夜最伤底子，痘痘和情绪多半一起来。</li>
-<li><strong>18–40岁</strong>：7–9小时，最好7.5——正好五个90分钟的睡眠周期。长期低于6小时，早衰、气血两亏；超过9小时，久卧伤气，人会发沉、浮肿。这一段是抗衰的关键期，重点是<strong>养肝血、敛阴液</strong>。</li>
-<li><strong>41–65岁</strong>：6–8小时，最好7。中年深睡眠自然变少，别死磕8小时，重质量不堆时长；熬夜容易气滞血瘀、长斑、血压出问题。</li>
-<li><strong>65岁以上</strong>：5–7小时，最好6。阳气渐衰，夜里易醒是常态；白天小憩别太久，更别白天昏天黑地地睡，把昼夜阴阳搅乱。</li>
-</ul>]]>
-    </summary>
-    <title>睡得对，老得慢：一份把现代医学和子午流注揉在一起的睡眠指南</title>
-    <updated>2026-09-30T07:00:00.000Z</updated>
   </entry>
 </feed>

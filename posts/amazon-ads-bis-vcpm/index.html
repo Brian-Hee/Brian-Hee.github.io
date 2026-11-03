@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？ | 心中之城</title><meta name="author" content="汇桐"><meta name="copyright" content="汇桐"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="SB里的BIS目标按vCPM计费，看着建议价三四十刀肉疼，自己换算后往往比CPC还便宜。但新手别碰——新品、没评论、旗舰店空架子的开了就是交学费。小站点反而是练手的好地方。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？">
+<meta property="og:url" content="https://soulburg.com/posts/amazon-ads-bis-vcpm/">
+<meta property="og:site_name" content="心中之城">
+<meta property="og:description" content="SB里的BIS目标按vCPM计费，看着建议价三四十刀肉疼，自己换算后往往比CPC还便宜。但新手别碰——新品、没评论、旗舰店空架子的开了就是交学费。小站点反而是练手的好地方。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://soulburg.com/img/cover-amazon-ads.png">
+<meta property="article:published_time" content="2026-11-03T08:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-03T08:00:00.000Z">
+<meta property="article:author" content="汇桐">
+<meta property="article:tag" content="亚马逊广告">
+<meta property="article:tag" content="跨境电商">
+<meta property="article:tag" content="广告投放">
+<meta property="article:tag" content="竞价策略">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://soulburg.com/img/og-share.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？",
+  "url": "https://soulburg.com/posts/amazon-ads-bis-vcpm/",
+  "image": "https://soulburg.com/img/cover-amazon-ads.png",
+  "datePublished": "2026-11-03T08:00:00.000Z",
+  "dateModified": "2026-11-03T08:00:00.000Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "汇桐",
+      "url": "https://soulburg.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://soulburg.com/posts/amazon-ads-bis-vcpm/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.7.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        const data = { value }
+
+        if (ttl != null) {
+          data.expiry = Date.now() + ttl * 86400000
+        }
+
+        localStorage.setItem(key, JSON.stringify(data))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return
+
+        try {
+          const data = JSON.parse(itemStr)
+
+          if (data.expiry && Date.now() > data.expiry) {
+            localStorage.removeItem(key)
+            return
+          }
+
+          return data.value
+        } catch {
+          localStorage.removeItem(key)
+        }
+      }
+    }
+
+    const scriptCache = new Map()
+    const cssCache = new Map()
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => {
+        if (scriptCache.has(url)) {
+          return scriptCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const script = document.createElement('script')
+
+          script.src = url
+          script.async = true
+
+          for (const key in attr) {
+            script.setAttribute(key, attr[key])
+          }
+
+          script.onload = resolve
+          script.onerror = reject
+
+          document.head.appendChild(script)
+        })
+
+        scriptCache.set(url, promise)
+
+        return promise
+      },
+      getCSS: (url, id) => {
+        if (cssCache.has(url)) {
+          return cssCache.get(url)
+        }
+
+        const promise = new Promise((resolve, reject) => {
+          const link = document.createElement('link')
+
+          link.rel = 'stylesheet'
+          link.href = url
+
+          if (id) {
+            link.id = id
+          }
+
+          link.onload = resolve
+          link.onerror = reject
+
+          document.head.appendChild(link)
+        })
+
+        cssCache.set(url, promise)
+
+        return promise
+      },
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const metaThemeColor = document.querySelector('meta[name="theme-color"]')
+      const activateDarkMode = () => {
+        document.documentElement.dataset.theme = 'dark'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.dataset.theme = 'light'
+        if (metaThemeColor !== null) {
+          metaThemeColor.setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?add18fe3a49e748fc6b67a2785183078";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/custom-v2.css?v=20261026"><link rel="alternate" type="application/atom+xml" title="心中之城 RSS" href="/atom.xml"><link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"><meta name="baidu-site-verification" content="codeva-jN3OA30iOd" /><meta name="baidu-site-verification" content="codeva-avsjk3HsuE" /><meta name="baidu-site-verification" content="codeva-i3SFezuWCz" /><meta name="msvalidate.01" content="D14D714E3595E6876D944CB0D74E5302" /><meta name="sogou_site_verification" content="JupoTeGRz8" /><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      if ($loadingBox.classList.contains('loaded')) return
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+
+  if (document.readyState === 'complete') {
+    preloader.endLoading()
+  } else {
+    window.addEventListener('load', preloader.endLoading)
+    document.addEventListener('DOMContentLoaded', preloader.endLoading)
+    // Add timeout protection: force end after 7 seconds
+    setTimeout(preloader.endLoading, 7000)
+  }
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/pinwheel.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 收藏</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wallpaper/"><i class="fa-fw fas fa-image"></i><span> 壁纸</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/favorites/"><i class="fa-fw fas fa-ellipsis-h"></i><span> 更多</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 百宝箱</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/hot/"><i class="fa-fw fas fa-fire"></i><span> 热搜榜</span></a></li><li><a class="site-page child" href="/tools/"><i class="fa-fw fas fa-tools"></i><span> 小工具</span></a></li><li><a class="site-page child" href="/files/"><i class="fa-fw fas fa-download"></i><span> 文件下载</span></a></li><li><a class="site-page child" href="/toolbox/"><i class="fa-fw fas fa-boxes"></i><span> 全部工具</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/img/cover-amazon-ads.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">心中之城</span></a><a class="nav-page-title" href="/"><span class="site-name">亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><span class="site-page group"><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 收藏</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wallpaper/"><i class="fa-fw fas fa-image"></i><span> 壁纸</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/favorites/"><i class="fa-fw fas fa-ellipsis-h"></i><span> 更多</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><span> 百宝箱</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/hot/"><i class="fa-fw fas fa-fire"></i><span> 热搜榜</span></a></li><li><a class="site-page child" href="/tools/"><i class="fa-fw fas fa-tools"></i><span> 小工具</span></a></li><li><a class="site-page child" href="/files/"><i class="fa-fw fas fa-download"></i><span> 文件下载</span></a></li><li><a class="site-page child" href="/toolbox/"><i class="fa-fw fas fa-boxes"></i><span> 全部工具</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-11-03T08:00:00.000Z" title="发表于 2026-11-03 16:00:00">2026-11-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-11-03T08:00:00.000Z" title="更新于 2026-11-03 16:00:00">2026-11-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/tech/">技术分享</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>做品牌推广（SB）的人，后台里有个目标选项叫 “提升展示量份额”，英文是 BIS。很多人第一次见会被它的计费方式劝退 —— 不是按点击付钱，是按千次可见展示付钱，也就是 vCPM。建议价随便点开一个品类，三四十刀起，看着就肉疼。</p>
+<p>我研究了一阵子，也自己小预算试过，今天把这个功能掰扯清楚。</p>
+<p>先说它到底是干嘛的。这个目标就是冲去抢搜索结果首页最顶部那个位置。跟传统 CPC 模式的 SB 不一样，它按曝光收费，规则是广告至少 50% 的内容被看到超过一秒，才会计费。亚马逊自己的研究数据是，从顶部位置点进旗舰店的人，比点进单个详情页的人买得更多。这也好理解，顶部那个位置自带 “这家是大牌” 的暗示，买家信任度不一样。</p>
+<p>那谁适合开？新手千万别碰。这个功能是给两类人准备的：一类是成长型品牌，旗舰店已经搭好了、产品有稳定销量和评论、之前在 SB 和 SP 上已经攒了一批关键词和素材，想进一步抢新客；另一类是品类头部品牌，想长期把品牌词和品类大词的顶部位置焊死，防对手进来抢。新品、没评论、旗舰店还是空架子的，开了就是给平台交学费。</p>
+<p>实操上有几个关键参数。预算怎么给？别拍脑袋，算你一个出单成本。比如你 SP 顶部位置 CPC 是 1 刀、转化率 5%，那出一个单的广告成本就是 1 除以 5% 等于 20 刀。BIS 初期按 1 到 2 个出单成本给日预算，也就是 20 到 40 刀一天，跑起来再调。</p>
+<p>最关键的是别被 vCPM 建议价吓到，自己换算。公式很简单：vCPM &#x3D; 1000 × CTR × CPC。意思是，一千次曝光带来多少个点击、每个点击值多少钱，乘出来就是你实际应该付的 vCPM。举个例子，灯具品类 vCPM 建议价 40 刀，你拿 SP 顶部位置的真实数据代进去 ——CTR 1.7%、CPC 2.85 刀，算出来等效 CPC 是 2.35 刀，比你 SP 顶部的 2.85 刀还便宜。这笔账一算你就不慌了。但这个公式有个软肋：它极其依赖 CTR。你 CTR 掉一个点，实际 CPC 就飙一截。所以开 BIS 之后，CTR 是你要死盯的指标，CTR 不行立刻回去换素材、换广告模式。</p>
+<p>素材上现在有个便利条件，亚马逊自己的 AI 图像生成器已经免费开放了，设计能力弱的卖家可以直接生成带生活场景的品牌图，不用外包。视频那边注意两个方向：横屏沉浸式体验是标配，竖版全屏视频在移动端互动率更高。另外有六类视频是审核重灾区 —— 夸大功效、前后对比、医疗暗示这些，别踩。</p>
+<p>最容易踩坑的是系统推荐词包。开 BIS 的时候，后台会给你两个词包，一个叫 “与落地页相关的关键词”，一个叫 “与品牌相关的关键词”。这玩意是系统自动抓的，会根据搜索趋势动态调整，你在设置页甚至看不到具体是哪些词，只能下载报告才知道。很多人图省事直接全开，这是大忌。正确的做法是：先从你 SP 的 “搜索词展示量份额报告” 里，把你已经验证过的高绩效词挑出来加进 SB，把 SB 报告里表现差的词否掉。系统推荐的词包当参考可以，当主力不行 —— 它不知道你产品真实的盈利边界在哪。</p>
+<p>小站点的逻辑反过来。美国站这种大站，vCPM 建议价高、竞争激烈；小站点比如加拿大、欧洲小语种，建议竞价天然低，反而是练手的好地方。但小站点选词别学大站投长尾，直接上品类最热的大词 —— 小站点搜索量本来就小，长尾词你连曝光都拿不到，vCPM 再低都是白花。</p>
+<p>最后说一句可能有点扎心的话。评论区有个卖家讲得我特别认同：在亚马逊上做品牌，你能做的只是 “流量品牌”，做不了 “心智品牌”。买家不会因为看了你几次顶部广告就对你形成情感认同，他只是在这个当下、这个搜索框前，觉得你比别家顺眼。所以 BIS 抢的不是忠诚度，是那个 “第一眼被看到” 的机会。想清楚这一点，就不会对这个功能有不切实际的期待。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://soulburg.com">汇桐</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://soulburg.com/posts/amazon-ads-bis-vcpm/">https://soulburg.com/posts/amazon-ads-bis-vcpm/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://soulburg.com" target="_blank">心中之城</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/cover-amazon-ads.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>支持一下</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/reward-wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/reward-wechat.jpg" alt="微信"/ loading='lazy'></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/reward-alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/reward-alipay.jpg" alt="支付宝"/ loading='lazy'></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/amazon-ads-haiwang-vs-value/" title="亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？"><img class="cover" src="/img/cover-amazon-ads.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post" loading='lazy'><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？</div></div><div class="info-2"><div class="info-item-1">广告圈里一直有两种哲学，最近两年吵得尤其凶。一种叫 “海王打法”，一种叫 “价值打法”。我两边的课都听过、也都在自己链接上试过，今天聊聊我的真实体感。 先说海王。核心就一句话：低成本、广触达。不靠某个大词吃流量，而是铺天盖地找低价流量入口，用极低的 CPC 把曝光堆起来。操作上有几个硬要求：SKU 得强（活跃、标签多、收录全）、流量要分层、标签要做关联、选词要杂 —— 高转化高 CPC 的标品大词、低转化中低 CPC 的大词、非标品大词，甚至小语种词、拼错词都得放进去，因为这些词投的人少，CPC 天然便宜。 晒出来的案例确实亮眼：服装品类关键词投放 CPC 压到 0.3 刀、ACOS 14.66%；女士短袖自动广告 CPC 0.21 刀、ACOS 13.15%；浴帘做商品投放定向竞品，CPC 0.26 刀。听起来是不是很心动？但我得泼盆冷水，也是评论区一堆实操派帮我泼的 ——这套打法不是谁都能抄。 第一个坑：品类。海王打法在服装上跑通，是因为服装本身就需要海量流量去碰 “对眼” 的人，CPC 压到两毛三这种事，放在 3C、工具这种标品里根本不可能。有个做了八年的卖家直接说，新品权...</div></div></div></a><a class="pagination-related" href="/posts/amazon-ads-keyword-groups/" title="亚马逊广告：关键词组能替代手动拓词吗？四个案例的真实答案"><img class="cover" src="/img/cover-amazon-ads.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post" loading='lazy'><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">亚马逊广告：关键词组能替代手动拓词吗？四个案例的真实答案</div></div><div class="info-2"><div class="info-item-1">2025 年年初亚马逊在 SP 手动投放里上了个新东西，叫 “关键词组”。入口在广告后台新建 SP 活动→手动定向→关键词投放，里面多了个 “关键词组” 的选项。我观察了快一年，也看了不少卖家的实测，今天给个中立评价。 先说它是个什么。简单讲就是系统帮你选词、帮你匹配、帮你跟搜索趋势，你不用自己扒词表、不用纠结广泛还是精准，选一个主题类型（比如 “品类相关””相似品牌””礼品相关”），它自己跑。官方给的四个案例，我按可信度从高到低排。 最有用的是新品冷启动。一个卖美妆的新卖家，ASIN 一堆、不会扒词、又想跳过传统 “先自动跑两周再转手动” 的慢流程，直接自动广告 + 关键词组并行开，两周系统匹配到 100 多个相关搜索词。这个案例我觉得最真实，因为它解决的是真实痛点 —— 新手不会搭词库，系统帮你兜底。虽然这 100 多个词里有一堆要否，但比起从零开始扒 ABA，确实省时间。 第二个有用的场景是拓低竞争词。一个卖鼻毛修剪器的卖家，常规能想到的词都投遍了，用关键词组的 “品类相关”+”相似品牌” 两个主题，拓出 50 多个新词。有意思的是这些词里有西班牙语的 “Depilador...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/amazon-ads-understanding/" title="亚马逊广告：新手最容易白花钱的那几件事"><img class="cover" src="/img/cover-amazon-ads.png" alt="cover" loading='lazy'><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-26</div><div class="info-item-2">亚马逊广告：新手最容易白花钱的那几件事</div></div><div class="info-2"><div class="info-item-1">深夜十一点，我又蹲在广告后台看数据。 做跨境这几年，我发现一个挺扎心的事：很多卖家的广告不是死于不会投，而是死于几个”看起来聪明”的小动作。流量少了就关活动，词跑出来就赶紧收，曝光不够就死命加价。钱花出去了，单没起来，回头骂亚马逊算法偏心。 我自己也这么干过，交过学费。这篇不讲教科书定义，就把我这些年真正一笔笔验证过的东西捋一遍，专门挑新手最容易白花钱的地方说。 一、先别急着投，你的 ASIN 可能根本不配打广告很多人上来就问竞价多少、预算开多少，第一步就错了：商品得先具备被推广的资格，否则预算砸下去，系统压根不展示。 我自己的检查顺序是这样的：  账户是不是激活状态的专业卖家； 商品有没有库存、是不是可售； 最重要的，你有没有拿到”加入购物车”按钮（Buy Box）。拿不到购物车，广告基本白搭，这一点什么时候都没变。 成人、二手、翻新这类品类，以及已经关闭的类目，本身就不符合推广条件，不用在它们身上较劲。  投之前把这几项过一遍，比你纠结出价实在得多。 我遇到过最憋屈的一次，是商品不可售了，广告还挂着，预算照烧，一晚上三百多美金，换回来零个曝光。那种感觉很难形容：你不在改价，不...</div></div></div></a><a class="pagination-related" href="/posts/amazon-ads-haiwang-vs-value/" title="亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？"><img class="cover" src="/img/cover-amazon-ads.png" alt="cover" loading='lazy'><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-11-03</div><div class="info-item-2">亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？</div></div><div class="info-2"><div class="info-item-1">广告圈里一直有两种哲学，最近两年吵得尤其凶。一种叫 “海王打法”，一种叫 “价值打法”。我两边的课都听过、也都在自己链接上试过，今天聊聊我的真实体感。 先说海王。核心就一句话：低成本、广触达。不靠某个大词吃流量，而是铺天盖地找低价流量入口，用极低的 CPC 把曝光堆起来。操作上有几个硬要求：SKU 得强（活跃、标签多、收录全）、流量要分层、标签要做关联、选词要杂 —— 高转化高 CPC 的标品大词、低转化中低 CPC 的大词、非标品大词，甚至小语种词、拼错词都得放进去，因为这些词投的人少，CPC 天然便宜。 晒出来的案例确实亮眼：服装品类关键词投放 CPC 压到 0.3 刀、ACOS 14.66%；女士短袖自动广告 CPC 0.21 刀、ACOS 13.15%；浴帘做商品投放定向竞品，CPC 0.26 刀。听起来是不是很心动？但我得泼盆冷水，也是评论区一堆实操派帮我泼的 ——这套打法不是谁都能抄。 第一个坑：品类。海王打法在服装上跑通，是因为服装本身就需要海量流量去碰 “对眼” 的人，CPC 压到两毛三这种事，放在 3C、工具这种标品里根本不可能。有个做了八年的卖家直接说，新品权...</div></div></div></a><a class="pagination-related" href="/posts/amazon-ads-low-vs-high-price/" title="亚马逊广告：低客单 vs 高客单 该怎么调整？"><img class="cover" src="/img/cover-amazon-ads.png" alt="cover" loading='lazy'><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-29</div><div class="info-item-2">亚马逊广告：低客单 vs 高客单 该怎么调整？</div></div><div class="info-2"><div class="info-item-1">前几天帮朋友看广告后台，他卖一款 10 刀出头的小家居品，ACOS 飙到 80%，急得要砍预算。我问他：你这个品，同行转化率多少？他答不上来。又问：你毛利润多少、能扛多少 CPA？还是答不上来。 这就是问题所在。很多人打广告，不管自己卖的是 10 块的玩意儿还是 100 刀的大件，上来都是一套结构：自动开着、广泛撒词、精准收词，然后盯着 ACOS 一个数字死磕。可客单价不同，你该盯的指标、能花的钱、甚至广告工具的搭配，压根不是一个逻辑。 这几年我自己踩下来，最大的体会就是：广告架构不是抄出来的，是先看你卖的东西贵不贵、标品还是非标品，再决定钱往哪砸。 先搞清楚：你到底算 “低客单” 还是 “高客单”别拿绝对价格一刀切。 标品，比如 3C 配件、小工具，消费者对价格敏感、价位带透明，低中高分得很清楚；非标品像衣服、工艺品，材质和款式能差出十倍价钱，硬套客单价没意义 —— 人家拼的是设计和差异化，广告费能不能回来，看的是溢价能力。 真正要对照的，是你那个类目的同行转化率。这个数我现在养成习惯，上新前一定去广告后台的品牌中位数、还有商机探测器里看一眼。你自己的转化连同行平均都够不着，那...</div></div></div></a><a class="pagination-related" href="/posts/amazon-ads-low-bid-tos/" title="亚马逊广告：低竞价也能上首页顶部？我在小站点踩出来的逻辑"><img class="cover" src="/img/cover-amazon-ads.png" alt="cover" loading='lazy'><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-30</div><div class="info-item-2">亚马逊广告：低竞价也能上首页顶部？我在小站点踩出来的逻辑</div></div><div class="info-2"><div class="info-item-1">说个挺反直觉的事。 同一个词，我在美国站出 1.5 刀，也就勉强混个脸熟；换到一个欧洲小语种站点，我出 0.5 欧，系统直接把我顶到了搜索结果首页最顶上。一开始我以为是 bug，后来翻了后台的首页首位曝光份额才明白 —— 不是我出价多牛，是那地方压根没人跟我抢。 做了几年多站点，我最大的教训就是：美国站那套精细化打法，直接复制到小站点，钱一定白花。每个市场的流量脾气不一样，出价逻辑、找词方式、甚至你该盯哪个位置，都得换着来。 美国站：流量大，但每一分钱都得算着花美国站没什么悬念，流量最足，竞争也最狠，CPC 贵得咬人。这种地方我的做法反而 “笨”：核心词用手动精准，出价给高，短时间内把转化砸出来，先把排名站住。同时每周拉一次搜索词报告，有曝光有点击但不出单的词，精准否定掉，别养着。 位置上我一定分开算账：搜索首页、搜索结果其他位置、商品详情页，这三个地方的 ACOS 我会拉出来对比，哪个位置划算就给哪个位置加广告位加价，而不是笼统地把整个出价抬上去。自动广告一直开着别关，它是帮我捡长尾的；再配一组手动商品投放，直接定向竞品 ASIN，去抢详情页那波流量。 欧洲五国：词碎、CPC ...</div></div></div></a><a class="pagination-related" href="/posts/amazon-ads-keyword-synergy/" title="亚马逊广告：强相关词怎么投放才能&quot;联动&quot;效果最大化"><img class="cover" src="/img/cover-amazon-ads.png" alt="cover" loading='lazy'><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-28</div><div class="info-item-2">亚马逊广告：强相关词怎么投放才能&quot;联动&quot;效果最大化</div></div><div class="info-2"><div class="info-item-1">昨天晚上我对着搜索词报告发呆，拉出来三百多个词，横看竖看都觉得乱。 做亚马逊的人大概都有过这种时刻：词越拓越多，预算越花越快，可到底哪些该留、哪些该砍、哪些该单独拎出来打，全凭感觉。我早些年就是这么干的——看见大词出单就猛砸，看见零转化就一刀切，结果账户忽上忽下，钱没少花，排名也没稳住。 踩过几年坑，我现在管关键词的思路，基本上就是**”先分堆、再分层、最后联动”**。今天倒出来跟大家聊聊。 第一步不是拓词，是先在脑子里给词分堆很多人一上来就问”去哪找词”，其实找词之前，你得先想清楚这些词是干嘛的。 我现在习惯把词分成三类：一类是产品本身的核心词，比如你卖宠物自动喂食器，那 automatic cat feeder 就是词根；一类是人群词，比如 for two cats、automatic feeder for senior cats；还有一类是场景词，比如 feeder for vacation。 分完堆之后有意思的事就来了：你不用再傻等着平台给你推荐词，直接拿核心词根去跟人群词、场景词排列组合。一个词根配五个人群、三个场景，光这么排，词库就厚了一圈。而且这么拓出来的词，天生就...</div></div></div></a><a class="pagination-related" href="/posts/amazon-ads-adgroup/" title="亚马逊广告：一个广告组到底塞多少词？"><img class="cover" src="/img/cover-amazon-ads.png" alt="cover" loading='lazy'><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-10-27</div><div class="info-item-2">亚马逊广告：一个广告组到底塞多少词？</div></div><div class="info-2"><div class="info-item-1">昨晚对账对到一点多。 后台数据越看越不对劲：自动广告跑出来一整屏全是 ASIN，关键词没几个；那个最能出单的大词，ACOS 高得吓人；更气的是，我明明投了广告费，业务报告里的访客数却怎么算都对不上。 干这行久了，你就知道这些”对不上”，往往不是系统出问题，是自己脑子里那套老经验该更新了。今天索性把这些年踩过的坑，挑最费钱的几条说说。 一、一个组塞太多词，是在给自己埋雷我最早图省事，一个广告组里哐哐挂两百个词，觉得网撒大总能捞着鱼。结果呢？预算被一两个大词几小时吃光，剩下的词连个曝光都没有，数据稀稀拉拉，回头连判断谁好谁坏的依据都凑不齐。 现在我手里的广告组，词基本控制在五十个上下。这个数不是死规矩，背后的道理很简单：词太少，前期没数据，广告起不来；词一多，钱被稀释，新词根本没机会被验证。新品期可选的词多，我就分批分组测，跑出真数据了，没转化的立刻砍。 还有个小习惯我一直留着——同一个词的不同匹配方式，我会拆到不同广告组去管，不然后期看报表全是一锅粥。 二、自动广告全跑 ASIN，先别急着骂系统有朋友发截图给我：自动广告搜索词报告拉出来，哗哗全是 ASIN。 你得先知道，自动广告其...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="giscus-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/pinwheel.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/ loading='lazy'></div><div class="author-info-name">汇桐</div><div class="author-info-description">想到什么写什么，看见什么记什么。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">39</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">28</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Brian-Hee"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Brian-Hee" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:hello@soulburg.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #EA4335;"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title="RSS"><i class="fas fa-rss" style="color: #FF7242;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><div style="text-align:center;"><div style="font-size:16px;font-weight:bold;margin-bottom:8px;letter-spacing:1px;">欢迎来到心中之城 🏠</div><div style="font-size:13px;line-height:1.8;color:#888;">这里没有固定栏目，只是一个随手记录生活的地方。<br><span style="color:#8a7dff;font-weight:500;">想到什么写什么，看见什么记什么</span>，<br>收集日子里的美好。</div><div style="margin:14px 10px;border-top:1px dashed #e8e8e8;"></div><img src="/img/wechat-qrcode.jpg" style="width:108px;border-radius:8px;display:block;margin:0 auto;box-shadow:0 2px 10px rgba(0,0,0,0.10);" alt="公众号洛神赋" loading='lazy'><div style="font-size:12px;color:#999;margin-top:10px;">扫码关注公众号 <b style="color:#555;">「洛神赋」</b></div><div style="font-size:11px;color:#bbb;margin-top:2px;">第一时间收到更新</div></div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/amazon-ads-keyword-groups/" title="亚马逊广告：关键词组能替代手动拓词吗？四个案例的真实答案"><img src="/img/cover-amazon-ads.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="亚马逊广告：关键词组能替代手动拓词吗？四个案例的真实答案"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/amazon-ads-keyword-groups/" title="亚马逊广告：关键词组能替代手动拓词吗？四个案例的真实答案">亚马逊广告：关键词组能替代手动拓词吗？四个案例的真实答案</a><time datetime="2026-11-03T08:30:00.000Z" title="发表于 2026-11-03 16:30:00">2026-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/amazon-ads-bis-vcpm/" title="亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？"><img src="/img/cover-amazon-ads.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/amazon-ads-bis-vcpm/" title="亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？">亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？</a><time datetime="2026-11-03T08:00:00.000Z" title="发表于 2026-11-03 16:00:00">2026-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/amazon-ads-haiwang-vs-value/" title="亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？"><img src="/img/cover-amazon-ads.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/amazon-ads-haiwang-vs-value/" title="亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？">亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？</a><time datetime="2026-11-03T07:30:00.000Z" title="发表于 2026-11-03 15:30:00">2026-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/amazon-ads-standard-vs-nonstandard/" title="亚马逊广告：一个撬排名一个抢详情页，标品和非标品的广告分水岭"><img src="/img/cover-amazon-ads.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="亚马逊广告：一个撬排名一个抢详情页，标品和非标品的广告分水岭"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/amazon-ads-standard-vs-nonstandard/" title="亚马逊广告：一个撬排名一个抢详情页，标品和非标品的广告分水岭">亚马逊广告：一个撬排名一个抢详情页，标品和非标品的广告分水岭</a><time datetime="2026-11-03T07:00:00.000Z" title="发表于 2026-11-03 15:00:00">2026-11-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/amazon-ads-free-tools/" title="亚马逊广告：没钱投广告了？这两个免费工具，帮你把转化再抬一截"><img src="/img/cover-amazon-ads.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="亚马逊广告：没钱投广告了？这两个免费工具，帮你把转化再抬一截"/ loading='lazy'></a><div class="content"><a class="title" href="/posts/amazon-ads-free-tools/" title="亚马逊广告：没钱投广告了？这两个免费工具，帮你把转化再抬一截">亚马逊广告：没钱投广告了？这两个免费工具，帮你把转化再抬一截</a><time datetime="2026-11-03T06:00:00.000Z" title="发表于 2026-11-03 14:00:00">2026-11-03</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By 汇桐</span></div><div class="footer_custom_text">心中之城</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.7.0"></script><script src="/js/main.js?v=5.7.0"></script><script src="/js/tw_cn.js?v=5.7.0"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const getGiscusTheme = theme => theme === 'dark' ? 'dark' : 'light'
+
+  const createScriptElement = config => {
+    const ele = document.createElement('script')
+    Object.entries(config).forEach(([key, value]) => {
+      ele.setAttribute(key, value)
+    })
+    return ele
+  }
+
+  const loadGiscus = (el = document, key) => {
+    const mappingConfig = isShuoshuo
+      ? { 'data-mapping': 'specific', 'data-term': key }
+      : { 'data-mapping': (option && option['data-mapping']) || 'pathname' }
+
+    const giscusConfig = {
+      src: 'https://giscus.app/client.js',
+      'data-repo': 'Brian-Hee/Brian-Hee.github.io',
+      'data-repo-id': 'R_kgDOUXwCog',
+      'data-category-id': 'DIC_kwDOUXwCos4DFjWl',
+      'data-theme': getGiscusTheme(document.documentElement.getAttribute('data-theme')),
+      'data-reactions-enabled': '1',
+      crossorigin: 'anonymous',
+      async: true,
+      ...option,
+      ...mappingConfig
+    }
+
+    const scriptElement = createScriptElement(giscusConfig)
+
+    el.querySelector('#giscus-wrap').appendChild(scriptElement)
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGiscus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const changeGiscusTheme = theme => {
+    const iframe = document.querySelector('#giscus-wrap iframe')
+    if (iframe) {
+      const message = {
+        giscus: {
+          setConfig: {
+            theme: getGiscusTheme(theme)
+          }
+        }
+      }
+      iframe.contentWindow.postMessage(message, 'https://giscus.app')
+    }
+  }
+
+  btf.addGlobalFn('themeChange', changeGiscusTheme, 'giscus')
+
+  if (isShuoshuo) {
+    'Giscus' === 'Giscus'
+      ? window.shuoshuoComment = { loadComment: loadGiscus }
+      : window.loadOtherComment = loadGiscus
+    return
+  }
+
+  if ('Giscus' === 'Giscus' || !false) {
+    if (false) btf.loadComment(document.getElementById('giscus-wrap'), loadGiscus)
+    else loadGiscus()
+  } else {
+    window.loadOtherComment = loadGiscus
+  }
+})()</script></div><script src="/js/home-filter.js"></script><script src="/js/clicklove.js"></script><script src="/js/avatar-spin.js"></script><script src="/js/page-detect.js"></script><script src="/js/mouse-stars.js"></script><script src="/js/banner-rotate.js?v=20261020"></script><script src="/js/wallpaper-data.js?v=20261023a"></script><script src="/js/inner-banner.js?v=20261023a"></script><script src="/js/wechat-follow.js?v=20261020"></script><script src="/js/author-card.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章..." type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.7.0"></script></div></div></body></html>
