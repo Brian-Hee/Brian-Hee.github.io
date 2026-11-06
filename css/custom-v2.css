@@ -359,10 +359,11 @@ body.page-sentences #post > * {
 .post-card .article-cover img,
 #recent-posts .article-cover img,
 .article-sort-item .article-cover img {
-  object-fit: cover !important;
+  object-fit: contain !important;
+  background-color: #0f172a;
 }
 [data-theme="dark"] .article-cover__image,
 [data-theme="dark"] .post-card .article-cover img,
 [data-theme="dark"] #recent-posts .article-cover img {
-  background-color: #1e1e1e;
+  background-color: #0f172a;
 }
