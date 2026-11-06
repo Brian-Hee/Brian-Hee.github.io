@@ -358,10 +358,10 @@ body.page-sentences #post > * {
 .post_cover {
   overflow: hidden;
   height: 100% !important;
-  background-color: #0b1220;
 }
 .post_cover .post-bg {
-  object-fit: contain !important;
+  object-fit: cover !important;
   width: 100% !important;
   height: 100% !important;
+  object-position: center center;
 }
