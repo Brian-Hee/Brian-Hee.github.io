@@ -268,6 +268,15 @@ window.WALLPAPERS = [
     url: "/img/gallery/amazon-ads-cover-original.png",
     date: "2026-10-28"
   },
+  {
+    title: "WorkBuddy 未来办公",
+    description: "腾讯AI办公助手WorkBuddy，未来感全息界面风格",
+    category: "科技",
+    resolution: "原图",
+    colors: "蓝/绿",
+    url: "/img/workbuddy/cover-workbuddy-future.png",
+    date: "2026-11-06"
+  },
   // ===== 人物类 =====
   {
     title: "白猫少女",
