@@ -352,11 +352,14 @@ body.page-sentences #post > * {
 }
 
 /* 首页文章卡片封面图完整显示，不裁剪 */
+.article-cover {
+  aspect-ratio: 16 / 9 !important;
+}
 .article-cover__image,
 .post-card .article-cover img,
-#recent-posts .article-cover img {
-  object-fit: contain !important;
-  background-color: #f5f7fa;
+#recent-posts .article-cover img,
+.article-sort-item .article-cover img {
+  object-fit: cover !important;
 }
 [data-theme="dark"] .article-cover__image,
 [data-theme="dark"] .post-card .article-cover img,
