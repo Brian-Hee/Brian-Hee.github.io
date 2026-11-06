@@ -349,13 +349,17 @@ body.page-sentences #post > * {
   padding: 0 !important;
   margin: 16px auto !important;
   overflow: hidden !important;
+  height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 #pagination .pagination {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  min-height: 48px !important;
-  padding: 6px 14px !important;
+  width: 100% !important;
+  padding: 0 14px !important;
 }
 
 /* 首页文章卡片左右布局：左边文字垂直居中 */
