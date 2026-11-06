@@ -355,13 +355,10 @@ body.page-sentences #post > * {
 .post_cover {
   aspect-ratio: 16 / 9 !important;
   overflow: hidden;
+  height: auto !important;
 }
 .post_cover .post-bg {
-  object-fit: contain !important;
-  background-color: #0f172a;
+  object-fit: cover !important;
   width: 100% !important;
   height: 100% !important;
-}
-[data-theme="dark"] .post_cover .post-bg {
-  background-color: #0f172a;
 }
