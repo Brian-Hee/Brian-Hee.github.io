@@ -346,9 +346,13 @@ body.page-sentences #post > * {
 /* 分页器收成圆角胶囊卡片，不再是横贯内容区的白长条 */
 #pagination {
   border-radius: 12px !important;
-  padding: 6px 14px !important;
+  padding: 0 14px !important;
   margin: 16px auto !important;
   overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 48px !important;
 }
 
 /* 首页文章卡片左右布局：左边文字垂直居中 */
