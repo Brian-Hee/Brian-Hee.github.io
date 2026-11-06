@@ -346,8 +346,8 @@ body.page-sentences #post > * {
 /* 分页器收成圆角胶囊卡片，不再是横贯内容区的白长条 */
 #pagination {
   border-radius: 12px !important;
-  padding: 12px 14px !important;
-  margin: 24px auto !important;
+  padding: 6px 14px !important;
+  margin: 16px auto !important;
   overflow: hidden !important;
 }
 
