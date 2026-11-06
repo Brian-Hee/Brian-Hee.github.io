@@ -351,17 +351,23 @@ body.page-sentences #post > * {
   overflow: hidden !important;
 }
 
-/* 首页文章卡片封面图完整显示，不裁剪 */
+/* 首页文章卡片左右布局：左边文字垂直居中 */
 .recent-post-item {
   align-items: stretch !important;
+}
+.recent-post-item .left,
+.recent-post-item .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .post_cover {
   overflow: hidden;
   height: 100% !important;
-  background-color: #061324;
 }
 .post_cover .post-bg {
-  object-fit: contain !important;
+  object-fit: cover !important;
   width: 100% !important;
   height: 100% !important;
+  object-position: center center;
 }
