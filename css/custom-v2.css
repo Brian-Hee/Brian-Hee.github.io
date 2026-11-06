@@ -355,11 +355,10 @@ body.page-sentences #post > * {
 .recent-post-item {
   align-items: stretch !important;
 }
-.recent-post-item .left,
-.recent-post-item .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.recent-post-item .recent-post-info {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
 }
 .post_cover {
   overflow: hidden;
