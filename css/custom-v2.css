@@ -356,6 +356,7 @@ body.page-sentences #post > * {
   aspect-ratio: 16 / 9 !important;
   overflow: hidden;
   height: auto !important;
+  min-height: 0 !important;
 }
 .post_cover .post-bg {
   object-fit: cover !important;
