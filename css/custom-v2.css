@@ -352,24 +352,16 @@ body.page-sentences #post > * {
 }
 
 /* 首页文章卡片封面图完整显示，不裁剪 */
-.article-cover {
+.post_cover {
   aspect-ratio: 16 / 9 !important;
   overflow: hidden;
 }
-.article-cover img,
-.article-cover__image,
-.post-card .article-cover img,
-#recent-posts .article-cover img,
-.article-sort-item .article-cover img,
-#article-container .flink-article .article-cover img {
+.post_cover .post-bg {
   object-fit: contain !important;
   background-color: #0f172a;
   width: 100% !important;
   height: 100% !important;
 }
-[data-theme="dark"] .article-cover img,
-[data-theme="dark"] .article-cover__image,
-[data-theme="dark"] .post-card .article-cover img,
-[data-theme="dark"] #recent-posts .article-cover img {
+[data-theme="dark"] .post_cover .post-bg {
   background-color: #0f172a;
 }
