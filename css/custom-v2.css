@@ -1,9 +1,20 @@
 /* 自定义样式 - 宇宙背景 + 卡片浮层 + 风车头像 */
 
-/* 网站背景 - 直接设置在 body 上 */
+/* 网站背景 - 用伪元素，避免被识别为图片触发右键菜单 */
 body {
-  background: url("/img/bg-mountain.jpg") no-repeat center center fixed !important;
-  background-size: cover !important;
+  background: #1a1a2e !important;
+}
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/img/bg-mountain.jpg") no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* 内容区域背景透明，让背景图显示出来 */
@@ -48,6 +59,13 @@ body {
 #pagination .extend {
   background: rgba(255, 255, 255, 0.9) !important;
   border-radius: 8px !important;
+}
+
+/* 当前页按钮：主题青填充 + 白字，避免白底白字看不见 */
+#pagination .page-number.current {
+  background: #00c4b6 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
 }
 
 /* 页脚背景半透明 */
@@ -228,6 +246,12 @@ body.page-sentences #post > * {
   color: rgba(255, 255, 255, 0.8) !important;
 }
 
+[data-theme="dark"] #pagination .page-number.current {
+  background: #00c4b6 !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
 [data-theme="dark"] .recent-post-item .post-title a,
 [data-theme="dark"] .recent-post-item .post-excerpt,
 [data-theme="dark"] .card-widget .card-info,
@@ -266,3 +290,94 @@ body.page-sentences #post > * {
   margin-bottom: 15px !important;
 }
 
+
+/* 文章内容左右边距对称 */
+.post-content {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#post {
+  padding: 20px !important;
+}
+
+/* ========== P0：正文可读性 + Hero 收窄 ========== */
+
+/* 正文字号 16px、行高 1.8、段距 18px（只作用于文章正文，不影响列表卡片） */
+#post .post-content,
+#post .article-entry {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  color: rgb(60, 58, 57) !important;
+}
+#post .post-content p,
+#post .article-entry p {
+  font-size: 16px !important;
+  line-height: 1.8 !important;
+  margin-bottom: 18px !important;
+}
+
+/* Hero：首页 full_page 保持满屏 100vh；内页（非首页）收窄 40vh，让内容更快露出 */
+#page-header:not(.full_page) {
+  height: 40vh !important;
+  min-height: 260px !important;
+}
+#page-header.full_page {
+  height: 100vh !important;
+  min-height: 0 !important;
+}
+#page-header .post-bg {
+  height: 100% !important;
+}
+
+/* === 收尾微调：移动端 dvh 防地址栏跳动 + 分页器胶囊化 === */
+#page-header.full_page {
+  height: 100vh !important;
+  height: 100dvh !important;
+}
+#page-header:not(.full_page) {
+  height: 40vh !important;
+  height: 40dvh !important;
+}
+@media (max-width: 768px) {
+  #page-header.full_page {
+    background-attachment: scroll !important;
+  }
+}
+/* 分页器收成圆角胶囊卡片，不再是横贯内容区的白长条 */
+#pagination {
+  border-radius: 12px !important;
+  padding: 0 !important;
+  margin: 16px auto !important;
+  overflow: hidden !important;
+  height: 56px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+#pagination .pagination {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  padding: 0 14px !important;
+}
+
+/* 首页文章卡片左右布局：左边文字垂直居中 */
+.recent-post-item {
+  align-items: stretch !important;
+}
+.recent-post-item .recent-post-info {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+.post_cover {
+  overflow: hidden;
+  height: 100% !important;
+}
+.post_cover .post-bg {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-position: center center;
+}

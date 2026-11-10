@@ -1,0 +1,260 @@
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #fff;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.header { text-align: center; margin-bottom: 40px; }
+.header h1 { font-size: 32px; margin-bottom: 10px; }
+.header p { opacity: 0.6; font-size: 14px; }
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+.card-icon { font-size: 32px; margin-bottom: 12px; }
+.card-title { font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+.card-time { display: flex; gap: 10px; margin-bottom: 16px; }
+.time-block {
+  flex: 1;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+}
+.time-num {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.time-label { font-size: 11px; opacity: 0.6; margin-top: 6px; }
+.card-msg { font-size: 13px; opacity: 0.7; }
+.card-setting {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.card-setting label { font-size: 12px; opacity: 0.6; display: block; margin-bottom: 6px; }
+.card-setting input {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+.card-setting input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+.section-title { font-size: 20px; font-weight: 600; margin-bottom: 16px; opacity: 0.9; }
+.festival-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+.festival-item {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.festival-item:hover { background: rgba(255,255,255,0.12); transform: translateY(-2px); }
+.festival-item.active { background: rgba(78, 204, 163, 0.15); border-color: #4ecca3; }
+.festival-icon { font-size: 28px; margin-bottom: 8px; }
+.festival-name { font-size: 14px; font-weight: 500; margin-bottom: 4px; }
+.festival-days { font-size: 12px; opacity: 0.6; }
+.detail-card {
+  display: none;
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.detail-card.show { display: block; }
+.detail-card .time-num { font-size: 48px; }
+.add-btn {
+  width: 100%;
+  padding: 16px;
+  background: rgba(255,255,255,0.05);
+  border: 2px dashed rgba(255,255,255,0.2);
+  border-radius: 16px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+.add-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); }
+.celebrate { color: #4ecca3; animation: pulse 1s ease infinite; }
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+@media (max-width: 600px) {
+  .time-num { font-size: 24px; }
+  .detail-card .time-num { font-size: 36px; }
+  .card { padding: 16px; }
+}
+</style>
+
+<div id="app"></div>
+
+<script src="/js/mouse-stars.js"></script>
+
+<script>
+function pad(n) { return String(n).padStart(2, '0'); }
+
+const festivals = [
+  { name: '元旦', icon: '🎊', month: 0, day: 1 },
+  { name: '春节', icon: '🧨', date: '2027-02-06' },
+  { name: '元宵节', icon: '🏮', date: '2027-02-20' },
+  { name: '清明节', icon: '🌿', date: '2027-04-05' },
+  { name: '劳动节', icon: '💪', month: 4, day: 1 },
+  { name: '端午节', icon: '🐉', date: '2027-06-09' },
+  { name: '中秋节', icon: '🌕', date: '2027-09-15' },
+  { name: '国庆节', icon: '🇨🇳', month: 9, day: 1 },
+  { name: '圣诞节', icon: '🎄', month: 11, day: 25 },
+];
+
+document.getElementById('app').innerHTML = `
+  <div class="container">
+    <div class="header"><h1>⏰ 倒计时</h1><p>每一刻都值得期待</p></div>
+    <div class="main-grid">
+      <div class="card" id="card-work">
+        <div class="card-icon">💼</div>
+        <div class="card-title">下班倒计时</div>
+        <div class="card-time">
+          <div class="time-block"><div class="time-num" id="work-h">00</div><div class="time-label">小时</div></div>
+          <div class="time-block"><div class="time-num" id="work-m">00</div><div class="time-label">分钟</div></div>
+          <div class="time-block"><div class="time-num" id="work-s">00</div><div class="time-label">秒</div></div>
+        </div>
+        <div class="card-msg" id="work-msg">再坚持一下</div>
+        <div class="card-setting"><label>下班时间</label><input type="time" id="work-time" value="17:30"></div>
+      </div>
+    </div>
+    <div class="section-title">🎊 节日倒计时（点卡片看详情）</div>
+    <div class="detail-card" id="detail">
+      <div class="card-icon" id="detail-icon">🎊</div>
+      <div class="card-title" id="detail-name">节日名称</div>
+      <div class="card-time">
+        <div class="time-block"><div class="time-num" id="detail-d">0</div><div class="time-label">天</div></div>
+        <div class="time-block"><div class="time-num" id="detail-h">00</div><div class="time-label">时</div></div>
+        <div class="time-block"><div class="time-num" id="detail-m">00</div><div class="time-label">分</div></div>
+        <div class="time-block"><div class="time-num" id="detail-s">00</div><div class="time-label">秒</div></div>
+      </div>
+    </div>
+    <div class="festival-list" id="festival-list"></div>
+    <button class="add-btn" onclick="addCustom()">+ 添加自定义倒计时</button>
+  </div>
+`;
+
+function getTarget(f) {
+  if (f.date) return new Date(f.date);
+  const now = new Date();
+  let t = new Date(now.getFullYear(), f.month, f.day);
+  if (t < now) t = new Date(now.getFullYear()+1, f.month, f.day);
+  return t;
+}
+
+const workTime = document.getElementById('work-time');
+const savedWork = localStorage.getItem('workTime');
+if (savedWork) workTime.value = savedWork;
+workTime.addEventListener('change', () => localStorage.setItem('workTime', workTime.value));
+
+function tickWork() {
+  const now = new Date();
+  const [h, m] = workTime.value.split(':').map(Number);
+  const off = new Date(now);
+  off.setHours(h, m, 0, 0);
+  if (off < now) off.setDate(off.getDate() + 1);
+  const diff = off - now;
+  document.getElementById('work-h').textContent = pad(Math.floor(diff/3600000));
+  document.getElementById('work-m').textContent = pad(Math.floor((diff%3600000)/60000));
+  document.getElementById('work-s').textContent = pad(Math.floor((diff%60000)/1000));
+  const msg = document.getElementById('work-msg');
+  if (diff < 0) { msg.textContent = '下班啦！快走吧 🎉'; msg.classList.add('celebrate'); }
+  else { msg.textContent = '再坚持一下'; msg.classList.remove('celebrate'); }
+}
+
+const list = document.getElementById('festival-list');
+let currentFestival = null;
+
+festivals.forEach((f, i) => {
+  const item = document.createElement('div');
+  item.className = 'festival-item';
+  item.innerHTML = `<div class="festival-icon">${f.icon}</div><div class="festival-name">${f.name}</div><div class="festival-days" data-days>计算中...</div>`;
+  item.onclick = () => {
+    if (item.classList.contains('active')) {
+      item.classList.remove('active');
+      currentFestival = null;
+      document.getElementById('detail').classList.remove('show');
+    } else {
+      document.querySelectorAll('.festival-item').forEach(x => x.classList.remove('active'));
+      item.classList.add('active');
+      currentFestival = f;
+      document.getElementById('detail-icon').textContent = f.icon;
+      document.getElementById('detail-name').textContent = f.name;
+      document.getElementById('detail').classList.add('show');
+    }
+  };
+  list.appendChild(item);
+  f.el = item;
+});
+
+function updateFestivalDays() {
+  const now = new Date();
+  festivals.forEach(f => {
+    const diff = getTarget(f) - now;
+    const days = Math.max(0, Math.floor(diff/86400000));
+    f.el.querySelector('[data-days]').textContent = days > 0 ? `还有${days}天` : '就是今天！';
+  });
+}
+
+function tickDetail() {
+  if (!currentFestival) return;
+  const now = new Date();
+  const diff = Math.max(0, getTarget(currentFestival) - now);
+  document.getElementById('detail-d').textContent = Math.floor(diff/86400000);
+  document.getElementById('detail-h').textContent = pad(Math.floor((diff%86400000)/3600000));
+  document.getElementById('detail-m').textContent = pad(Math.floor((diff%3600000)/60000));
+  document.getElementById('detail-s').textContent = pad(Math.floor((diff%60000)/1000));
+}
+
+function addCustom() {
+  const title = prompt('倒计时名称：');
+  if (!title) return;
+  const date = prompt('日期（YYYY-MM-DD）：');
+  if (!date) return;
+  list.insertAdjacentHTML('beforeend', `<div class="festival-item"><div class="festival-icon">📅</div><div class="festival-name">${title}</div><div class="festival-days">${date}</div></div>`);
+}
+
+function tickAll() {
+  tickWork();
+  updateFestivalDays();
+  tickDetail();
+}
+tickAll();
+setInterval(tickAll, 1000);
+</script>

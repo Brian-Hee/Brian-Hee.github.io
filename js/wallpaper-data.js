@@ -250,6 +250,33 @@ window.WALLPAPERS = [
     url: "/img/gallery/circuit-chip.jpg",
     date: "2026-09-22"
   },
+  {
+    title: "记忆网络节点",
+    description: "深蓝背景中三个发光球体由光线网络互联，象征记忆网络与知识图谱（Pexels免费可商用）",
+    category: "科技",
+    resolution: "1260×840",
+    colors: "蓝/白",
+    url: "/img/gallery/mempalace-memory-net.jpg",
+    date: "2026-10-20"
+  },
+  {
+    title: "AMAZON ADS",
+    description: "亚马逊广告系列文章封面，深蓝购物车与图表主题",
+    category: "科技",
+    resolution: "原图",
+    colors: "蓝/橙",
+    url: "/img/gallery/amazon-ads-cover-original.png",
+    date: "2026-10-28"
+  },
+  {
+    title: "WorkBuddy 未来办公",
+    description: "腾讯AI办公助手WorkBuddy，未来感全息界面风格",
+    category: "科技",
+    resolution: "原图",
+    colors: "蓝/绿",
+    url: "/img/workbuddy/cover-workbuddy-future.png",
+    date: "2026-11-06"
+  },
   // ===== 人物类 =====
   {
     title: "白猫少女",

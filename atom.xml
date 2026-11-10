@@ -4,363 +4,337 @@
     <name>汇桐</name>
   </author>
   <generator uri="https://hexo.io/">Hexo</generator>
-  <icon>https://amzian.com/icon.png</icon>
-  <id>https://amzian.com/</id>
-  <link href="https://amzian.com/" rel="alternate"/>
-  <link href="https://amzian.com/atom.xml" rel="self"/>
+  <icon>https://soulburg.com/icon.png</icon>
+  <id>https://soulburg.com/</id>
+  <link href="https://soulburg.com/" rel="alternate"/>
+  <link href="https://soulburg.com/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, 汇桐</rights>
-  <subtitle>记录生活感受，分享知识教程</subtitle>
+  <subtitle>我的随手记：想到什么写什么，看见什么记什么</subtitle>
   <title>心中之城</title>
-  <updated>2026-09-30T06:59:14.066Z</updated>
+  <updated>2026-11-10T08:30:00.000Z</updated>
   <entry>
     <author>
       <name>汇桐</name>
     </author>
-    <category term="生活随笔" scheme="https://amzian.com/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
-    <category term="睡眠" scheme="https://amzian.com/tags/%E7%9D%A1%E7%9C%A0/"/>
-    <category term="养生" scheme="https://amzian.com/tags/%E5%85%BB%E7%94%9F/"/>
-    <category term="子午流注" scheme="https://amzian.com/tags/%E5%AD%90%E5%8D%88%E6%B5%81%E6%B3%A8/"/>
-    <category term="健康" scheme="https://amzian.com/tags/%E5%81%A5%E5%BA%B7/"/>
-    <id>https://amzian.com/2026/09/30/%E7%9D%A1%E7%9C%A0%E6%8C%87%E5%8D%97/</id>
-    <link href="https://amzian.com/2026/09/30/%E7%9D%A1%E7%9C%A0%E6%8C%87%E5%8D%97/"/>
-    <published>2026-09-30T07:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>养生这事儿，讲到底就三句话：<strong>时长是底线，时辰是效率，心神决定你老得有多快。</strong> 下面这套东西，把现代睡眠医学的硬指标和中医、道家睡法里真正经过长期验证的部分拼在一起，去掉那些神神叨叨的禁忌，留下能直接照做的。</p>
-<h2 id="不同年龄段，睡多久才够"><a href="#不同年龄段，睡多久才够" class="headerlink" title="不同年龄段，睡多久才够"></a>不同年龄段，睡多久才够</h2><ul>
-<li><strong>0–3岁</strong>：10–14小时，最好11–13。小儿稚阴稚阳，多睡长气血，别抱着哄，困了就放。</li>
-<li><strong>4–12岁</strong>：9–12小时，最好9.5–11。23点后还没睡，肝气容易郁，注意力散，发育也跟着受影响。</li>
-<li><strong>13–17岁</strong>：8–10小时，最好8.5–9.5。这是肾精充盈的关键期，熬夜最伤底子，痘痘和情绪多半一起来。</li>
-<li><strong>18–40岁</strong>：7–9小时，最好7.5——正好五个90分钟的睡眠周期。长期低于6小时，早衰、气血两亏；超过9小时，久卧伤气，人会发沉、浮肿。这一段是抗衰的关键期，重点是<strong>养肝血、敛阴液</strong>。</li>
-<li><strong>41–65岁</strong>：6–8小时，最好7。中年深睡眠自然变少，别死磕8小时，重质量不堆时长；熬夜容易气滞血瘀、长斑、血压出问题。</li>
-<li><strong>65岁以上</strong>：5–7小时，最好6。阳气渐衰，夜里易醒是常态；白天小憩别太久，更别白天昏天黑地地睡，把昼夜阴阳搅乱。</li>
-</ul>]]>
-    </summary>
-    <title>睡得对，老得慢：一份把现代医学和子午流注揉在一起的睡眠指南</title>
-    <updated>2026-09-30T06:59:14.066Z</updated>
+    <category term="AI" scheme="https://soulburg.com/categories/AI/"/>
+    <category term="AI" scheme="https://soulburg.com/tags/AI/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="效率" scheme="https://soulburg.com/tags/%E6%95%88%E7%8E%87/"/>
+    <category term="工作流" scheme="https://soulburg.com/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
+    <id>https://soulburg.com/posts/ai-workflow-2026/</id>
+    <link href="https://soulburg.com/posts/ai-workflow-2026/"/>
+    <published>2026-11-10T08:30:00.000Z</published>
+    <summary>大部分人不是不会用AI，是把它用浅了。AI出图写文案是基本功，真正拉开差距的是让它帮你做决策前的脏活累活、把你的分析方法沉淀成固定流程、最后让它主动找你汇报问题。</summary>
+    <title>从 &quot;我问 AI 答&quot; 到 &quot;AI 主动找我&quot;：2026 年小卖家的 AI 工作流长什么样</title>
+    <updated>2026-11-10T08:30:00.000Z</updated>
   </entry>
   <entry>
     <author>
       <name>汇桐</name>
     </author>
-    <category term="思考与认知" scheme="https://amzian.com/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"/>
-    <category term="认知" scheme="https://amzian.com/tags/%E8%AE%A4%E7%9F%A5/"/>
-    <category term="修行" scheme="https://amzian.com/tags/%E4%BF%AE%E8%A1%8C/"/>
-    <category term="人生" scheme="https://amzian.com/tags/%E4%BA%BA%E7%94%9F/"/>
-    <id>https://amzian.com/2026/09/30/%E4%BA%BA%E5%88%86%E4%B8%A4%E7%A7%8D/</id>
-    <link href="https://amzian.com/2026/09/30/%E4%BA%BA%E5%88%86%E4%B8%A4%E7%A7%8D/"/>
-    <published>2026-09-30T06:30:00.000Z</published>
+    <category term="工具" scheme="https://soulburg.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="AI" scheme="https://soulburg.com/tags/AI/"/>
+    <category term="效率" scheme="https://soulburg.com/tags/%E6%95%88%E7%8E%87/"/>
+    <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
+    <id>https://soulburg.com/posts/workbuddy-invite/</id>
+    <link href="https://soulburg.com/posts/workbuddy-invite/"/>
+    <published>2026-11-06T06:00:00.000Z</published>
+    <summary>腾讯出品的WorkBuddy，不是那种只会聊天的AI，是真能替你干活的。写方案做PPT拉数据分析，背后150多个AI专家分工，还跟企微腾讯文档腾讯会议全打通。现在注册送2000积分，我邀请你来咱俩都赚。</summary>
+    <title>腾讯出的这个AI办公神器，我用了两周，把摸鱼时间翻倍了</title>
+    <updated>2026-11-06T06:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
+    <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
+    <id>https://soulburg.com/posts/amazon-ads-keyword-groups/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-keyword-groups/"/>
+    <published>2026-11-03T08:30:00.000Z</published>
+    <summary>2025年新上的关键词组功能，系统帮你选词帮你匹配。不是神器是效率工具——新品期不会搭词库让它兜底、小语种新品牌词让它捡漏、节日礼品词让它蹭一波。但它跟自动广告高度重叠，否词功夫一点没少。</summary>
+    <title>亚马逊广告：关键词组能替代手动拓词吗？四个案例的真实答案</title>
+    <updated>2026-11-03T08:30:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
+    <category term="竞价策略" scheme="https://soulburg.com/tags/bidding/"/>
+    <id>https://soulburg.com/posts/amazon-ads-bis-vcpm/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-bis-vcpm/"/>
+    <published>2026-11-03T08:00:00.000Z</published>
+    <summary>SB里的BIS目标按vCPM计费，看着建议价三四十刀肉疼，自己换算后往往比CPC还便宜。但新手别碰——新品、没评论、旗舰店空架子的开了就是交学费。小站点反而是练手的好地方。</summary>
+    <title>亚马逊广告：品牌推广里那个按千次曝光付费的目标，到底怎么用？</title>
+    <updated>2026-11-03T08:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
+    <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
+    <id>https://soulburg.com/posts/amazon-ads-haiwang-vs-value/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-haiwang-vs-value/"/>
+    <published>2026-11-03T07:30:00.000Z</published>
+    <summary>海王打法低成本广触达，价值打法找精准需求。新品期老老实实做价值打法先搞清楚卖点，链接跑顺了再拿海王拓低价流量。别搞反顺序——海王是给跑起来的链接补流量，不是给新品冷启动用的。</summary>
+    <title>亚马逊广告：广告圈两大门派——海王撒网和价值钓鱼，你站哪边？</title>
+    <updated>2026-11-03T07:30:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
+    <category term="广告结构" scheme="https://soulburg.com/tags/ad-structure/"/>
+    <id>https://soulburg.com/posts/amazon-ads-standard-vs-nonstandard/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-standard-vs-nonstandard/"/>
+    <published>2026-11-03T07:00:00.000Z</published>
+    <summary>拿同一套结构打所有品类一定翻车。标品是流量集中、用广告换排名；非标品是需求分散、用结构接流失。核心大词砸预算撬排名，非标品退到详情页截流，别脑子一热开一堆近似款自己跟自己抢流量。</summary>
+    <title>亚马逊广告：一个撬排名一个抢详情页，标品和非标品的广告分水岭</title>
+    <updated>2026-11-03T07:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
+    <category term="品牌运营" scheme="https://soulburg.com/tags/%E5%93%81%E7%89%8C%E8%BF%90%E8%90%A5/"/>
+    <id>https://soulburg.com/posts/amazon-ads-free-tools/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-free-tools/"/>
+    <published>2026-11-03T06:00:00.000Z</published>
+    <summary>广告费哗哗砸着，却把亚马逊给的两个免费工具当摆设——品牌旗舰店和Posts。不投广告的时候它们也在默默接流量，用好了订单能提30%。SKU少就砸视觉焦点，SKU多就分类货架，素材后台就能生成。</summary>
+    <title>亚马逊广告：没钱投广告了？这两个免费工具，帮你把转化再抬一截</title>
+    <updated>2026-11-03T06:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="预算策略" scheme="https://soulburg.com/tags/budget/"/>
+    <category term="ACOS" scheme="https://soulburg.com/tags/ACOS/"/>
+    <id>https://soulburg.com/posts/amazon-ads-budget-allocation/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-budget-allocation/"/>
+    <published>2026-11-03T02:00:00.000Z</published>
+    <summary>广告预算不是看着给的，是从销量和利润目标倒推出来的。前期敢亏买排名，后期收着花吃利润。词按月搜索量分三层，SP推不动了用SB和视频补创意素材。顺序对了，销量和利润不用二选一。</summary>
+    <title>亚马逊广告：开广告应该怎样合理分配预算，才能做到好的ACOS</title>
+    <updated>2026-11-03T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="多站点运营" scheme="https://soulburg.com/tags/multi-site/"/>
+    <category term="小语种站点" scheme="https://soulburg.com/tags/small-market/"/>
+    <id>https://soulburg.com/posts/amazon-ads-small-market-boom/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-small-market-boom/"/>
+    <published>2026-11-02T02:00:00.000Z</published>
+    <summary>美国站CPC卷上天，几个小语种站加起来利润反而更舒服。但小语种不是翻译一遍就完事——提前埋伏当地节日、别按天数砍新品、大词敢投、词贵精不贵多。真正的壁垒在本土化，不在广告后台。</summary>
+    <title>亚马逊广告：美国站卷不动了？小语种站点才是低成本捡钱的地方</title>
+    <updated>2026-11-02T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="预算策略" scheme="https://soulburg.com/tags/budget/"/>
+    <category term="旺季运营" scheme="https://soulburg.com/tags/peak-season/"/>
+    <id>https://soulburg.com/posts/amazon-ads-peak-season-budget/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-peak-season-budget/"/>
+    <published>2026-10-30T10:00:00.000Z</published>
+    <summary>节前猛加预算结果正日子泄了，或者从节前到节后一套打法打到底——大促广告翻车基本都是这两种。预算分三段、竞价分两类、利润靠结构补，子弹留到该用的地方。</summary>
+    <title>亚马逊广告：大促前我最常劝的一句话——别把子弹全打在节前</title>
+    <updated>2026-10-30T10:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="旺季运营" scheme="https://soulburg.com/tags/peak-season/"/>
+    <category term="广告结构" scheme="https://soulburg.com/tags/ad-structure/"/>
+    <id>https://soulburg.com/posts/amazon-ads-peak-season-structure/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-peak-season-structure/"/>
+    <published>2026-10-30T06:00:00.000Z</published>
+    <summary>旺季预算加多少、出价抬不抬，先别急着调。先看你的品流量是从搜索来的还是详情页逛来的。标品死磕关键词，非标品重视关联流量，自动养词、手动收词、商品投放抢互补——顺序对了旺季才不慌。</summary>
+    <title>亚马逊广告：旺季前搭广告，自动、手动、商品投放三步排兵</title>
+    <updated>2026-10-30T06:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="竞价策略" scheme="https://soulburg.com/tags/bidding/"/>
+    <category term="多站点运营" scheme="https://soulburg.com/tags/multi-site/"/>
+    <id>https://soulburg.com/posts/amazon-ads-low-bid-tos/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-low-bid-tos/"/>
+    <published>2026-10-30T02:00:00.000Z</published>
+    <summary>美国站出1.5刀勉强混脸熟，欧洲小站出0.5欧直接顶到首页最顶。不是出价神了，是那地方没人抢。美国站练精细化，小站点抢位置，同样的钱换个市场回报高得多。</summary>
+    <title>亚马逊广告：低竞价也能上首页顶部？我在小站点踩出来的逻辑</title>
+    <updated>2026-10-30T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
+    <category term="ACOS" scheme="https://soulburg.com/tags/ACOS/"/>
+    <id>https://soulburg.com/posts/amazon-ads-low-vs-high-price/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-low-vs-high-price/"/>
+    <published>2026-10-29T02:00:00.000Z</published>
+    <summary>10刀的小玩意儿和100刀的大件，广告逻辑根本不是一回事。低客单别盯ACOS先盯转化率，高客单盯CPA敢在大词上砸钱，视频和再营销才是主角。那些4:4:2的预算比例表，看完就扔。</summary>
+    <title>亚马逊广告：低客单 vs 高客单 该怎么调整？</title>
+    <updated>2026-10-29T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
+    <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
+    <id>https://soulburg.com/posts/amazon-ads-keyword-synergy/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-keyword-synergy/"/>
+    <published>2026-10-28T02:00:00.000Z</published>
+    <summary>三百多个搜索词横看竖看都乱？词越拓越多，预算越花越快，哪些该留哪些该砍全凭感觉。先分堆、再分层、最后联动——把词根、人群词、场景词排好队，大词冲排名、长尾捡漏、自动广告当侦察兵，词库是养出来的不是堆出来的。</summary>
+    <title>亚马逊广告：强相关词怎么投放才能&quot;联动&quot;效果最大化</title>
+    <updated>2026-10-28T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
+    <category term="避坑" scheme="https://soulburg.com/tags/pitfalls/"/>
+    <id>https://soulburg.com/posts/amazon-ads-adgroup/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-adgroup/"/>
+    <published>2026-10-27T02:00:00.000Z</published>
+    <summary>后台数据对不上，往往不是系统出问题，是老经验该更新了。一个组塞多少词、自动广告全跑 ASIN 怎么办、有曝光没点击先动什么、广告点击为什么比访客数多——一篇把对账时最费钱的几个坑说清楚。</summary>
+    <title>亚马逊广告：一个广告组到底塞多少词？</title>
+    <updated>2026-10-27T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
+    <category term="避坑" scheme="https://soulburg.com/tags/pitfalls/"/>
+    <id>https://soulburg.com/posts/amazon-ads-understanding/</id>
+    <link href="https://soulburg.com/posts/amazon-ads-understanding/"/>
+    <published>2026-10-26T02:00:00.000Z</published>
+    <summary>很多卖家的广告不是死于不会投，而是死于几个&quot;看起来聪明&quot;的小动作：流量少了就关活动、词跑出来就收、曝光不够就死命加价。这篇把投前资格、别乱动、看懂归因、选词、出价和品牌词红线一次捋清，给新手省点学费。</summary>
+    <title>亚马逊广告：新手最容易白花钱的那几件事</title>
+    <updated>2026-10-26T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
+    <category term="AI" scheme="https://soulburg.com/tags/AI/"/>
+    <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
+    <category term="教程" scheme="https://soulburg.com/tags/tutorial/"/>
+    <id>https://soulburg.com/posts/mempalace-long-term-memory/</id>
+    <link href="https://soulburg.com/posts/mempalace-long-term-memory/"/>
+    <published>2026-10-20T02:00:00.000Z</published>
+    <summary>本地优先、原文留存、零 API 调用的开源 AI 长期记忆库 MemPalace，用翼—房间—抽屉的记忆宫殿结构，给大模型续上不断片的长记忆。</summary>
+    <title>AI 的记忆宫殿：MemPalace 给大模型补上丢失的那片记忆</title>
+    <updated>2026-10-20T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="生活随笔" scheme="https://soulburg.com/categories/life/"/>
+    <category term="健康" scheme="https://soulburg.com/tags/health/"/>
+    <id>https://soulburg.com/posts/secondhand-smoke/</id>
+    <link href="https://soulburg.com/posts/secondhand-smoke/"/>
+    <published>2026-10-14T02:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>你一定对这些场景不陌生：</p>
+<blockquote>
+<p>深夜回家，楼道里飘着散不尽的烟味，顺着门缝钻进家家户户；<br>电梯门一开，浓重的烟味扑面而来，抱着孩子的妈妈只能屏住呼吸往里退；<br>家里的阳台门”咔嗒”一声关上，隔着玻璃能看见星火明灭，里面的人觉得自己已经足够体贴，没熏着客厅里的妻儿。</p>
+</blockquote>
+<p>太多人把抽烟当成一件只关乎自己的私事，大不了就是伤自己的肺，最坏不过得个肺癌，自己认了。可很少有人真的明白——<strong>烟草真正的杀伤力，从来都不是缓慢到来的绝症，而是毫无预兆的轰然崩塌。</strong></p>
+<p>前一秒还在说笑的人，下一秒就可能因为心梗、脑梗栽倒在地，连一句交代都来不及留。而更隐蔽的伤害，早已经顺着每一缕飘散的烟雾，落到了身边每一个人的身上。</p>]]>
+    </summary>
+    <title>你抽的每一口烟，都在给身边的人埋雷</title>
+    <updated>2026-10-14T02:00:00.000Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>汇桐</name>
+    </author>
+    <category term="思考与认知" scheme="https://soulburg.com/categories/thinking/"/>
+    <category term="认知" scheme="https://soulburg.com/tags/mindset/"/>
+    <id>https://soulburg.com/posts/two-kinds-of-people/</id>
+    <link href="https://soulburg.com/posts/two-kinds-of-people/"/>
+    <published>2026-10-13T02:00:00.000Z</published>
     <summary>
       <![CDATA[<p>把视角拉到生命意识那一层看，这世上的灵魂大体分两种底色。</p>
 <p>一种人天生是<strong>来做事的</strong>。大约百分之三点八，行动和创造就是他们的本能，心里那股劲不散，事情不落地他们坐不住。</p>
 <p>更多的人，接近三成八，是<strong>来体验的</strong>。我们这些普通人，功课不在外面，全在关系里——原生家庭、亲密关系、那些剪不断的执念。这一门的主修课，叫**”心灭定”**。</p>]]>
     </summary>
     <title>人分两种：来干事的，还是来修心的</title>
-    <updated>2026-09-30T06:53:16.691Z</updated>
+    <updated>2026-10-13T02:00:00.000Z</updated>
   </entry>
   <entry>
     <author>
       <name>汇桐</name>
     </author>
-    <category term="思考与认知" scheme="https://amzian.com/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"/>
-    <category term="思考" scheme="https://amzian.com/tags/%E6%80%9D%E8%80%83/"/>
-    <category term="赚钱" scheme="https://amzian.com/tags/%E8%B5%9A%E9%92%B1/"/>
-    <category term="流量" scheme="https://amzian.com/tags/%E6%B5%81%E9%87%8F/"/>
-    <id>https://amzian.com/2026/09/28/%E8%B5%9A%E9%92%B1%E5%B0%B1%E6%98%AF%E6%8A%84/</id>
-    <link href="https://amzian.com/2026/09/28/%E8%B5%9A%E9%92%B1%E5%B0%B1%E6%98%AF%E6%8A%84/"/>
-    <published>2026-09-28T02:00:00.000Z</published>
+    <category term="思考与认知" scheme="https://soulburg.com/categories/thinking/"/>
+    <category term="认知" scheme="https://soulburg.com/tags/mindset/"/>
+    <category term="赚钱" scheme="https://soulburg.com/tags/money/"/>
+    <category term="流量" scheme="https://soulburg.com/tags/traffic/"/>
+    <id>https://soulburg.com/posts/money-is-copying/</id>
+    <link href="https://soulburg.com/posts/money-is-copying/"/>
+    <published>2026-10-11T02:00:00.000Z</published>
     <summary>
       <![CDATA[<p>会搞流量，赚钱就容易；不会搞流量，赚钱比登天还难。</p>
 <p>我身边那些买房买车的，扒拉下来看，共同点就一个——会做流量。</p>]]>
     </summary>
     <title>赚钱这事儿，你别嫌脏，就是个&quot;抄&quot;字</title>
-    <updated>2026-09-30T03:39:37.747Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://amzian.com/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"/>
-    <category term="思考" scheme="https://amzian.com/tags/%E6%80%9D%E8%80%83/"/>
-    <category term="赚钱" scheme="https://amzian.com/tags/%E8%B5%9A%E9%92%B1/"/>
-    <category term="商业" scheme="https://amzian.com/tags/%E5%95%86%E4%B8%9A/"/>
-    <id>https://amzian.com/2026/09/28/%E8%B5%9A%E9%92%B1%E5%BA%95%E8%A3%A4/</id>
-    <link href="https://amzian.com/2026/09/28/%E8%B5%9A%E9%92%B1%E5%BA%95%E8%A3%A4/"/>
-    <published>2026-09-28T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>天下所有商业模式，翻到根上，来来回回就是那么几条规矩。你把这几条看透了，不敢保证一夜暴富，但至少能少被割几茬韭菜，少交不少冤枉的智商税。</p>]]>
-    </summary>
-    <title>赚钱这点事，扒到底就这么几条底裤</title>
-    <updated>2026-09-30T03:39:37.745Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://amzian.com/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"/>
-    <category term="认知" scheme="https://amzian.com/tags/%E8%AE%A4%E7%9F%A5/"/>
-    <category term="社交" scheme="https://amzian.com/tags/%E7%A4%BE%E4%BA%A4/"/>
-    <category term="靠谱" scheme="https://amzian.com/tags/%E9%9D%A0%E8%B0%B1/"/>
-    <id>https://amzian.com/2026/09/27/%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B5%96%E5%B0%B1%E7%9C%8B%E8%BF%99%E4%B8%89%E4%BB%B6%E5%B0%8F%E4%BA%8B/</id>
-    <link href="https://amzian.com/2026/09/27/%E4%B8%80%E4%B8%AA%E4%BA%BA%E5%80%BC%E4%B8%8D%E5%80%BC%E5%BE%97%E4%BF%A1%E8%B5%96%E5%B0%B1%E7%9C%8B%E8%BF%99%E4%B8%89%E4%BB%B6%E5%B0%8F%E4%BA%8B/"/>
-    <published>2026-09-27T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>说实话，我这些年看人，越来越简单了。</p>
-<p>能力强不强、情商高不高，其实都可以慢慢练。可一个人靠不靠谱，真的藏在特别小的地方。</p>
-<p>说到底，就看一句话：</p>
-<p><strong>“凡事有交代，件件有着落，事事有回音。”</strong></p>
-<p]]>
-    </summary>
-    <title>一个人值不值得信赖，就看这三件小事</title>
-    <updated>2026-09-30T03:39:37.743Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://amzian.com/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"/>
-    <category term="副业" scheme="https://amzian.com/tags/%E5%89%AF%E4%B8%9A/"/>
-    <category term="思考" scheme="https://amzian.com/tags/%E6%80%9D%E8%80%83/"/>
-    <category term="赚钱" scheme="https://amzian.com/tags/%E8%B5%9A%E9%92%B1/"/>
-    <id>https://amzian.com/2026/09/27/%E4%BF%A1%E4%BB%B0%E5%8D%B0%E9%92%9E/</id>
-    <link href="https://amzian.com/2026/09/27/%E4%BF%A1%E4%BB%B0%E5%8D%B0%E9%92%9E/"/>
-    <published>2026-09-27T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>一个破塑料娃娃，被资本炒到天价，一群人嗷嗷叫着往里冲。排队、抽签、加价抢，你以为自己走在潮流前头，其实是跪在镰刀底下。</p>
-<p>这世界根本没什么潮流，只有明晃晃的人性收割。99%的人抢到个”隐藏款”还在那儿沾沾自喜，那1%的人早把你们这股狂热，变成了自己的印钞机。他们一分钱没花，把你的”热爱”按在地上搓，反手日入6000+。</p>]]>
-    </summary>
-    <title>你在为信仰充值，有人拿你的信仰印钞</title>
-    <updated>2026-09-30T03:39:37.740Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="随笔" scheme="https://amzian.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    <category term="心中之城" scheme="https://amzian.com/tags/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E/"/>
-    <category term="建站心得" scheme="https://amzian.com/tags/%E5%BB%BA%E7%AB%99%E5%BF%83%E5%BE%97/"/>
-    <category term="信息技术" scheme="https://amzian.com/tags/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/"/>
-    <id>https://amzian.com/2026/09/26/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E%E6%9E%84%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E5%AD%97%E5%AE%B6%E5%9B%AD/</id>
-    <link href="https://amzian.com/2026/09/26/%E5%BF%83%E4%B8%AD%E4%B9%8B%E5%9F%8E%E6%9E%84%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E5%AD%97%E5%AE%B6%E5%9B%AD/"/>
-    <published>2026-09-26T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h2 id="欢迎来到心中之城-City-of-Heart"><a href="#欢迎来到心中之城-City-of-Heart" class="headerlink" title="欢迎来到心中之城 (City of Heart)"></a>欢迎来到心中之城 (City of]]>
-    </summary>
-    <title>心中之城：构建属于自己的数字家园</title>
-    <updated>2026-09-30T03:39:37.738Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://amzian.com/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"/>
-    <category term="认知" scheme="https://amzian.com/tags/%E8%AE%A4%E7%9F%A5/"/>
-    <category term="创业" scheme="https://amzian.com/tags/%E5%88%9B%E4%B8%9A/"/>
-    <category term="思考" scheme="https://amzian.com/tags/%E6%80%9D%E8%80%83/"/>
-    <id>https://amzian.com/2026/09/26/%E9%A1%B9%E7%9B%AE%E6%9C%9B%E6%B0%94/</id>
-    <link href="https://amzian.com/2026/09/26/%E9%A1%B9%E7%9B%AE%E6%9C%9B%E6%B0%94/"/>
-    <published>2026-09-26T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>任何能让你赚到钱的项目，扒开外面那层花架子，里面其实都不是”项目多亮眼”，而是你一脚踩中了一个真实存在、还没被喂饱的需求。</p>
-<p>财富这东西有点意思——它不是你追来的，是你把根扎在价值上，它自己跟上来的影子。</p>]]>
-    </summary>
-    <title>项目能不能成，别盯着项目看，去望那股气</title>
-    <updated>2026-09-30T03:39:37.736Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://amzian.com/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"/>
-    <category term="思考" scheme="https://amzian.com/tags/%E6%80%9D%E8%80%83/"/>
-    <category term="赚钱" scheme="https://amzian.com/tags/%E8%B5%9A%E9%92%B1/"/>
-    <category term="流量" scheme="https://amzian.com/tags/%E6%B5%81%E9%87%8F/"/>
-    <id>https://amzian.com/2026/09/25/%E7%84%A6%E8%99%91%E7%94%9F%E6%84%8F/</id>
-    <link href="https://amzian.com/2026/09/25/%E7%84%A6%E8%99%91%E7%94%9F%E6%84%8F/"/>
-    <published>2026-09-25T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>最近是不是觉得日子紧？号动不动就被限流，要么弹个”安全核对”让你重新验证。你急得团团转，在各个免费群里四处求助，换来的要么是骗子，要么是同行的冷眼。</p>
-<p>该醒醒了。你这通焦虑，早被人整理成标准化服务，明码标价，按次收费。你还在研究申诉话术的时候，人家靠这波封号潮，已经在盘算下一笔收益了。</p>]]>
-    </summary>
-    <title>你刷抖音杀时间，有人把你的焦虑做成了生意</title>
-    <updated>2026-09-30T03:39:37.733Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://amzian.com/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"/>
-    <category term="赚钱" scheme="https://amzian.com/tags/%E8%B5%9A%E9%92%B1/"/>
-    <category term="成长" scheme="https://amzian.com/tags/%E6%88%90%E9%95%BF/"/>
-    <category term="自媒体" scheme="https://amzian.com/tags/%E8%87%AA%E5%AA%92%E4%BD%93/"/>
-    <id>https://amzian.com/2026/09/25/%E5%88%AB%E5%9B%B0%E5%9C%A8%E6%88%90%E9%95%BF%E7%9A%84%E5%B9%BB%E8%A7%89%E9%87%8C%E5%85%88%E4%B8%BA%E8%B5%9A%E9%92%B1%E8%B5%8B%E8%83%BD%E8%87%AA%E5%B7%B1/</id>
-    <link href="https://amzian.com/2026/09/25/%E5%88%AB%E5%9B%B0%E5%9C%A8%E6%88%90%E9%95%BF%E7%9A%84%E5%B9%BB%E8%A7%89%E9%87%8C%E5%85%88%E4%B8%BA%E8%B5%9A%E9%92%B1%E8%B5%8B%E8%83%BD%E8%87%AA%E5%B7%B1/"/>
-    <published>2026-09-25T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="我喜欢为了赚钱而成长，而不是为了成长而成长"><a href="#我喜欢为了赚钱而成长，而不是为了成长而成长" class="headerlink"]]>
-    </summary>
-    <title>别困在&quot;成长&quot;的幻觉里，先为赚钱赋能自己</title>
-    <updated>2026-09-30T03:39:37.731Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="外贸获客" scheme="https://amzian.com/tags/%E5%A4%96%E8%B4%B8%E8%8E%B7%E5%AE%A2/"/>
-    <category term="客户开发" scheme="https://amzian.com/tags/%E5%AE%A2%E6%88%B7%E5%BC%80%E5%8F%91/"/>
-    <category term="WhatsApp" scheme="https://amzian.com/tags/WhatsApp/"/>
-    <category term="避坑" scheme="https://amzian.com/tags/%E9%81%BF%E5%9D%91/"/>
-    <id>https://amzian.com/2026/09/23/whatsapp-client-hunting/</id>
-    <link href="https://amzian.com/2026/09/23/whatsapp-client-hunting/"/>
-    <published>2026-09-23T02:00:00.000Z</published>
-    <summary>WhatsApp不是注册完就群发的工具——先养号、再分组、发动态像发朋友圈、发图走文档通道、客户长期跟。在巴西、印度、东南亚这种八成以上人用的市场，这是离客户最近的一条线。</summary>
-    <title>WhatsApp开发客户，新手别一上来就群发</title>
-    <updated>2026-09-30T03:39:37.724Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="客户开发" scheme="https://amzian.com/tags/%E5%AE%A2%E6%88%B7%E5%BC%80%E5%8F%91/"/>
-    <category term="WhatsApp" scheme="https://amzian.com/tags/WhatsApp/"/>
-    <category term="外贸" scheme="https://amzian.com/tags/%E5%A4%96%E8%B4%B8/"/>
-    <category term="获客" scheme="https://amzian.com/tags/%E8%8E%B7%E5%AE%A2/"/>
-    <id>https://amzian.com/2026/09/23/whatsapp-six-ways/</id>
-    <link href="https://amzian.com/2026/09/23/whatsapp-six-ways/"/>
-    <published>2026-09-23T02:00:00.000Z</published>
-    <summary>谷歌指令、地图工具、展商名录、展会名片、本地黄页、客户官网——六条找WhatsApp客户的路子，外加四条防封号提醒和四条开口话术。</summary>
-    <title>找海外客户的WhatsApp，其实就六条路</title>
-    <updated>2026-09-30T03:39:37.728Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="跨境电商" scheme="https://amzian.com/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/"/>
-    <category term="TikTok" scheme="https://amzian.com/tags/TikTok/"/>
-    <category term="美国本土店" scheme="https://amzian.com/tags/%E7%BE%8E%E5%9B%BD%E6%9C%AC%E5%9C%9F%E5%BA%97/"/>
-    <category term="运营" scheme="https://amzian.com/tags/%E8%BF%90%E8%90%A5/"/>
-    <id>https://amzian.com/2026/09/22/us-tiktok-local-store/</id>
-    <link href="https://amzian.com/2026/09/22/us-tiktok-local-store/"/>
-    <published>2026-09-22T02:00:00.000Z</published>
-    <summary>一份美国TikTok本土店全流程：发货方式、账号绑定、原创内容、直播节奏、店群选品、红人计划、佣金回款、本土店与ACCU店区别。</summary>
-    <title>做美国TikTok本土店，这二十多个坑我替你踩过一遍</title>
-    <updated>2026-09-30T03:39:37.720Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="跨境电商" scheme="https://amzian.com/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/"/>
-    <category term="TikTok" scheme="https://amzian.com/tags/TikTok/"/>
-    <category term="避坑" scheme="https://amzian.com/tags/%E9%81%BF%E5%9D%91/"/>
-    <category term="美区小店" scheme="https://amzian.com/tags/%E7%BE%8E%E5%8C%BA%E5%B0%8F%E5%BA%97/"/>
-    <id>https://amzian.com/2026/09/22/us-tiktok-ban-wave/</id>
-    <link href="https://amzian.com/2026/09/22/us-tiktok-ban-wave/"/>
-    <published>2026-09-22T02:00:00.000Z</published>
-    <summary>美区TK小店这波封店潮主要抓物流欺诈——跑水账号、空包裹、轨迹造假、仓库地址对不上都在列；加上资料造假、IP乱切、产品踩线、店铺闲置，四条死因。</summary>
-    <title>美区TikTok小店这波封店潮，大卖也没能全身而退</title>
-    <updated>2026-09-30T03:39:37.713Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="TikTok" scheme="https://amzian.com/tags/TikTok/"/>
-    <category term="海外营销" scheme="https://amzian.com/tags/%E6%B5%B7%E5%A4%96%E8%90%A5%E9%94%80/"/>
-    <category term="内容运营" scheme="https://amzian.com/tags/%E5%86%85%E5%AE%B9%E8%BF%90%E8%90%A5/"/>
-    <category term="跨境" scheme="https://amzian.com/tags/%E8%B7%A8%E5%A2%83/"/>
-    <id>https://amzian.com/2026/09/18/tiktok-nine-markets/</id>
-    <link href="https://amzian.com/2026/09/18/tiktok-nine-markets/"/>
-    <published>2026-09-18T02:00:00.000Z</published>
-    <summary>九个国家九种口味——东南亚吃中文内容，泰国要泰语字幕，日本偏细腻，美国最综合也最卷。但水面之下，人性这根弦全世界是通的。</summary>
-    <title>同一个TikTok，九国九个脾气，但底下那根弦是通的</title>
-    <updated>2026-09-30T03:39:37.709Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="教程" scheme="https://amzian.com/tags/%E6%95%99%E7%A8%8B/"/>
-    <category term="跨境电商" scheme="https://amzian.com/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86/"/>
-    <category term="TikTok" scheme="https://amzian.com/tags/TikTok/"/>
-    <category term="开店" scheme="https://amzian.com/tags/%E5%BC%80%E5%BA%97/"/>
-    <id>https://amzian.com/2026/09/18/tiktok-shop-registration/</id>
-    <link href="https://amzian.com/2026/09/18/tiktok-shop-registration/"/>
-    <published>2026-09-18T02:00:00.000Z</published>
-    <summary>TikTok小店不收自然人——东南亚接受企业或个体户执照，美区目前只收企业执照且要求注册满90天；&quot;5条视频100赞&quot;是创作者挂车门槛、不是开店门槛，别搞混。</summary>
-    <title>TikTok小店怎么注册？先把门槛这关搞清楚</title>
-    <updated>2026-09-30T03:39:37.711Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="AI" scheme="https://amzian.com/tags/AI/"/>
-    <category term="OpenClaw" scheme="https://amzian.com/tags/OpenClaw/"/>
-    <category term="Ollama" scheme="https://amzian.com/tags/Ollama/"/>
-    <category term="教程" scheme="https://amzian.com/tags/%E6%95%99%E7%A8%8B/"/>
-    <id>https://amzian.com/2026/09/15/OpenClaw-Windows-%E5%AE%8C%E6%95%B4%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
-    <link href="https://amzian.com/2026/09/15/OpenClaw-Windows-%E5%AE%8C%E6%95%B4%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-    <published>2026-09-15T02:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h1 id="最强小白指南：OpenClaw-Windows-完整安装教程（云端AI-本地AI-一次讲透）"><a href="#最强小白指南：OpenClaw-Windows-完整安装教程（云端AI-本地AI-一次讲透）" class="headerlink"]]>
-    </summary>
-    <title>OpenClaw Windows 完整安装教程（云端AI + 本地AI）</title>
-    <updated>2026-09-30T03:39:37.704Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="思考与认知" scheme="https://amzian.com/categories/%E6%80%9D%E8%80%83%E4%B8%8E%E8%AE%A4%E7%9F%A5/"/>
-    <category term="副业" scheme="https://amzian.com/tags/%E5%89%AF%E4%B8%9A/"/>
-    <category term="电商" scheme="https://amzian.com/tags/%E7%94%B5%E5%95%86/"/>
-    <category term="外贸尾单" scheme="https://amzian.com/tags/%E5%A4%96%E8%B4%B8%E5%B0%BE%E5%8D%95/"/>
-    <category term="创业" scheme="https://amzian.com/tags/%E5%88%9B%E4%B8%9A/"/>
-    <id>https://amzian.com/2026/09/15/tailgoods-sidebusiness/</id>
-    <link href="https://amzian.com/2026/09/15/tailgoods-sidebusiness/"/>
-    <published>2026-09-15T02:00:00.000Z</published>
-    <summary>出口厂家多做的那批货，按出口品质、清仓价格在国内卖——小红书上单店几万销量，一单赚五块就是十几万。重点不是尾单，是&quot;避实就虚&quot;找冷门细分。</summary>
-    <title>别人挤破头的赛道别去，这种&quot;捡漏&quot;生意一个月能跑六万</title>
-    <updated>2026-09-30T03:39:37.707Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="SEO" scheme="https://amzian.com/tags/SEO/"/>
-    <category term="外贸工具" scheme="https://amzian.com/tags/%E5%A4%96%E8%B4%B8%E5%B7%A5%E5%85%B7/"/>
-    <category term="网站运营" scheme="https://amzian.com/tags/%E7%BD%91%E7%AB%99%E8%BF%90%E8%90%A5/"/>
-    <category term="资源合集" scheme="https://amzian.com/tags/%E8%B5%84%E6%BA%90%E5%90%88%E9%9B%86/"/>
-    <id>https://amzian.com/2026/09/14/foreign-trade-toolbox/</id>
-    <link href="https://amzian.com/2026/09/14/foreign-trade-toolbox/"/>
-    <published>2026-09-14T02:00:00.000Z</published>
-    <summary>一份外贸人网站运营常备工具箱：找邮箱、SEO、建站、设计、EDM、网站体检、客服、视频、众包、传输、笔记——按用途重新归堆，全部可点击直达。</summary>
-    <title>外贸人常备工具箱</title>
-    <updated>2026-09-30T03:39:37.700Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>汇桐</name>
-    </author>
-    <category term="技术分享" scheme="https://amzian.com/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    <category term="Instagram" scheme="https://amzian.com/tags/Instagram/"/>
-    <category term="外贸获客" scheme="https://amzian.com/tags/%E5%A4%96%E8%B4%B8%E8%8E%B7%E5%AE%A2/"/>
-    <category term="社媒营销" scheme="https://amzian.com/tags/%E7%A4%BE%E5%AA%92%E8%90%A5%E9%94%80/"/>
-    <category term="客户开发" scheme="https://amzian.com/tags/%E5%AE%A2%E6%88%B7%E5%BC%80%E5%8F%91/"/>
-    <id>https://amzian.com/2026/09/14/instagram-client-hunting/</id>
-    <link href="https://amzian.com/2026/09/14/instagram-client-hunting/"/>
-    <published>2026-09-14T02:00:00.000Z</published>
-    <summary>Instagram开发客户五步：主页写清楚、挂话题扩流量、翻同行粉丝找名单、顺品牌找下游、每天点赞评论混脸熟。别一上来就发私信硬推。</summary>
-    <title>在Instagram上捞大客户，别一上来就发私信</title>
-    <updated>2026-09-30T03:39:37.702Z</updated>
+    <updated>2026-10-11T02:00:00.000Z</updated>
   </entry>
 </feed>
