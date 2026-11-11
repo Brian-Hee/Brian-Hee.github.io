@@ -17,8 +17,8 @@
       <name>汇桐</name>
     </author>
     <category term="AI" scheme="https://soulburg.com/categories/AI/"/>
-    <category term="AI" scheme="https://soulburg.com/tags/AI/"/>
     <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
+    <category term="AI" scheme="https://soulburg.com/tags/AI/"/>
     <category term="效率" scheme="https://soulburg.com/tags/%E6%95%88%E7%8E%87/"/>
     <category term="工作流" scheme="https://soulburg.com/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/"/>
     <id>https://soulburg.com/posts/ai-workflow-2026/</id>
@@ -33,9 +33,9 @@
       <name>汇桐</name>
     </author>
     <category term="工具" scheme="https://soulburg.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
     <category term="AI" scheme="https://soulburg.com/tags/AI/"/>
     <category term="效率" scheme="https://soulburg.com/tags/%E6%95%88%E7%8E%87/"/>
-    <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
     <id>https://soulburg.com/posts/workbuddy-invite/</id>
     <link href="https://soulburg.com/posts/workbuddy-invite/"/>
     <published>2026-11-06T06:00:00.000Z</published>
@@ -48,10 +48,10 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
-    <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
+    <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
     <id>https://soulburg.com/posts/amazon-ads-keyword-groups/</id>
     <link href="https://soulburg.com/posts/amazon-ads-keyword-groups/"/>
     <published>2026-11-03T08:30:00.000Z</published>
@@ -64,8 +64,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
     <category term="竞价策略" scheme="https://soulburg.com/tags/bidding/"/>
     <id>https://soulburg.com/posts/amazon-ads-bis-vcpm/</id>
@@ -80,8 +80,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
     <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
     <id>https://soulburg.com/posts/amazon-ads-haiwang-vs-value/</id>
@@ -96,8 +96,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
     <category term="广告结构" scheme="https://soulburg.com/tags/ad-structure/"/>
     <id>https://soulburg.com/posts/amazon-ads-standard-vs-nonstandard/</id>
@@ -112,8 +112,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
     <category term="品牌运营" scheme="https://soulburg.com/tags/%E5%93%81%E7%89%8C%E8%BF%90%E8%90%A5/"/>
     <id>https://soulburg.com/posts/amazon-ads-free-tools/</id>
@@ -128,8 +128,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="预算策略" scheme="https://soulburg.com/tags/budget/"/>
     <category term="ACOS" scheme="https://soulburg.com/tags/ACOS/"/>
     <id>https://soulburg.com/posts/amazon-ads-budget-allocation/</id>
@@ -144,8 +144,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="多站点运营" scheme="https://soulburg.com/tags/multi-site/"/>
     <category term="小语种站点" scheme="https://soulburg.com/tags/small-market/"/>
     <id>https://soulburg.com/posts/amazon-ads-small-market-boom/</id>
@@ -160,8 +160,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="预算策略" scheme="https://soulburg.com/tags/budget/"/>
     <category term="旺季运营" scheme="https://soulburg.com/tags/peak-season/"/>
     <id>https://soulburg.com/posts/amazon-ads-peak-season-budget/</id>
@@ -176,8 +176,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="旺季运营" scheme="https://soulburg.com/tags/peak-season/"/>
     <category term="广告结构" scheme="https://soulburg.com/tags/ad-structure/"/>
     <id>https://soulburg.com/posts/amazon-ads-peak-season-structure/</id>
@@ -192,8 +192,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="竞价策略" scheme="https://soulburg.com/tags/bidding/"/>
     <category term="多站点运营" scheme="https://soulburg.com/tags/multi-site/"/>
     <id>https://soulburg.com/posts/amazon-ads-low-bid-tos/</id>
@@ -208,8 +208,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
     <category term="ACOS" scheme="https://soulburg.com/tags/ACOS/"/>
     <id>https://soulburg.com/posts/amazon-ads-low-vs-high-price/</id>
@@ -224,8 +224,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
     <category term="关键词" scheme="https://soulburg.com/tags/keywords/"/>
     <id>https://soulburg.com/posts/amazon-ads-keyword-synergy/</id>
@@ -240,8 +240,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
     <category term="避坑" scheme="https://soulburg.com/tags/pitfalls/"/>
     <id>https://soulburg.com/posts/amazon-ads-adgroup/</id>
@@ -256,8 +256,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="亚马逊广告" scheme="https://soulburg.com/tags/amazon-ads/"/>
+    <category term="跨境电商" scheme="https://soulburg.com/tags/cross-border/"/>
     <category term="广告投放" scheme="https://soulburg.com/tags/ads/"/>
     <category term="避坑" scheme="https://soulburg.com/tags/pitfalls/"/>
     <id>https://soulburg.com/posts/amazon-ads-understanding/</id>
@@ -272,8 +272,8 @@
       <name>汇桐</name>
     </author>
     <category term="技术分享" scheme="https://soulburg.com/categories/tech/"/>
-    <category term="AI" scheme="https://soulburg.com/tags/AI/"/>
     <category term="工具" scheme="https://soulburg.com/tags/tools/"/>
+    <category term="AI" scheme="https://soulburg.com/tags/AI/"/>
     <category term="教程" scheme="https://soulburg.com/tags/tutorial/"/>
     <id>https://soulburg.com/posts/mempalace-long-term-memory/</id>
     <link href="https://soulburg.com/posts/mempalace-long-term-memory/"/>
