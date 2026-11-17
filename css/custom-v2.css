@@ -365,13 +365,13 @@ body.page-sentences #post > * {
 
 /* 首页文章卡片左右布局：封面16:9，文字垂直居中，超出截断 */
 .recent-post-item {
-  align-items: center !important;
+  align-items: stretch !important;
 }
 .recent-post-item .recent-post-info {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
-  height: 100% !important;
+  min-height: 0 !important;
   overflow: hidden !important;
 }
 .post_cover {
@@ -379,7 +379,7 @@ body.page-sentences #post > * {
   aspect-ratio: 16 / 9 !important;
   height: auto !important;
   flex-shrink: 0;
-  align-self: stretch;
+  align-self: center;
 }
 .post_cover .post-bg {
   object-fit: cover !important;
