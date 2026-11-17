@@ -365,17 +365,20 @@ body.page-sentences #post > * {
 
 /* 首页文章卡片左右布局：左边文字垂直居中 */
 .recent-post-item {
-  align-items: center !important;
+  align-items: stretch !important;
 }
 .recent-post-item .recent-post-info {
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
 }
 .post_cover {
   overflow: hidden;
   aspect-ratio: 16 / 9 !important;
   height: auto !important;
+  flex-shrink: 0;
 }
 .post_cover .post-bg {
   object-fit: cover !important;
