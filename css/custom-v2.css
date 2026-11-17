@@ -365,7 +365,7 @@ body.page-sentences #post > * {
 
 /* 首页文章卡片左右布局：左边文字垂直居中 */
 .recent-post-item {
-  align-items: stretch !important;
+  align-items: center !important;
 }
 .recent-post-item .recent-post-info {
   display: flex !important;
@@ -374,7 +374,8 @@ body.page-sentences #post > * {
 }
 .post_cover {
   overflow: hidden;
-  height: 100% !important;
+  aspect-ratio: 16 / 9 !important;
+  height: auto !important;
 }
 .post_cover .post-bg {
   object-fit: cover !important;
