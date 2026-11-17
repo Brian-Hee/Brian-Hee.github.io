@@ -360,6 +360,7 @@ body.page-sentences #post > * {
   justify-content: center !important;
   width: 100% !important;
   padding: 0 14px !important;
+  margin: 0 !important;
 }
 
 /* 首页文章卡片左右布局：左边文字垂直居中 */
