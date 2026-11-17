@@ -364,7 +364,7 @@ body.page-sentences #post > * {
 }
 
 /* 首页文章卡片左右布局：封面16:9，文字垂直居中，超出截断 */
-.recent-post-item {
+#recent-posts .recent-post-item {
   align-items: stretch !important;
   height: 205px !important;
 }
